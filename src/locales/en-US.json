@@ -1,0 +1,47 @@
+{
+    "navbar": {
+        "logo-alt": "Letter G logo",
+        "title": "Gabriel Rosa",
+        "subtitle": "Full Stack Developer",
+        "home": "Home",
+        "about": "About me",
+        "experience": "Experience",
+        "certificates": "Certificates",
+        "apps": "Apps & Pages",
+        "pictures": "Pictures",
+        "videos": "Videos",
+        "downloads": "Downloads",
+        "socials": "Socials & Contact",
+        "theme": "Switch Theme",
+        "language": "Mudar para Português"
+    },
+    "home": {
+        "title": "Gabriel Rosa",
+        "subtitle1": "Full Stack Developer",
+        "subtitle2": "IT Technician",
+        "subtitle3": "Persona Fan"
+    },
+    "about": {
+        "img-alt": "Gabriel Rosa's profile picture",
+        "currently": "I work at the <span class='text-cyan-500'>Brazilian Center for Physics Research</span> as a Full Stack Developer. I am passionate about Development and System.",
+        "work": "I use <span class='text-emerald-500'>VueJS</span> and <span class='text-sky-500'>TailwindCSS</span> on the Frontend, <span class='text-emerald-500'>NodeJS</span>, <span class='text-lime-500'>Express</span>, <span class='text-lime-700'>MongoDB</span> and <span class='text-indigo-500'>OpenLdap</span> on the Backend, and, <span class='text-orange-600'>Ubuntu Server</span> as a deplyment server.",
+        "hobby": "One of my hobbies is audiovisual production, I have a long experience with <span class='text-rose-600'>Adobe</span> Softwares, mainly <span class='text-sky-500'>Photoshop</span>, <span class='text-purple-600'>Premiere</span> and <span class='text-violet-500'>After Effects</span>. Currently my main goal is to dedicate myself to Development and Systems Administration."
+    },
+    "experience": {
+        "academic": "Academic",
+        "cinamomo": "CE Cinamomo",
+        "2016-2018": "2016 - 2018",
+        "highschool": "High School",
+        "unicarioca": "Centro Universitário Unicarioca",
+        "2019": "2019 - present",
+        "cs": "Computer Science",
+        "professional": "Professional",
+        "cbpf": "Brazilian Center for Physics Research",
+        "2018-2019": "2018 - 2019",
+        "intern": "intern",
+        "2019-2022": "2019 - 2022",
+        "it-tech": "IT Technician",
+        "2022": "2022 - present",
+        "full-stack": "Full Stack Developer"
+    }
+}

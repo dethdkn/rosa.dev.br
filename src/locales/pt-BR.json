@@ -1,0 +1,47 @@
+{
+    "navbar": {
+        "logo-alt": "Logo contendo uma letra G",
+        "title": "Gabriel Rosa",
+        "subtitle": "Desenvolvedor Full Stack",
+        "home": "Início",
+        "about": "Sobre mim",
+        "experience": "Experiência",
+        "certificates": "Certificados",
+        "apps": "Apps & Páginas",
+        "pictures": "Fotos",
+        "videos": "Vídeos",
+        "downloads": "Downloads",
+        "socials": "Sociais & contato",
+        "theme": "Mudar tema",
+        "language": "Switch to English"
+    },
+    "home": {
+        "title": "Gabriel Rosa",
+        "subtitle1": "Desenvolvedor Full Stack",
+        "subtitle2": "Técnico em Informática",
+        "subtitle3": "Fã de Persona"
+    },
+    "about": {
+        "img-alt": "Foto do Gabriel Rosa",
+        "currently": "Atualmente trabalho no <span class='text-cyan-500'>Centro Brasileiro de pesquisas Físicas</span> como Desenvolvedor Full Stack. Sou apaixonado pela área de Desenvolvimento e Sistemas.",
+        "work": "Trabalho no Frontend com <span class='text-emerald-500'>VueJS</span> e <span class='text-sky-500'>TailwindCSS</span>, no Backend com <span class='text-emerald-500'>NodeJS</span>, <span class='text-lime-500'>Express</span>, <span class='text-lime-700'>MongoDB</span> e <span class='text-indigo-500'>OpenLdap</span>, e, o sistema <span class='text-orange-600'>Ubuntu Server</span> para deploy.",
+        "hobby": "Um dos meus hobbys é produção audiovisual, tenho longa experiencia com softwares da <span class='text-rose-600'>Adobe</span>, principalmente <span class='text-sky-500'>Photoshop</span>, <span class='text-purple-600'>Premiere</span> e <span class='text-violet-500'>After Effects</span>. Atualmente meu objetivo é me aprofundar na área de desenvolvimento e melhorar minhas habilidades de programação e Linux."
+    },
+    "experience": {
+        "academic": "Acadêmica",
+        "cinamomo": "CE Cinamomo",
+        "2016-2018": "2016 - 2018",
+        "highschool": "Ensino Médio",
+        "unicarioca": "Centro Universitário Unicarioca",
+        "2019": "2019 - presente",
+        "cs": "Ciências da Computação",
+        "professional": "Profissional",
+        "cbpf": "Brazilian Center for Physics Research",
+        "2018-2019": "2018 - 2019",
+        "intern": "Estagiário",
+        "2019-2022": "2019 - 2022",
+        "it-tech": "Técnico em Informática",
+        "2022": "2022 - presente",
+        "full-stack": "Desenvolvedor Full Stack"
+    }
+}
