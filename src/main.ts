@@ -1,3 +1,4 @@
+localStorage.getItem("theme") === 'dark' ? document.getElementsByTagName( 'html' )[0].classList.add('dark') : document.getElementsByTagName( 'html' )[0].classList.remove('dark')
 import { createApp } from 'vue'
 import { createI18n } from 'vue-i18n'
 import './style.sass'
