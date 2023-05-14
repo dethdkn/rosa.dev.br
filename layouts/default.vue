@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 const { t, locale } = useI18n()
-defineProps({
-    myCurrentRoute: String
-})
+if(process.client){
+    localStorage.getItem("theme") === 'light' ? document.getElementsByTagName( 'html' )[0].classList.remove('dark') : document.getElementsByTagName( 'html' )[0].classList.add('dark')
+}
+const route = useRouter()
+const myCurrentRoute = route.currentRoute
 const checkRoute = (current: string = '', nav: string[]) => {
     return nav.includes(current) ? 'navbar-link-active' : 'bg group navbar-link';
 }
@@ -26,6 +28,7 @@ const changeLanguage = () => {
         localStorage.setItem('language', 'en-US')
     }
 }
+const ano = ref(new Date().getFullYear())
 </script>
 <template>
     <aside class="sidebar fixed min-h-screen w-[3.35rem] hover:w-60 z-50 overflow-hidden border-r bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900 hover:shadow-lg transition-500 overflow-y-auto">
@@ -40,76 +43,76 @@ const changeLanguage = () => {
                 </div>
                 <ul class="mt-6 space-y-2 tracking-wide">
                     <li class="min-w-max">
-                        <RouterLink to="/" :class="checkRoute(myCurrentRoute, ['/'])">
+                        <NuxtLink to="/" :class="checkRoute(myCurrentRoute.fullPath, ['/'])">
                             <FaIcon icon="house" class="mr-2 group-hover:text-sky-600"/>
                             <span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
                                 {{ t('navbar.home') }}
                             </span>
-                        </RouterLink>
+                        </NuxtLink>
                     </li>
                     <li class="min-w-max">
-                        <RouterLink to="/about" :class="checkRoute(myCurrentRoute, ['/about'])">
+                        <NuxtLink to="/about" :class="checkRoute(myCurrentRoute.fullPath, ['/about'])">
                             <FaIcon icon="face-smile-beam" class="mr-2 group-hover:text-sky-600"/>
                             <span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
                                 {{ t('navbar.about') }}
                             </span>
-                        </RouterLink>
+                        </NuxtLink>
                     </li>
                     <li class="min-w-max">
-                        <RouterLink to="/experience" :class="checkRoute(myCurrentRoute, ['/experience'])">
+                        <NuxtLink to="/experience" :class="checkRoute(myCurrentRoute.fullPath, ['/experience'])">
                             <FaIcon icon="briefcase" class="mr-2 group-hover:text-sky-600"/>
                             <span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
                                 {{ t('navbar.experience') }}
                             </span>
-                        </RouterLink>
+                        </NuxtLink>
                     </li>
                     <li class="min-w-max">
-                        <RouterLink to="/certificates" :class="checkRoute(myCurrentRoute, ['/certificates'])">
+                        <NuxtLink to="/certificates" :class="checkRoute(myCurrentRoute.fullPath, ['/certificates'])">
                             <FaIcon icon="circle-check" class="mr-2 group-hover:text-sky-600"/>
                             <span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
                                 {{ t('navbar.certificates') }}
                             </span>
-                        </RouterLink>
+                        </NuxtLink>
                     </li>
                     <li class="min-w-max">
-                        <RouterLink to="/apps-pages" :class="checkRoute(myCurrentRoute, ['/apps-pages'])">
+                        <NuxtLink to="/apps-pages" :class="checkRoute(myCurrentRoute.fullPath, ['/apps-pages'])">
                             <FaIcon icon="code" class="mr-2 group-hover:text-sky-600"/>
                             <span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
                                 {{ t('navbar.apps') }}
                             </span>
-                        </RouterLink>
+                        </NuxtLink>
                     </li>
                     <li class="min-w-max">
-                        <RouterLink to="/pictures" :class="checkRoute(myCurrentRoute, ['/pictures'])">
+                        <NuxtLink to="/pictures" :class="checkRoute(myCurrentRoute.fullPath, ['/pictures'])">
                             <FaIcon icon="camera" class="mr-2 group-hover:text-sky-600"/>
                             <span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
                                 {{ t('navbar.pictures') }}
                             </span>
-                        </RouterLink>
+                        </NuxtLink>
                     </li>
                     <li class="min-w-max">
-                        <RouterLink to="/videos" :class="checkRoute(myCurrentRoute, ['/videos'])">
+                        <NuxtLink to="/videos" :class="checkRoute(myCurrentRoute.fullPath, ['/videos'])">
                             <FaIcon icon="circle-play" class="mr-2 group-hover:text-sky-600"/>
                             <span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
                                 {{ t('navbar.videos') }}
                             </span>
-                        </RouterLink>
+                        </NuxtLink>
                     </li>
                     <li class="min-w-max">
-                        <RouterLink to="/downloads" :class="checkRoute(myCurrentRoute, ['/downloads'])">
+                        <NuxtLink to="/downloads" :class="checkRoute(myCurrentRoute.fullPath, ['/downloads'])">
                             <FaIcon icon="cloud-arrow-down" class="mr-2 group-hover:text-sky-600"/>
                             <span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
                                 {{ t('navbar.downloads') }}
                             </span>
-                        </RouterLink>
+                        </NuxtLink>
                     </li>
                     <li class="min-w-max">
-                        <RouterLink to="/socials-contact" :class="checkRoute(myCurrentRoute, ['/socials-contact'])">
+                        <NuxtLink to="/socials-contact" :class="checkRoute(myCurrentRoute.fullPath, ['/socials-contact'])">
                             <FaIcon icon="user-plus" class="mr-2 group-hover:text-sky-600"/>
                             <span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
                                 {{ t('navbar.socials') }}
                             </span>
-                        </RouterLink>
+                        </NuxtLink>
                     </li>
                 </ul>
             </div>
@@ -129,4 +132,11 @@ const changeLanguage = () => {
             </div>
         </div>
     </aside>
+    <main class="min-h-[calc(100vh-1.97rem)] ml-[3.35rem] bg-gray-100 dark:bg-gray-900 transition-500">
+        <slot/>
+    </main>
+    <footer class="bg-cyan-500 m-auto text-center text-gray-100 dark:text-gray-800 ml-[3.35rem] p-1 transition-500">
+        <FaIcon icon="copyright"/>
+        <p class="font-bold inline-block ml-2">{{ ano }}</p>
+    </footer>
 </template>

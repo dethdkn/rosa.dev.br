@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
+useHead({
+    title: 'Gabriel Rosa - '+t('navbar.about')
+})
 </script>
 <template>
     <section class="min-h-[calc(100vh-2rem)] flex items-center justify-center relative">

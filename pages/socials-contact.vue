@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+useHead({
+    title: 'Gabriel Rosa - '+t('navbar.socials')
+})
+</script>
 <template>
     <section class="min-h-[calc(100vh-2rem)] flex items-center justify-center relative">
         <div class="bg-gray-200/80 dark:bg-slate-800 rounded-xl m-5 lg:mx-60 p-4">

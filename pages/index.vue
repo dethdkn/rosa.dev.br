@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { computed, ref, onMounted, watchEffect } from 'vue'
 import { useMouse, useWindowSize } from '@vueuse/core'
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
