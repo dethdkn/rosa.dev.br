@@ -99,7 +99,7 @@ const ano = ref(new Date().getFullYear())
                         </NuxtLink>
                     </li>
                     <li class="min-w-max">
-                        <NuxtLink to="/downloads" :class="checkRoute(myCurrentRoute.fullPath, ['/downloads'])">
+                        <NuxtLink to="/download" :class="checkRoute(myCurrentRoute.fullPath, ['/downloads'])">
                             <FaIcon icon="cloud-arrow-down" class="mr-2 group-hover:text-sky-600"/>
                             <span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
                                 {{ t('navbar.downloads') }}
