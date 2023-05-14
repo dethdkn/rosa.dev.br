@@ -15,6 +15,14 @@ export default defineNuxtConfig({
             autoprefixer: {},
         }
     },
+    modules: [
+        'nuxt-simple-sitemap'
+    ],
+    runtimeConfig: {
+        public: {
+            siteUrl: 'https://rosa.dev.br',
+        }
+    },
     app: {
         head: {
             title: 'Gabriel Rosa',
