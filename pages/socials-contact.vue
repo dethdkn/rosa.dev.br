@@ -16,17 +16,17 @@ useHead({
                 <FaIcon :icon="['fab','linkedin']" class="transform translate-y-[0.45rem] p-1 bg-blue-400 dark:bg-sky-500 rounded-full"/>
                 <span> gabrielsdrosa</span>
             </a>
-            <a href="https://github.com/gabrielsdrosa" target="_blank" class="block text-gray-600 dark:text-white px-4 py-3 hover:bg-gradient-to-r hover:from-sky-600 hover:to-cyan-400 rounded-2xl">
+            <a href="https://github.com/dethdkn" target="_blank" class="block text-gray-600 dark:text-white px-4 py-3 hover:bg-gradient-to-r hover:from-sky-600 hover:to-cyan-400 rounded-2xl">
                 <FaIcon :icon="['fab','github']" class="transform translate-y-[0.45rem] p-1 bg-blue-400 dark:bg-sky-500 rounded-full"/>
-                <span> gabrielsdrosa</span>
+                <span> dethdkn</span>
             </a>
             <a href="https://www.youtube.com/@gabrielsdrosa" target="_blank" class="block text-gray-600 dark:text-white px-4 py-3 hover:bg-gradient-to-r hover:from-sky-600 hover:to-cyan-400 rounded-2xl">
                 <FaIcon :icon="['fab','youtube']" class="transform translate-y-[0.45rem] p-1 bg-blue-400 dark:bg-sky-500 rounded-full"/>
                 <span> @gabrielsdrosa</span>
             </a>
-            <a href="https://www.behance.net/gabrielsdrosa" target="_blank" class="block text-gray-600 dark:text-white px-4 py-3 hover:bg-gradient-to-r hover:from-sky-600 hover:to-cyan-400 rounded-2xl">
+            <a href="https://www.behance.net/dethdkn" target="_blank" class="block text-gray-600 dark:text-white px-4 py-3 hover:bg-gradient-to-r hover:from-sky-600 hover:to-cyan-400 rounded-2xl">
                 <FaIcon :icon="['fab','behance']" class="transform translate-y-[0.45rem] p-1 bg-blue-400 dark:bg-sky-500 rounded-full"/>
-                <span> gabrielsdrosa</span>
+                <span> dethdkn</span>
             </a>
             <a href="https://www.instagram.com/gabriel.sdrosa/" target="_blank" class="block text-gray-600 dark:text-white px-4 py-3 hover:bg-gradient-to-r hover:from-sky-600 hover:to-cyan-400 rounded-2xl">
                 <FaIcon :icon="['fab','instagram']" class="transform translate-y-[0.45rem] p-1 bg-blue-400 dark:bg-sky-500 rounded-full"/>
