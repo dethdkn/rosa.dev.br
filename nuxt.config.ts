@@ -46,7 +46,7 @@ export default defineNuxtConfig({
             ],
             link: [
                 {rel: 'canonical', href: 'https://rosa.dev.br/'},
-                {rel: 'icon', type: 'image/x-icon', href: '/favicon.png'}
+                {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
             ]
         },
         pageTransition: { name: 'slide-right', mode: 'out-in' }
