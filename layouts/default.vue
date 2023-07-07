@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 const { t, locale } = useI18n()
-if(process.client){
+if(process.client)
     localStorage.getItem("theme") === 'light' ? document.getElementsByTagName( 'html' )[0].classList.remove('dark') : document.getElementsByTagName( 'html' )[0].classList.add('dark')
-}
 const route = useRouter()
 const myCurrentRoute = route.currentRoute
 const checkRoute = (current: string = '', nav: string[]) => {
-    return nav.includes(current) ? 'navbar-link-active' : 'bg group navbar-link';
+    return nav.includes(current) ? 'navbar-link-active' : 'bg group navbar-link'
 }
 const changeTheme = () =>{
     const htmlClasses = document.getElementsByTagName( 'html' )[0].classList
@@ -20,7 +19,7 @@ const changeTheme = () =>{
     }
 }
 const changeLanguage = () => {
-    if (locale.value === 'en-US') {
+    if(locale.value === 'en-US'){
         locale.value = 'pt-BR'
         localStorage.setItem('language', 'pt-BR')
     } else {

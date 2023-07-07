@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 useHead({
-    title: 'Gabriel Rosa - '+t('navbar.certificates')
+    title: `Gabriel Rosa - ${t('navbar.certificates')}`
 })
 </script>
 <template>

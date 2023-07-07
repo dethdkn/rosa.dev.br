@@ -24,24 +24,17 @@
     "about": {
         "img-alt": "Gabriel Rosa's profile picture",
         "currently": "I work at the <span class='text-cyan-500'>Brazilian Center for Physics Research</span> as a Full Stack Developer. I am passionate about Development and System.",
-        "work": "I use <span class='text-emerald-500'>VueJS</span> and <span class='text-sky-500'>TailwindCSS</span> on the Frontend, <span class='text-emerald-500'>NodeJS</span>, <span class='text-lime-500'>Express</span>, <span class='text-lime-700'>MongoDB</span> and <span class='text-indigo-500'>OpenLdap</span> on the Backend, and, <span class='text-orange-600'>Ubuntu Server</span> as a deployment server.",
+        "work": "I use <span class='text-emerald-500'>NuxtJS/VueJS</span>, <span class='text-sky-500'>TailwindCSS</span>, <span class='text-emerald-500'>NodeJS</span>, <span class='text-lime-700'>MongoDB</span>, <span class='text-indigo-500'>OpenLdap</span>, and, <span class='text-orange-600'>Ubuntu Server</span>.",
         "hobby": "One of my hobbies is audiovisual production, I have a long experience with <span class='text-rose-600'>Adobe</span> Softwares, mainly <span class='text-sky-500'>Photoshop</span>, <span class='text-purple-600'>Premiere</span> and <span class='text-violet-500'>After Effects</span>. Currently my main goal is to dedicate myself to Development and Systems Administration."
     },
     "experience": {
         "academic": "Academic",
-        "cinamomo": "CE Cinamomo",
-        "2016-2018": "2016 - 2018",
-        "highschool": "High School",
         "unicarioca": "Centro Universitário Unicarioca",
         "2019": "2019 - present",
         "cs": "Computer Science",
         "professional": "Professional",
         "cbpf": "Brazilian Center for Physics Research",
-        "2018-2019": "2018 - 2019",
-        "intern": "intern",
-        "2019-2022": "2019 - 2022",
-        "it-tech": "IT Technician",
-        "2022": "2022 - present",
+        "2019-present": "2019 - present",
         "full-stack": "Full Stack Developer"
     }
 }
