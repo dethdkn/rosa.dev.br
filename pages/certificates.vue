@@ -434,6 +434,16 @@ const certificates = ref([
 			subtitle: 'Udemy',
 			anotherTitle: '04/2023'
 		}
+	},
+	{
+		img: {
+			href: '/certificados/Nuxt3_Udemy.pdf',
+			img: '/udemy.png',
+			alt: 'Udemy Logo',
+			title: 'The Nuxt 3 Bootcamp - The Complete Developer Guide',
+			subtitle: 'Udemy',
+			anotherTitle: '08/2023'
+		}
 	}
 ])
 </script>
