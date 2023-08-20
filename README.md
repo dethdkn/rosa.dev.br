@@ -42,4 +42,4 @@
 ## 📝 License
 
 Copyright © 2023 [Gabriel 'DethDKN' Rosa](https://github.com/dethdkn)\
-This project is under [MIT license](https://github.com/dethdkn/ldap-sha512/blob/main/LICENSE)
+This project is under [MIT license](https://github.com/dethdkn/rosa.dev.br/blob/main/LICENSE)
