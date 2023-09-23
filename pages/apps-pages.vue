@@ -20,6 +20,14 @@ const apps = ref([
 			alt: 'Ldap-Sha512',
 			title: 'Ldap-Sha512'
 		}
+	},
+	{
+		img: {
+			href: 'https://youtu.be/Zq7PwGxcsLg',
+			img: '/idcbpf.jpg',
+			alt: 'IDCBPF - 👥 Ldap account management',
+			title: 'IDCBPF'
+		}
 	}
 ])
 </script>

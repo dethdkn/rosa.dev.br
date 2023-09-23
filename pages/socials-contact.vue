@@ -5,22 +5,23 @@ useHead({
 })
 
 const medias = ref([
-	{href: 'mailto:gabriel@rosa.dev.br', icon: 'envelope', text: 'gabriel@rosa.dev.br'},
+	{href: 'mailto:gabriel@rosa.dev.br', icon: 'i-heroicons-envelope', text: 'gabriel@rosa.dev.br'},
+	{href: 'https://github.com/dethdkn', icon: 'bxl:github', text: 'dethdkn'},
 	{
 		href: 'https://www.linkedin.com/in/gabrielsdrosa',
-		icon: ['fab', 'linkedin'],
+		icon: 'bxl:linkedin-square',
 		text: '/in/gabrielsdrosa'
 	},
-	{href: 'https://github.com/dethdkn', icon: ['fab', 'github'], text: 'dethdkn'},
+
 	{
 		href: 'https://www.youtube.com/@gabrielsdrosa',
-		icon: ['fab', 'youtube'],
+		icon: 'bxl:youtube',
 		text: '@gabrielsdrosa'
 	},
-	{href: 'https://www.behance.net/dethdkn', icon: ['fab', 'behance'], text: 'dethdkn'},
+	{href: 'https://www.behance.net/dethdkn', icon: 'bxl:behance', text: 'dethdkn'},
 	{
 		href: 'https://www.instagram.com/gabriel.sdrosa',
-		icon: ['fab', 'instagram'],
+		icon: 'bxl:instagram',
 		text: 'gabriel.sdrosa'
 	}
 ])

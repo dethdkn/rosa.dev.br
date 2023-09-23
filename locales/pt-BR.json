@@ -23,9 +23,11 @@
     },
     "about": {
         "img-alt": "Foto do Gabriel Rosa",
-        "currently": "Atualmente trabalho no <span class='text-cyan-500'>Centro Brasileiro de pesquisas Físicas</span> como Desenvolvedor Full Stack. Sou apaixonado pela área de Desenvolvimento e Sistemas.",
-        "work": "Trabalho com <span class='text-emerald-500'>NuxtJS/VueJS</span>, <span class='text-sky-500'>TailwindCSS</span>, <span class='text-emerald-500'>NodeJS</span>, <span class='text-lime-500'>Express</span>, <span class='text-lime-700'>MongoDB</span>, <span class='text-indigo-500'>OpenLdap</span>, e <span class='text-orange-600'>Ubuntu Server</span>.",
-        "hobby": "Um dos meus hobbys é produção audiovisual, tenho longa experiencia com softwares da <span class='text-rose-600'>Adobe</span>, principalmente <span class='text-sky-500'>Photoshop</span>, <span class='text-purple-600'>Premiere</span> e <span class='text-violet-500'>After Effects</span>. Atualmente meu objetivo é me aprofundar na área de desenvolvimento e melhorar minhas habilidades de programação e Linux."
+        "title": "👨‍💻 Desenvolvedor Full Stack  🐧 Apaixonado por Linux  🚀 Autodidata",
+        "experience-title": "💼 Experiência:",
+        "experience": "🚀 Alta experiência em Node.js, Vue.js e Nuxt.js. 🧪 Especializado em testes automatizados com Vitest. 💡 Proficiente em TypeScript e Tailwind CSS. 📊 Compreensão de bancos de dados relacionais e não relacionais, principalmente MongoDB. 📂 Conhecimento sólido em controle de versão com Git, GitHub e GitLab. 🌐 Experiência em gerenciamento de sistemas Linux para web, incluindo configuração do Nginx.",
+        "learner-title": "📚 Ávido Aprendiz:",
+        "learner": "Sou um autodidata dedicado, sempre ansioso para aprender novas tecnologias e abordagens. Minha capacidade de aprendizado rápido me permite acompanhar as tendências em constante evolução no mundo da tecnologia."
     },
     "experience": {
         "academic": "Acadêmica",

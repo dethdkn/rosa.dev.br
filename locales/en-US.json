@@ -23,9 +23,11 @@
     },
     "about": {
         "img-alt": "Gabriel Rosa's profile picture",
-        "currently": "I work at the <span class='text-cyan-500'>Brazilian Center for Physics Research</span> as a Full Stack Developer. I am passionate about Development and System.",
-        "work": "I use <span class='text-emerald-500'>NuxtJS/VueJS</span>, <span class='text-sky-500'>TailwindCSS</span>, <span class='text-emerald-500'>NodeJS</span>, <span class='text-lime-700'>MongoDB</span>, <span class='text-indigo-500'>OpenLdap</span>, and, <span class='text-orange-600'>Ubuntu Server</span>.",
-        "hobby": "One of my hobbies is audiovisual production, I have a long experience with <span class='text-rose-600'>Adobe</span> Softwares, mainly <span class='text-sky-500'>Photoshop</span>, <span class='text-purple-600'>Premiere</span> and <span class='text-violet-500'>After Effects</span>. Currently my main goal is to dedicate myself to Development and Systems Administration."
+        "title": "👨‍💻 Full Stack Developer  🐧 Linux Enthusiast  🚀 Self-Directed Learner",
+        "experience-title": "💼 Experience:",
+        "experience": "🚀 Extensive expertise in Node.js, Vue.js, and Nuxt.js. 🧪 Specialized in automated testing with Vitest. 💡 Proficient in TypeScript and Tailwind CSS. 📊 Solid understanding of relational and non-relational databases, primarily MongoDB. 📂 Strong knowledge of version control with Git, GitHub, and GitLab. 🌐 Experience in managing Linux systems for the web, including Nginx configuration.",
+        "learner-title": "📚 Quick Learner:",
+        "learner": "I'm a dedicated self-learner, always eager to grasp new technologies and approaches. My ability to learn quickly enables me to keep up with the ever-evolving trends in the tech world."
     },
     "experience": {
         "academic": "Academic",

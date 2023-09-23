@@ -444,6 +444,16 @@ const certificates = ref([
 			subtitle: 'Udemy',
 			anotherTitle: '08/2023'
 		}
+	},
+	{
+		img: {
+			href: '/certificados/Javascript_Unit_Testing_Udemy.pdf',
+			img: '/udemy.png',
+			alt: 'Udemy Logo',
+			title: 'JavaScript Unit Testing - The Practical Guide',
+			subtitle: 'Udemy',
+			anotherTitle: '09/2023'
+		}
 	}
 ])
 </script>

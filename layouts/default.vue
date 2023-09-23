@@ -49,7 +49,7 @@ const ano = ref(new Date().getFullYear())
 				<ul class="mt-6 space-y-2 tracking-wide">
 					<li class="min-w-max">
 						<NuxtLink to="/" :class="checkRoute(route.fullPath, ['/'])">
-							<FaIcon icon="house" class="mr-2 group-hover:text-sky-600" />
+							<Icon name="i-heroicons-home" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.home') }}
 							</span>
@@ -57,7 +57,7 @@ const ano = ref(new Date().getFullYear())
 					</li>
 					<li class="min-w-max">
 						<NuxtLink to="/about" :class="checkRoute(route.fullPath, ['/about'])">
-							<FaIcon icon="face-smile-beam" class="mr-2 group-hover:text-sky-600" />
+							<Icon name="i-heroicons-face-smile" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.about') }}
 							</span>
@@ -65,7 +65,7 @@ const ano = ref(new Date().getFullYear())
 					</li>
 					<li class="min-w-max">
 						<NuxtLink to="/experience" :class="checkRoute(route.fullPath, ['/experience'])">
-							<FaIcon icon="briefcase" class="mr-2 group-hover:text-sky-600" />
+							<Icon name="i-heroicons-sparkles" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.experience') }}
 							</span>
@@ -73,7 +73,7 @@ const ano = ref(new Date().getFullYear())
 					</li>
 					<li class="min-w-max">
 						<NuxtLink to="/certificates" :class="checkRoute(route.fullPath, ['/certificates'])">
-							<FaIcon icon="circle-check" class="mr-2 group-hover:text-sky-600" />
+							<Icon name="i-heroicons-check-badge" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.certificates') }}
 							</span>
@@ -81,7 +81,7 @@ const ano = ref(new Date().getFullYear())
 					</li>
 					<li class="min-w-max">
 						<NuxtLink to="/apps-pages" :class="checkRoute(route.fullPath, ['/apps-pages'])">
-							<FaIcon icon="code" class="mr-2 group-hover:text-sky-600" />
+							<Icon name="i-heroicons-code-bracket" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.apps') }}
 							</span>
@@ -89,7 +89,7 @@ const ano = ref(new Date().getFullYear())
 					</li>
 					<li class="min-w-max">
 						<NuxtLink to="/pictures" :class="checkRoute(route.fullPath, ['/pictures'])">
-							<FaIcon icon="camera" class="mr-2 group-hover:text-sky-600" />
+							<Icon name="i-heroicons-camera" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.pictures') }}
 							</span>
@@ -97,7 +97,7 @@ const ano = ref(new Date().getFullYear())
 					</li>
 					<li class="min-w-max">
 						<NuxtLink to="/videos" :class="checkRoute(route.fullPath, ['/videos'])">
-							<FaIcon icon="circle-play" class="mr-2 group-hover:text-sky-600" />
+							<Icon name="i-heroicons-video-camera" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.videos') }}
 							</span>
@@ -105,7 +105,10 @@ const ano = ref(new Date().getFullYear())
 					</li>
 					<li class="min-w-max">
 						<NuxtLink to="/download" :class="checkRoute(route.fullPath, ['/downloads'])">
-							<FaIcon icon="cloud-arrow-down" class="mr-2 group-hover:text-sky-600" />
+							<Icon
+								name="i-heroicons-arrow-down-on-square-stack"
+								class="mr-2 group-hover:text-sky-600"
+							/>
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.downloads') }}
 							</span>
@@ -116,7 +119,7 @@ const ano = ref(new Date().getFullYear())
 							to="/socials-contact"
 							:class="checkRoute(route.fullPath, ['/socials-contact'])"
 						>
-							<FaIcon icon="user-plus" class="mr-2 group-hover:text-sky-600" />
+							<Icon name="i-heroicons-user-circle" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.socials') }}
 							</span>
@@ -126,13 +129,13 @@ const ano = ref(new Date().getFullYear())
 			</div>
 			<div class="w-max -mb-3">
 				<span class="bg group navbar-link cursor-pointer" @click="changeTheme">
-					<FaIcon icon="circle" class="mr-2 group-hover:text-sky-600" />
+					<Icon name="i-heroicons-swatch" class="mr-2 group-hover:text-sky-600" />
 					<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 						{{ t('navbar.theme') }}
 					</span>
 				</span>
 				<span class="bg group navbar-link cursor-pointer" @click="changeLanguage">
-					<FaIcon icon="language" class="mr-2 group-hover:text-sky-600" />
+					<Icon name="i-heroicons-language" class="mr-2 group-hover:text-sky-600" />
 					<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 						{{ t('navbar.language') }}
 					</span>
@@ -140,15 +143,7 @@ const ano = ref(new Date().getFullYear())
 			</div>
 		</div>
 	</aside>
-	<main
-		class="min-h-[calc(100vh-1.97rem)] ml-[3.35rem] bg-gray-100 dark:bg-gray-900 transition-500"
-	>
+	<main class="min-h-screen ml-[3.35rem] bg-gray-100 dark:bg-gray-900 transition-500">
 		<slot />
 	</main>
-	<footer
-		class="bg-cyan-500 m-auto text-center text-gray-100 dark:text-gray-800 ml-[3.35rem] p-1 transition-500"
-	>
-		<FaIcon icon="copyright" />
-		<p class="font-bold inline-block ml-2">{{ ano }}</p>
-	</footer>
 </template>

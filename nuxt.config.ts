@@ -1,16 +1,17 @@
 export default defineNuxtConfig({
-	css: ['~/assets/style.sass', '@fortawesome/fontawesome-svg-core/styles.css'],
-	build: {
-		transpile: ['@fortawesome/vue-fontawesome', '@fortawesome/fontawesome-svg-core']
-	},
-	modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@vueuse/nuxt', 'nuxt-simple-sitemap'],
+	css: ['~/assets/style.sass'],
+	modules: [
+		'@nuxtjs/tailwindcss',
+		'@nuxtjs/i18n',
+		'@vueuse/nuxt',
+		'nuxt-icon',
+		'nuxt-simple-sitemap'
+	],
 	i18n: {
 		vueI18n: './i18n.config.ts'
 	},
-	runtimeConfig: {
-		public: {
-			siteUrl: 'https://rosa.dev.br'
-		}
+	site: {
+		url: 'https://example.com'
 	},
 	app: {
 		head: {

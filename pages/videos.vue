@@ -17,6 +17,18 @@ const videos = ref([
 			title:
 				'Pendrive Multiboot Personalizável (pra mostrar pros seus amiguinhos do TI e não ensinar a fazer)'
 		}
+	},
+	{
+		video: {
+			url: 'https://www.youtube.com/embed/ih04DQNcfJw',
+			title: 'Criando um projeto em NUXT e trabalhando com rotas'
+		}
+	},
+	{
+		video: {
+			url: 'https://www.youtube.com/embed/3fenbr36stM',
+			title: 'Modulos e Plugins no NUXT'
+		}
 	}
 ])
 </script>
