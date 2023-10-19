@@ -28,6 +28,14 @@ const apps = ref([
 			alt: 'IDCBPF - 👥 Ldap account management',
 			title: 'IDCBPF'
 		}
+	},
+	{
+		img: {
+			href: 'https://auditorios.cbpf.br',
+			img: '/auditorios.png',
+			alt: 'Agenda de Auditórios - CBPF',
+			title: 'Agenda de Auditórios'
+		}
 	}
 ])
 </script>
