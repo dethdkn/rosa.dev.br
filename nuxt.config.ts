@@ -1,26 +1,23 @@
 export default defineNuxtConfig({
-	css: ['~/assets/style.sass'],
+	css: ['~/assets/global.sass'],
 	modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@vueuse/nuxt', 'nuxt-icon', '@nuxtseo/module'],
 	tailwindcss: {
-		cssPath: false,
-		configPath: 'tailwind.config.ts'
+		config: {darkMode: 'class'}
 	},
 	i18n: {
-		vueI18n: './i18n.config.ts'
-	},
-	robots: {
-		sitemap: '/sitemap.xml',
-		credits: false
-	},
-	sitemap: {
-		sitemapName: 'sitemap.xml',
-		credits: false
+		baseUrl: 'https://rosa.dev.br/',
+		defaultLocale: 'en',
+		langDir: 'locales',
+		locales: [
+			{code: 'en', iso: 'en-US', name: 'English (US)', file: 'en.json'},
+			{code: 'pt', iso: 'pt-BR', name: 'Português (BR)', file: 'pt.json'}
+		],
+		strategy: 'no_prefix'
 	},
 	site: {
-		url: 'https://rosa.dev.br',
+		url: 'https://rosa.dev.br/',
 		name: 'Gabriel Rosa',
-		description:
-			'I work at the Brazilian Center for Physics Research as a Full Stack Developer. I am passionate about Development and System.',
+		description: 'Full Stack Developer | IT Technician | Persona Fan',
 		defaultLocale: 'en',
 		twitter: '@DethDKN',
 		identity: {

@@ -4,6 +4,8 @@ const {t, locale} = useI18n()
 const language = useCookie('language')
 const theme = useCookie('theme')
 
+if (language.value === 'pt') locale.value = 'pt'
+
 const {currentRoute: route} = useRouter()
 
 const checkRoute = (current: string = '', nav: string[]) => {
@@ -23,8 +25,8 @@ const changeTheme = () => {
 
 const changeLanguage = () => {
 	if (locale.value === 'en') {
-		locale.value = 'pt-BR'
-		language.value = 'pt-BR'
+		locale.value = 'pt'
+		language.value = 'pt'
 		return
 	}
 	locale.value = 'en'
