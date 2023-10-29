@@ -1,14 +1,13 @@
 import ptBR from '~/locales/pt-BR.json'
-import enUS from '~/locales/en-US.json'
-const defaultLang = 'en-US'
+import en from '~/locales/en.json'
 
 export default defineI18nConfig(() => ({
 	legacy: false,
 	warnHtmlMessage: false,
-	locale: defaultLang,
-	fallbackLocale: defaultLang,
+	locale: 'en',
+	fallbackLocale: 'en',
 	messages: {
 		'pt-BR': ptBR,
-		'en-US': enUS
+		en: en
 	}
 }))

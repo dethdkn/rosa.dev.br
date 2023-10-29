@@ -3,34 +3,43 @@ const {t} = useI18n()
 useHead({
 	title: `Gabriel Rosa - ${t('navbar.pictures')}`
 })
+defineOgImage({
+	title: `Gabriel Rosa | ${t('navbar.pictures')}`,
+	component: 'Og'
+})
+useSeoMeta({
+	description:
+		'Explore my photo gallery 📷 and get to know me through these snapshots 🌟. From candid moments to special occasions, these pictures share my story 📖.'
+})
+
 const imgs = ref([
 	{
 		img: {
-			img: '/santos_dumont.png',
+			img: '/images/santos_dumont.png',
 			alt: 'Super Computador Santos Dumont'
 		}
 	},
 	{
 		img: {
-			img: '/data_center.png',
+			img: '/images/data_center.png',
 			alt: 'Rio Science Data Center'
 		}
 	},
 	{
 		img: {
-			img: '/cbpf_confraternizacao.png',
+			img: '/images/cbpf_confraternizacao.png',
 			alt: 'Confraternização do CBPF'
 		}
 	},
 	{
 		img: {
-			img: '/cbpf_cotec.png',
+			img: '/images/cbpf_cotec.png',
 			alt: 'COTEC - CBPF'
 		}
 	},
 	{
 		img: {
-			img: '/reuniao.png',
+			img: '/images/reuniao.png',
 			alt: 'Reunião - CBPF'
 		}
 	}

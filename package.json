@@ -9,16 +9,17 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.8.5",
-    "@types/node": "^20.8.7",
-    "nuxt": "^3.7.4"
+    "@nuxt/devtools": "^1.0.0",
+    "@types/node": "^20.8.9",
+    "nuxt": "^3.8.0"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "8.0.0-rc.2",
-    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@nuxtjs/i18n": "8.0.0-rc.5",
+    "@nuxtjs/tailwindcss": "^6.8.1",
+    "@nuxtseo/module": "2.0.0-beta.39",
+    "@vercel/analytics": "^1.1.1",
     "@vueuse/nuxt": "^10.5.0",
-    "nuxt-icon": "^0.5.0",
-    "nuxt-simple-sitemap": "^3.4.0",
-    "sass": "^1.69.4"
+    "nuxt-icon": "^0.6.1",
+    "sass": "^1.69.5"
   }
 }

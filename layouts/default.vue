@@ -22,18 +22,17 @@ const changeTheme = () => {
 }
 
 const changeLanguage = () => {
-	if (locale.value === 'en-US') {
+	if (locale.value === 'en') {
 		locale.value = 'pt-BR'
 		language.value = 'pt-BR'
 		return
 	}
-	locale.value = 'en-US'
-	language.value = 'en-US'
+	locale.value = 'en'
+	language.value = 'en'
 }
-
-const ano = ref(new Date().getFullYear())
 </script>
 <template>
+	<NuxtLoadingIndicator color="#0284c7" :height="4" />
 	<aside
 		class="sidebar fixed min-h-screen w-[3.35rem] hover:w-60 z-50 overflow-hidden border-r bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900 hover:shadow-lg transition-500 overflow-y-auto"
 	>

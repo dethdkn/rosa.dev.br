@@ -2,7 +2,7 @@
 const error = defineProps(['error'])
 const {statusCode, message} = error.error
 useHead({
-	title: 'Gabriel Rosa - ' + statusCode
+	title: statusCode
 })
 </script>
 <template>

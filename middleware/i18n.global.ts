@@ -1,7 +1,7 @@
 export default defineNuxtRouteMiddleware(() => {
 	const {$i18n} = useNuxtApp()
-	let selectedLang = 'en-US'
+	let selectedLang = 'en'
 	const language = useCookie('language')
-	selectedLang = language.value !== 'en-US' && language.value !== 'pt-BR' ? 'en-US' : language.value
+	selectedLang = language.value !== 'en' && language.value !== 'pt-BR' ? 'en' : language.value
 	$i18n.locale.value = selectedLang
 })

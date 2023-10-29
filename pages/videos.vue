@@ -1,7 +1,15 @@
 <script setup lang="ts">
 const {t} = useI18n()
 useHead({
-	title: `Gabriel Rosa - ${t('navbar.videos')}`
+	title: t('navbar.videos')
+})
+defineOgImage({
+	title: `Gabriel Rosa | ${t('navbar.videos')}`,
+	component: 'Og'
+})
+useSeoMeta({
+	description:
+		'Explore my YouTube Videos Showcase! Explore a variety of insightful tutorials and subscribe for the latest updates. Enjoy expanding your knowledge with my instructional content!'
 })
 
 const videos = ref([

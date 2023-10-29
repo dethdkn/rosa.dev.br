@@ -1,5 +1,14 @@
 <script setup lang="ts">
 const {t} = useI18n()
+
+defineOgImage({
+	title: 'Gabriel Rosa',
+	component: 'Og'
+})
+useSeoMeta({
+	description: `${t('home.subtitle1')} | ${t('home.subtitle2')} | ${t('home.subtitle3')}`
+})
+
 const {x, y} = useMouse()
 const {width, height} = useWindowSize()
 

@@ -1,7 +1,15 @@
 <script setup lang="ts">
 const {t} = useI18n()
 useHead({
-	title: `Gabriel Rosa - ${t('navbar.socials')}`
+	title: t('navbar.socials')
+})
+defineOgImage({
+	title: `Gabriel Rosa | ${t('navbar.socials')}`,
+	component: 'Og'
+})
+useSeoMeta({
+	description:
+		'Discover my social media profiles - Github, Linkedin, YouTube, and more. Connect with me and explore my digital world.'
 })
 
 const medias = ref([
