@@ -12,7 +12,8 @@ export default defineNuxtConfig({
 			{code: 'en', iso: 'en-US', name: 'English (US)', file: 'en.json'},
 			{code: 'pt', iso: 'pt-BR', name: 'Português (BR)', file: 'pt.json'}
 		],
-		strategy: 'no_prefix'
+		strategy: 'no_prefix',
+		detectBrowserLanguage: false
 	},
 	site: {
 		url: 'https://rosa.dev.br/',
