@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import 'animate.css'
+
 const { t } = useI18n()
 
 defineOgImage({
@@ -74,6 +76,13 @@ onMounted(() => {
 watchEffect(() => {
 	typeArray.value = [t('home.subtitle1'), t('home.subtitle2'), t('home.subtitle3')]
 })
+
+function tada() {
+	if (logo.value) {
+		logo.value.classList.add('animate__animated', 'animate__tada')
+		setTimeout(() => logo.value?.classList.remove('animate__animated', 'animate__tada'), 1000)
+	}
+}
 </script>
 
 <template>
@@ -85,7 +94,7 @@ watchEffect(() => {
 		<h2
 			ref="logo"
 			class="font-bold text-center text-5xl dark:text-white transition-500"
-			:style="{ maskImage: logoGradient }"
+			:style="{ maskImage: logoGradient }" @click="tada"
 		>
 			<p>{{ t('home.title') }}</p>
 			<span class="inline-block mr-[-15px]">{{ typeValue }}&nbsp;</span>

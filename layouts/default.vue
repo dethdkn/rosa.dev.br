@@ -6,6 +6,15 @@ function nope() {
 	setTimeout(() => hidden.value = true, 5000)
 }
 if (process.client) {
+	// eslint-disable-next-line no-console
+	console.log(`%c  
+	.88888.           dP                oo          dP     888888ba                             
+d8'    88          88                            88     88     8b                            
+88        .d8888b. 88d888b. 88d888b. dP .d8888b. 88    a88aaaa8P' .d8888b. .d8888b. .d8888b. 
+88   YP88 88'   88 88'   88 88'   88 88 88ooood8 88     88    8b. 88'   88 Y8ooooo. 88'   88 
+Y8.   .88 88.  .88 88.  .88 88       88 88.  ... 88     88     88 88.  .88       88 88.  .88 
+88888'   88888P8 88Y8888' dP       dP  88888P' dP     dP     dP  88888P'  88888P'  88888P8`,	'font-family:monospace; color: #00FFFF;')
+
 	window.addEventListener('keydown', (event) => {
 		if (event.code === 'F12') {
 			event.preventDefault()

@@ -33,6 +33,23 @@ function changeLanguage() {
 	locale.value = 'en'
 	language.value = 'en'
 }
+
+const favicon = ref(true)
+
+if (process.client) {
+	let keys: string[] = []
+	const sequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a', 'Enter']
+
+	window.addEventListener('keydown', (event) => {
+		keys.push(event.key)
+		keys.splice(-sequence.length - 1, keys.length - sequence.length)
+		if (keys.join(',') === sequence.join(',')) {
+			keys = []
+			favicon.value = false
+			setTimeout(() => favicon.value = true, 1980)
+		}
+	})
+}
 </script>
 
 <template>
@@ -43,7 +60,8 @@ function changeLanguage() {
 		<div class="flex h-screen flex-col justify-between pt-2 pb-6">
 			<div>
 				<div class="flex items-center w-max p-2.5 cursor-cell">
-					<img src="/favicon.ico" class="w-8 h-8 inline-block" :alt="t('navbar.logo-alt')">
+					<img v-if="favicon" src="/favicon.ico" class="w-8 h-8 inline-block" :alt="t('navbar.logo-alt')">
+					<img v-else src="/happy.gif" class="w-8 h-8 inline-block" alt="Happy Gif">
 					<h1 class="inline-block ml-4 font-medium text-center dark:text-white transition-1000">
 						<p>{{ t('navbar.title') }}</p>
 						<p class="text-xs">
