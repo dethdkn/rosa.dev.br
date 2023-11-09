@@ -5,6 +5,15 @@ function nope() {
 	hidden.value = false
 	setTimeout(() => hidden.value = true, 5000)
 }
+if (process.client) {
+	window.addEventListener('keydown', (event) => {
+		if (event.code === 'F12') {
+			event.preventDefault()
+			nope()
+			return false
+		}
+	})
+}
 </script>
 
 <template>
