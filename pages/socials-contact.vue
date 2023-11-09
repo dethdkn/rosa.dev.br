@@ -1,43 +1,44 @@
 <script setup lang="ts">
-const {t} = useI18n()
+const { t } = useI18n()
 useHead({
-	title: t('navbar.socials')
+	title: t('navbar.socials'),
 })
 defineOgImage({
 	title: `Gabriel Rosa | ${t('navbar.socials')}`,
-	component: 'Og'
+	component: 'Og',
 })
 useSeoMeta({
 	description:
-		'Discover my social media profiles - Github, Linkedin, YouTube, and more. Connect with me and explore my digital world.'
+		'Discover my social media profiles - Github, Linkedin, YouTube, and more. Connect with me and explore my digital world.',
 })
 
 const medias = ref([
-	{href: 'mailto:gabriel@rosa.dev.br', icon: 'i-heroicons-envelope', text: 'gabriel@rosa.dev.br'},
-	{href: 'https://github.com/dethdkn', icon: 'bxl:github', text: 'dethdkn'},
+	{ href: 'mailto:gabriel@rosa.dev.br', icon: 'i-heroicons-envelope', text: 'gabriel@rosa.dev.br' },
+	{ href: 'https://github.com/dethdkn', icon: 'bxl:github', text: 'dethdkn' },
 	{
 		href: 'https://www.linkedin.com/in/gabrielsdrosa',
 		icon: 'bxl:linkedin-square',
-		text: '/in/gabrielsdrosa'
+		text: '/in/gabrielsdrosa',
 	},
 
 	{
 		href: 'https://www.youtube.com/@gabrielsdrosa',
 		icon: 'bxl:youtube',
-		text: '@gabrielsdrosa'
+		text: '@gabrielsdrosa',
 	},
-	{href: 'https://www.behance.net/dethdkn', icon: 'bxl:behance', text: 'dethdkn'},
+	{ href: 'https://www.behance.net/dethdkn', icon: 'bxl:behance', text: 'dethdkn' },
 	{
 		href: 'https://www.instagram.com/gabriel.sdrosa',
 		icon: 'bxl:instagram',
-		text: 'gabriel.sdrosa'
-	}
+		text: 'gabriel.sdrosa',
+	},
 ])
 </script>
+
 <template>
 	<Section>
 		<Card>
-			<Social v-for="media in medias" :href="media.href" :icon="media.icon" :text="media.text" />
+			<Social v-for="media in medias" :key="media.href" :href="media.href" :icon="media.icon" :text="media.text" />
 		</Card>
 	</Section>
 </template>

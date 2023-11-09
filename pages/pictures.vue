@@ -1,50 +1,51 @@
 <script setup lang="ts">
-const {t} = useI18n()
+const { t } = useI18n()
 useHead({
-	title: `Gabriel Rosa - ${t('navbar.pictures')}`
+	title: `Gabriel Rosa - ${t('navbar.pictures')}`,
 })
 defineOgImage({
 	title: `Gabriel Rosa | ${t('navbar.pictures')}`,
-	component: 'Og'
+	component: 'Og',
 })
 useSeoMeta({
 	description:
-		'Explore my photo gallery 📷 and get to know me through these snapshots 🌟. From candid moments to special occasions, these pictures share my story 📖.'
+		'Explore my photo gallery 📷 and get to know me through these snapshots 🌟. From candid moments to special occasions, these pictures share my story 📖.',
 })
 
 const imgs = ref([
 	{
 		img: {
 			img: '/images/santos_dumont.png',
-			alt: 'Super Computador Santos Dumont'
-		}
+			alt: 'Super Computador Santos Dumont',
+		},
 	},
 	{
 		img: {
 			img: '/images/data_center.png',
-			alt: 'Rio Science Data Center'
-		}
+			alt: 'Rio Science Data Center',
+		},
 	},
 	{
 		img: {
 			img: '/images/cbpf_confraternizacao.png',
-			alt: 'Confraternização do CBPF'
-		}
+			alt: 'Confraternização do CBPF',
+		},
 	},
 	{
 		img: {
 			img: '/images/cbpf_cotec.png',
-			alt: 'COTEC - CBPF'
-		}
+			alt: 'COTEC - CBPF',
+		},
 	},
 	{
 		img: {
 			img: '/images/reuniao.png',
-			alt: 'Reunião - CBPF'
-		}
-	}
+			alt: 'Reunião - CBPF',
+		},
+	},
 ])
 </script>
+
 <template>
 	<Section>
 		<Grid :contents="imgs" />

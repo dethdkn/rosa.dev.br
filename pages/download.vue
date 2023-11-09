@@ -1,15 +1,15 @@
 <script setup lang="ts">
-const {t} = useI18n()
+const { t } = useI18n()
 useHead({
-	title: t('navbar.downloads')
+	title: t('navbar.downloads'),
 })
 defineOgImage({
 	title: `Gabriel Rosa | ${t('navbar.downloads')}`,
-	component: 'Og'
+	component: 'Og',
 })
 useSeoMeta({
 	description:
-		'Get ready to dive into a bunch of cool downloads. No spoilers here, so just start grabbing them now! 🚀📥'
+		'Get ready to dive into a bunch of cool downloads. No spoilers here, so just start grabbing them now! 🚀📥',
 })
 
 const downloads = ref([
@@ -18,11 +18,12 @@ const downloads = ref([
 			href: '/downloads/lavenza.zip',
 			img: '/images/lavenza.jpg',
 			alt: 'Ventoy Lavenza Theme',
-			title: 'Lavenza Theme - Ventoy'
-		}
-	}
+			title: 'Lavenza Theme - Ventoy',
+		},
+	},
 ])
 </script>
+
 <template>
 	<Section>
 		<Grid :contents="downloads" />

@@ -1,17 +1,18 @@
 <script setup lang="ts">
-const {t} = useI18n()
+const { t } = useI18n()
 useHead({
-	title: t('navbar.experience')
+	title: t('navbar.experience'),
 })
 defineOgImage({
 	title: `Gabriel Rosa | ${t('navbar.experience')}`,
-	component: 'Og'
+	component: 'Og',
 })
 useSeoMeta({
 	description:
-		'Explore my academic and professional journey, showcasing my accomplishments, research, and career milestones, demonstrating the value I bring to your endeavors.'
+		'Explore my academic and professional journey, showcasing my accomplishments, research, and career milestones, demonstrating the value I bring to your endeavors.',
 })
 </script>
+
 <template>
 	<Section>
 		<Card class="md:flex">

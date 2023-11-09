@@ -1,8 +1,8 @@
 <script setup lang="ts">
-const {href, icon} = defineProps({
-	href: {type: String, required: true},
-	icon: {type: String, required: true},
-	text: {type: String, required: true}
+const { href, icon } = defineProps({
+	href: { type: String, required: true },
+	icon: { type: String, required: true },
+	text: { type: String, required: true },
 })
 </script>
 
