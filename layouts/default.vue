@@ -30,7 +30,7 @@ Y8.   .88 88.  .88 88.  .88 88       88 88.  ... 88     88     88 88.  .88      
 	<nav @contextmenu.prevent="nope">
 		<Navbar />
 	</nav>
-	<main class="min-h-screen ml-[3.35rem] bg-gray-100 dark:bg-gray-900 transition-500" @contextmenu.prevent="nope">
+	<main class="min-h-screen ml-[3.5rem] bg-gray-100 dark:bg-gray-900 transition-500" @contextmenu.prevent="nope">
 		<slot />
 	</main>
 	<img src="/nope.gif" alt="nope emoji gif" class="absolute -translate-x-[75%] -translate-y-1/2 h-32 cursor-none z-50 rounded-md" :class="{ hidden }" :style="{ left: `${x}px`, top: `${y}px` }" @contextmenu.prevent>

@@ -1,5 +1,5 @@
 <template>
-	<section class="min-h-[calc(100vh-2rem)] flex items-center justify-center relative">
+	<section class="min-h-[100vh] flex items-center justify-center relative">
 		<slot />
 	</section>
 </template>

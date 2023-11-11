@@ -17,7 +17,7 @@ const { width, height } = useWindowSize()
 const dx = computed(() => Math.abs(x.value - width.value / 2))
 const dy = computed(() => Math.abs(y.value - height.value / 2))
 const distance = computed(() => Math.sqrt(dx.value * dx.value + dy.value * dy.value))
-const size = computed(() => Math.max(300 - distance.value / 3, 150))
+const size = computed(() => Math.max(500 - distance.value / 3, 150))
 const opacity = computed(() => Math.min(Math.max(size.value / 300, 0.7), 1))
 const logo = ref<HTMLElement>()
 const logoGradient = computed(() => {
@@ -77,10 +77,10 @@ watchEffect(() => {
 	typeArray.value = [t('home.subtitle1'), t('home.subtitle2'), t('home.subtitle3')]
 })
 
-function tada() {
+function flip() {
 	if (logo.value) {
-		logo.value.classList.add('animate__animated', 'animate__tada')
-		setTimeout(() => logo.value?.classList.remove('animate__animated', 'animate__tada'), 1000)
+		logo.value.classList.add('animate__animated', 'animate__flip')
+		setTimeout(() => logo.value?.classList.remove('animate__animated', 'animate__flip'), 1000)
 	}
 }
 </script>
@@ -94,7 +94,7 @@ function tada() {
 		<h2
 			ref="logo"
 			class="font-bold text-center text-5xl dark:text-white transition-500"
-			:style="{ maskImage: logoGradient }" @click="tada"
+			:style="{ maskImage: logoGradient }" @click="flip"
 		>
 			<p>{{ t('home.title') }}</p>
 			<span class="inline-block mr-[-15px]">{{ typeValue }}&nbsp;</span>
