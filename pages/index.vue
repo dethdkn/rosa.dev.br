@@ -77,10 +77,14 @@ watchEffect(() => {
 	typeArray.value = [t('home.subtitle1'), t('home.subtitle2'), t('home.subtitle3')]
 })
 
-function flip() {
+function drop() {
 	if (logo.value) {
-		logo.value.classList.add('animate__animated', 'animate__flip')
-		setTimeout(() => logo.value?.classList.remove('animate__animated', 'animate__flip'), 1000)
+		logo.value.classList.add('animate__animated', 'animate__hinge')
+		setTimeout(() => {
+			logo.value?.classList.remove('animate__animated', 'animate__hinge')
+			logo.value?.classList.add('animate__animated', 'animate__jackInTheBox')
+			setTimeout(() => logo.value?.classList.remove('animate__animated', 'animate__jackInTheBox'), 1000)
+		}, 3000)
 	}
 }
 </script>
@@ -94,7 +98,7 @@ function flip() {
 		<h2
 			ref="logo"
 			class="font-bold text-center text-5xl dark:text-white transition-500"
-			:style="{ maskImage: logoGradient }" @click="flip"
+			:style="{ maskImage: logoGradient }" @click="drop"
 		>
 			<p>{{ t('home.title') }}</p>
 			<span class="inline-block mr-[-15px]">{{ typeValue }}&nbsp;</span>
