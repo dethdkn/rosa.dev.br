@@ -4,8 +4,18 @@ const { t, locale } = useI18n()
 const language = useCookie('language')
 const theme = useCookie('theme')
 
+const computedLanguage = computed({
+	get() {
+		return locale.value
+	},
+	set(val) {
+		locale.value = val
+		language.value = val
+	},
+})
+
 if (language.value === 'pt')
-	locale.value = 'pt'
+	computedLanguage.value = 'pt'
 
 const { currentRoute: route } = useRouter()
 
@@ -25,13 +35,9 @@ function changeTheme() {
 }
 
 function changeLanguage() {
-	if (locale.value === 'en') {
-		locale.value = 'pt'
-		language.value = 'pt'
-		return
-	}
-	locale.value = 'en'
-	language.value = 'en'
+	if (computedLanguage.value === 'en')
+		return computedLanguage.value = 'pt'
+	computedLanguage.value = 'en'
 }
 
 const favicon = ref(true)
