@@ -61,9 +61,7 @@ function eraseText() {
 		typeArrayIndex += 1
 		if (typeArrayIndex >= typeArray.value.length)
 			typeArrayIndex = 0
-		setTimeout(() => {
-			typeText()
-		}, typingSpeed + 1000)
+		setTimeout(() => typeText(), typingSpeed + 1000)
 	}
 }
 
