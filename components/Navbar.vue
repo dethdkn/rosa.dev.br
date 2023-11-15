@@ -78,7 +78,7 @@ if (process.client) {
 				<ul class="mt-6 space-y-2 tracking-wide">
 					<li class="min-w-max">
 						<NuxtLink to="/" :class="checkRoute(route.fullPath, ['/'])">
-							<Icon name="i-heroicons-home" class="mr-2 group-hover:text-sky-600" />
+							<Icon name="line-md:home-md" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.home') }}
 							</span>
@@ -86,7 +86,7 @@ if (process.client) {
 					</li>
 					<li class="min-w-max">
 						<NuxtLink to="/about" :class="checkRoute(route.fullPath, ['/about'])">
-							<Icon name="i-heroicons-face-smile" class="mr-2 group-hover:text-sky-600" />
+							<Icon name="line-md:emoji-smile" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.about') }}
 							</span>
@@ -94,7 +94,7 @@ if (process.client) {
 					</li>
 					<li class="min-w-max">
 						<NuxtLink to="/experience" :class="checkRoute(route.fullPath, ['/experience'])">
-							<Icon name="i-heroicons-sparkles" class="mr-2 group-hover:text-sky-600" />
+							<Icon name="line-md:star-alt" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.experience') }}
 							</span>
@@ -102,7 +102,7 @@ if (process.client) {
 					</li>
 					<li class="min-w-max">
 						<NuxtLink to="/certificates" :class="checkRoute(route.fullPath, ['/certificates'])">
-							<Icon name="i-heroicons-check-badge" class="mr-2 group-hover:text-sky-600" />
+							<Icon name="line-md:check-list-3" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.certificates') }}
 							</span>
@@ -110,7 +110,7 @@ if (process.client) {
 					</li>
 					<li class="min-w-max">
 						<NuxtLink to="/apps-pages" :class="checkRoute(route.fullPath, ['/apps-pages'])">
-							<Icon name="i-heroicons-code-bracket" class="mr-2 group-hover:text-sky-600" />
+							<Icon name="line-md:document-code" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.apps') }}
 							</span>
@@ -118,7 +118,7 @@ if (process.client) {
 					</li>
 					<li class="min-w-max">
 						<NuxtLink to="/pictures" :class="checkRoute(route.fullPath, ['/pictures'])">
-							<Icon name="i-heroicons-camera" class="mr-2 group-hover:text-sky-600" />
+							<Icon name="line-md:image" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.pictures') }}
 							</span>
@@ -126,7 +126,7 @@ if (process.client) {
 					</li>
 					<li class="min-w-max">
 						<NuxtLink to="/videos" :class="checkRoute(route.fullPath, ['/videos'])">
-							<Icon name="i-heroicons-video-camera" class="mr-2 group-hover:text-sky-600" />
+							<Icon name="line-md:youtube-filled" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.videos') }}
 							</span>
@@ -134,10 +134,7 @@ if (process.client) {
 					</li>
 					<li class="min-w-max">
 						<NuxtLink to="/download" :class="checkRoute(route.fullPath, ['/downloads'])">
-							<Icon
-								name="i-heroicons-arrow-down-on-square-stack"
-								class="mr-2 group-hover:text-sky-600"
-							/>
+							<Icon name="line-md:cloud-down" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.downloads') }}
 							</span>
@@ -148,7 +145,7 @@ if (process.client) {
 							to="/socials-contact"
 							:class="checkRoute(route.fullPath, ['/socials-contact'])"
 						>
-							<Icon name="i-heroicons-user-circle" class="mr-2 group-hover:text-sky-600" />
+							<Icon name="line-md:account" class="mr-2 group-hover:text-sky-600" />
 							<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 								{{ t('navbar.socials') }}
 							</span>
@@ -158,13 +155,14 @@ if (process.client) {
 			</div>
 			<div class="w-max -mb-3">
 				<span class="bg group navbar-link cursor-pointer" @click="changeTheme">
-					<Icon name="i-heroicons-swatch" class="mr-2 group-hover:text-sky-600" />
+					<Icon v-if="theme === 'light'" name="line-md:moon-to-sunny-outline-transition" class="mr-2 group-hover:text-sky-600" />
+					<Icon v-else name="line-md:sunny-outline-to-moon-transition" class="mr-2 group-hover:text-sky-600" />
 					<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 						{{ t('navbar.theme') }}
 					</span>
 				</span>
 				<span class="bg group navbar-link cursor-pointer" @click="changeLanguage">
-					<Icon name="i-heroicons-language" class="mr-2 group-hover:text-sky-600" />
+					<Icon name="line-md:rotate-270" class="mr-2 group-hover:text-sky-600" />
 					<span class="group-hover:text-gray-900 dark:group-hover:text-gray-400">
 						{{ t('navbar.language') }}
 					</span>

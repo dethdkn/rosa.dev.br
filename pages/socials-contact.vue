@@ -13,23 +13,23 @@ useSeoMeta({
 })
 
 const medias = ref([
-	{ href: 'mailto:gabriel@rosa.dev.br', icon: 'i-heroicons-envelope', text: 'gabriel@rosa.dev.br' },
-	{ href: 'https://github.com/dethdkn', icon: 'bxl:github', text: 'dethdkn' },
+	{ href: 'mailto:gabriel@rosa.dev.br', icon: 'line-md:email-opened', text: 'gabriel@rosa.dev.br' },
+	{ href: 'https://github.com/dethdkn', icon: 'line-md:github', text: 'dethdkn' },
 	{
 		href: 'https://www.linkedin.com/in/gabrielsdrosa',
-		icon: 'bxl:linkedin-square',
+		icon: 'line-md:linkedin',
 		text: '/in/gabrielsdrosa',
 	},
 
 	{
 		href: 'https://www.youtube.com/@gabrielsdrosa',
-		icon: 'bxl:youtube',
+		icon: 'line-md:youtube-filled',
 		text: '@gabrielsdrosa',
 	},
 	{ href: 'https://www.behance.net/dethdkn', icon: 'bxl:behance', text: 'dethdkn' },
 	{
 		href: 'https://www.instagram.com/gabriel.sdrosa',
-		icon: 'bxl:instagram',
+		icon: 'line-md:instagram',
 		text: 'gabriel.sdrosa',
 	},
 ])

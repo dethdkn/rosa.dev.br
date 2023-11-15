@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-	css: ['~/assets/global.sass'],
+	css: ['~/assets/global.sass', 'animate.css/animate.min.css'],
 	modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@vueuse/nuxt', 'nuxt-icon', '@nuxtseo/module'],
 	tailwindcss: {
 		config: { darkMode: 'class' },
