@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const { title, location, year, subtitle } = defineProps({
-	title: String,
-	location: String,
-	year: String,
-	subtitle: String,
+	title: { type: String, required: true },
+	location: { type: String, required: true },
+	year: { type: String, required: true },
+	subtitle: { type: String, required: true },
 })
 </script>
 

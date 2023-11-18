@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
 useHead({
-	title: `Gabriel Rosa - ${t('navbar.pictures')}`,
+	title: t('navbar.pictures'),
 })
 defineOgImage({
 	title: `Gabriel Rosa | ${t('navbar.pictures')}`,

@@ -83,6 +83,13 @@ function drop() {
 		}, 3000)
 	}
 }
+
+onMounted(() => {
+	if (logo.value) {
+		logo.value.classList.add('animate__animated', 'animate__flipInY')
+		setTimeout(() => logo.value?.classList.remove('animate__animated', 'animate__flipInY'), 1000)
+	}
+})
 </script>
 
 <template>

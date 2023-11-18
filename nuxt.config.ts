@@ -9,8 +9,8 @@ export default defineNuxtConfig({
 		defaultLocale: 'en',
 		langDir: 'locales',
 		locales: [
-			{ code: 'en', iso: 'en-US', name: 'English (US)', file: 'en.json' },
-			{ code: 'pt', iso: 'pt-BR', name: 'Português (BR)', file: 'pt.json' },
+			{ code: 'en', iso: 'en-US', name: 'English (US)', file: 'en.ts' },
+			{ code: 'pt', iso: 'pt-BR', name: 'Português (BR)', file: 'pt.ts' },
 		],
 		strategy: 'no_prefix',
 		detectBrowserLanguage: false,
@@ -30,6 +30,9 @@ export default defineNuxtConfig({
 			htmlAttrs: { class: 'dark' },
 		},
 		pageTransition: { name: 'slide-right', mode: 'out-in' },
+	},
+	linkChecker: {
+		enabled: false,
 	},
 	devtools: {
 		enabled: true,

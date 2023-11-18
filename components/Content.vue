@@ -1,20 +1,7 @@
 <script setup lang="ts">
 const { content } = defineProps({
 	content: {
-		type: Object as () => {
-			img?: {
-				href?: string
-				img: string
-				alt: string
-				title?: string
-				subtitle?: string
-				anotherTitle?: string
-			}
-			video?: {
-				url: string
-				title: string
-			}
-		},
+		type: Object as () => Content,
 		required: true,
 	},
 })
@@ -43,12 +30,14 @@ const { content } = defineProps({
 			</p>
 		</figcaption>
 	</a>
-	<div v-else-if="content.img && content.img.img" class="relative">
-		<img
-			:src="content.img.img"
-			:alt="content.img.alt"
-			class="rounded-2xl w-64 h-[12.25rem] m-5 cursor-cell"
-		>
+	<div v-else-if="content.img && content.img.img" class="cursor-zoom-in m-5">
+		<div class="w-64 rounded-2xl overflow-hidden">
+			<img
+				:src="content.img.img"
+				:alt="content.img.alt"
+				class="w-full object-cover transition-all hover:scale-110"
+			>
+		</div>
 	</div>
 	<div v-else-if="content.video" class="relative">
 		<iframe
