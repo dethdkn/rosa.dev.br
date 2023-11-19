@@ -43,6 +43,24 @@ const imgs = ref([
 			alt: 'Reunião - CBPF',
 		},
 	},
+	{
+		img: {
+			img: '/images/almoco_sistemas.png',
+			alt: 'Almoço Equipe de Sistemas',
+		},
+	},
+	{
+		img: {
+			img: '/images/studio.png',
+			alt: 'Estúdio',
+		},
+	},
+	{
+		img: {
+			img: '/images/cleaning_server.png',
+			alt: 'Limpando Servidor',
+		},
+	},
 ])
 </script>
 
