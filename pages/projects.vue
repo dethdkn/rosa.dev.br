@@ -3,5 +3,5 @@
 </script>
 
 <template>
-	<h1>error</h1>
+	<h1>projects</h1>
 </template>
