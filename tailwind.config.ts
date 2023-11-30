@@ -1,14 +1,8 @@
-export default {
-	content: [
-		'./components/**/*.{js,vue,ts}',
-		'./layouts/**/*.vue',
-		'./pages/**/*.vue',
-		'./plugins/**/*.{js,ts}',
-		'./app.vue',
-		'./error.vue',
-	],
+import type { Config } from 'tailwindcss'
+
+export default <Partial<Config>>{
 	theme: {
 		extend: {},
-	},
-	plugins: [],
+	  },
+	darkMode: 'class',
 }
