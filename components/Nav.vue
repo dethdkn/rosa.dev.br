@@ -42,15 +42,15 @@ watch(locale, () => {
 </script>
 
 <template>
-	<nav class="bg-[#EFF1F5] dark:bg-[#1E1E2E]">
+	<nav class="bg-[#EFF1F5] dark:bg-[#1E1E2E] border-b border-gray-200 dark:border-gray-800">
 		<div
-			class="flex flex-wrap items-center justify-center p-4 mx-auto max-w-screen-xl sm:justify-between"
+			class="flex flex-wrap items-center p-4 mx-auto max-w-screen-xl justify-between"
 		>
 			<NuxtLink to="/" class="flex items-center group">
 				<img src="/favicon.ico" :alt="t('nav.logo')" class="w-8 h-8 mr-3 group-hover:animate-pulse group-hover:animate-infinite group-hover:animate-duration-[2000ms] group-hover:animate-delay-500">
 				<span class="self-center text-2xl font-semibold whitespace-nowrap text-[#4C4F69] dark:text-[#CDD5F4] group-hover:text-[#F28AA9] dark:group-hover:text-[#F28AA9] font-['Delius_Unicase']">Gabriel Rosa</span>
 			</NuxtLink>
-			<div class="flex items-center mt-4 lg:order-2 sm:mt-0 space-x-4">
+			<div class="flex items-center lg:order-2 sm:mt-0 space-x-4">
 				<ClientOnly>
 					<button @click="changeLanguage">
 						<Icon name="iconoir:chat-bubble-translate" size="1.5rem" class="text-[#4C4F69] dark:text-[#CDD5F4] hover:text-[#F28AA9] dark:hover:text-[#F28AA9]" />

@@ -1,5 +1,6 @@
 <h1 align="center">rosa.dev.br</h1>
 <p align="center">🧑‍💼 My personal webpage</p>
+   
 <p align="center">
    <a href="https://rosa.dev.br">
       <img src="https://img.shields.io/badge/check me!-👻-06b6d4" alt="rosa.dev.br"/>
@@ -21,10 +22,6 @@
 - <a href="https://vuejs.org" target="_blank">
      <img src="https://vuejs.org/logo.svg" alt="Vue" width="11">
         Vue
-  </a>
-- <a href="https://vueuse.org" target="_blank">
-     <img src="https://vueuse.org/favicon.svg" alt="VueUse" width="11">
-        VueUse
   </a>
 - <a href="https://kazupon.github.io/vue-i18n" target="_blank">
      <img src="https://kazupon.github.io/vue-i18n/vue-i18n-logo.png" alt="Vue I18n" width="11">

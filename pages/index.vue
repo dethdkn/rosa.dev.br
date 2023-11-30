@@ -4,6 +4,18 @@ const { t } = useI18n()
 useHead({
 	title: t('home.title'),
 })
+
+useSeoMeta({
+	description: `${t('home.im')} Gabriel Rosa ${t('home.aka')} Deth`,
+})
+
+defineOgImage({
+	component: 'Home',
+	title: t('home.title'),
+	im: t('home.im'),
+	aka: t('home.aka'),
+	subtitle: t('home.subtitle'),
+})
 </script>
 
 <template>
