@@ -49,7 +49,7 @@ watch(locale, () => {
 			class="flex flex-wrap items-center p-4 mx-auto max-w-screen-xl justify-between"
 		>
 			<NuxtLink to="/" class="flex items-center group">
-				<img src="/favicon.ico" :alt="t('nav.logo')" class="w-8 h-8 mr-3 group-hover:animate-pulse group-hover:animate-infinite group-hover:animate-duration-[2000ms] group-hover:animate-delay-500">
+				<NuxtImg src="/logo.webp" :alt="t('nav.logo')" class="w-8 h-8 mr-3 group-hover:animate-pulse group-hover:animate-infinite group-hover:animate-duration-[2000ms] group-hover:animate-delay-500" placeholder preload />
 				<span class="self-center text-2xl font-semibold whitespace-nowrap text-[#4C4F69] dark:text-[#CDD5F4] group-hover:text-[#F28AA9] dark:group-hover:text-[#F28AA9] font-['Delius_Unicase']">Gabriel Rosa</span>
 			</NuxtLink>
 			<div class="flex items-center lg:order-2 sm:mt-0 space-x-4">
