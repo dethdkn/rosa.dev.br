@@ -12,7 +12,7 @@ useSeoMeta({
 defineOgImage({
 	component: 'Home',
 	title: t('home.title'),
-	im: t('home.im'),
+	im: t('home.simple_im'),
 	aka: t('home.aka'),
 	subtitle: t('home.subtitle'),
 })

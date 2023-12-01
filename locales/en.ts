@@ -10,12 +10,13 @@ export default {
 	home: {
 		title: 'Home',
 		im: 'I\'m',
+		simple_im: 'Im',
 		aka: 'aka',
 		subtitle: 'Full Stack Developer • IT Technician • Persona Fan',
 	},
 	about: {
 		title: 'About me',
-		description: 'find out the techie stuff I\'m into, a bunch of pics, and the certificates that make me look legit. It\'s me in a nutshell, no fluff. Enjoy! 🌟',
+		description: 'find out the techie stuff Im into, a bunch of pics, and the certificates that make me look legit. Its me in a nutshell, no fluff. Enjoy!',
 		learner: 'I\'m a dedicated self-learner, always eager to grasp new technologies and approaches. My ability to learn quickly enables me to keep up with the ever-evolving trends in tech.',
 		experience: 'Experience',
 		unicarioca: 'Centro Universitário Unicarioca',
@@ -32,7 +33,7 @@ export default {
 	},
 	projects: {
 		title: 'Projects',
-		description: 'Explore my projects, built with Nuxt, Vue, Tailwind CSS, and other cools technologies.',
+		description: 'Explore my projects, built with Nuxt, Vue, Tailwind CSS, and other cool technologies.',
 		rosa_description: '🧑🏻‍💼 My personal webpage',
 		karine_description: '👩🏻‍💼 My girlfriend\'s page',
 		ldapsha512_description: '🔑 Ldap sha512-crypt password generator for node',

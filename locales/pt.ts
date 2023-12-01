@@ -10,12 +10,13 @@ export default {
 	home: {
 		title: 'Início',
 		im: 'Eu sou o',
+		simple_im: 'Eu sou o',
 		aka: 'ou',
 		subtitle: 'Desenvolvedor Full Stack • Técnico em Informática • Fã de Persona',
 	},
 	about: {
 		title: 'Sobre mim',
-		description: 'Conheça minha jornada profissional, as coisas de tecnologia que curto, um monte de fotos e os certificados que me fazem parecer respeitável. É tudo sobre mim, sem enrolação. Aproveitem! 🌟',
+		description: 'Conheça minha jornada profissional, as coisas de tecnologia que curto, um monte de fotos e os certificados que me fazem parecer respeitável. É tudo sobre mim, sem enrolação. Aproveitem!',
 		learner: 'Sou um autodidata dedicado, sempre ansioso para aprender novas tecnologias e abordagens. Minha capacidade de aprendizado rápido me permite acompanhar as tendências em constante evolução da tecnologia.',
 		experience: 'Experiência',
 		unicarioca: 'Centro Universitário Unicarioca',
