@@ -6,6 +6,9 @@ export default {
 		certificates: 'Certificates',
 		projects: 'Projects',
 		blog: 'Blog',
+		language: 'Change language',
+		theme: 'Change theme',
+		menu: 'Open the menu',
 	},
 	home: {
 		title: 'Home',

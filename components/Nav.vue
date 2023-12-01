@@ -54,13 +54,13 @@ watch(locale, () => {
 			</NuxtLink>
 			<div class="flex items-center lg:order-2 sm:mt-0 space-x-4">
 				<ClientOnly>
-					<button @click="changeLanguage">
+					<button :aria-label="t('nav.language')" @click="changeLanguage">
 						<Icon name="iconoir:chat-bubble-translate" size="1.5rem" class="text-[#4C4F69] dark:text-[#CDD5F4] hover:text-[#F28AA9] dark:hover:text-[#F28AA9]" />
 					</button>
-					<button @click="isDark = !isDark">
+					<button :aria-label="t('nav.theme')" @click="isDark = !isDark">
 						<Icon :name="isDark ? 'iconoir:moon-sat' : 'iconoir:sun-light'" size="1.5rem" class="text-[#4C4F69] dark:text-[#CDD5F4] hover:text-[#F28AA9] dark:hover:text-[#F28AA9]" />
 					</button>
-					<button class="lg:hidden" @click="menuClosed = !menuClosed">
+					<button :aria-label="t('nav.menu')" class="lg:hidden" @click="menuClosed = !menuClosed">
 						<Icon name="iconoir:menu" size="1.5rem" class="text-[#4C4F69] dark:text-[#CDD5F4] hover:text-[#F28AA9] dark:hover:text-[#F28AA9]" />
 					</button>
 				</ClientOnly>

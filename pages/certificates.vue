@@ -20,6 +20,6 @@ defineOgImage({
 		<p class="text-[#4C4F69] dark:text-[#CDD5F4] text-4xl border-b-2 border-[#F28AA9] inline">
 			{{ t('certificates.title') }}
 		</p>
-		<List v-for="certificate in certificates" :key="certificate.href" :title="certificate.title" :badges="certificate.badges" :urls="[{ url: certificate.href, icon: 'iconoir:doc-star-in', external: false }]" :description="`${certificate.subtitle} • ${certificate.concluded}`" />
+		<List v-for="certificate in certificates" :key="certificate.href" :title="certificate.title" :badges="certificate.badges" :urls="[{ url: certificate.href, icon: 'iconoir:doc-star-in', external: false, aria: 'PDF' }]" :description="`${certificate.subtitle} • ${certificate.concluded}`" />
 	</div>
 </template>

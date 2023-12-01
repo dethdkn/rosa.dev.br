@@ -92,11 +92,13 @@ watch(selected, (nv) => {
 				<div class="grid grid-cols-1 sm:grid-cols-2 md:grod-cols-3 lg:grid-cols-4 place-items-center">
 					<div v-for="img in imgs" :key="img.url" class="cursor-zoom-in m-5" @click="openPopup(img)">
 						<div class="w-64 rounded-2xl overflow-hidden">
-							<img
+							<NuxtImg
 								:src="img.url"
 								:alt="img.alt"
 								class="w-full object-cover transition-all hover:scale-110"
-							>
+								placeholder
+								loading="lazy"
+							/>
 						</div>
 					</div>
 				</div>
@@ -107,7 +109,7 @@ watch(selected, (nv) => {
 				</p>
 				<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-5 place-items-center pt-8">
 					<NuxtLink v-for="stack in stacks" :key="stack.title" :to="stack.url" external target="_blank">
-						<img :src="stack.imgurl" :alt="`${stack.title} Logo`" class="w-24 hover:cursor-pointer" :title="stack.title">
+						<NuxtImg :src="stack.imgurl" :alt="`${stack.title} Logo`" class="w-24 hover:cursor-pointer" :title="stack.title" placeholder loading="lazy" />
 					</NuxtLink>
 				</div>
 			</div>
