@@ -38,7 +38,7 @@ watch(selected, (nv) => {
 <template>
 	<div>
 		<div class="px-20 py-5 space-y-10 lg:space-y-20">
-			<div class="border-b border-gray-300 dark:border-gray-700 pb-10">
+			<div class="border-b border-gray-300 dark:border-gray-700 pb-10 text-center sm:text-start">
 				<p class="text-[#4C4F69] dark:text-[#CDD5F4] text-4xl border-b-2 border-[#F28AA9] inline">
 					{{ t('about.title') }}
 				</p>
@@ -46,7 +46,7 @@ watch(selected, (nv) => {
 					{{ t('about.learner') }}
 				</p>
 			</div>
-			<div class="border-b border-gray-300 dark:border-gray-700 pb-10">
+			<div class="border-b border-gray-300 dark:border-gray-700 pb-10 text-center sm:text-start">
 				<p class="text-[#4C4F69] dark:text-[#CDD5F4] text-4xl border-b-2 border-[#F28AA9] inline">
 					{{ t('about.experience') }}
 				</p>
@@ -59,7 +59,7 @@ watch(selected, (nv) => {
 							<h3 class=" text-lg font-medium leading-tight mb-2">
 								{{ t('about.unicarioca') }}
 							</h3>
-							<p class="text-sm border border-[#F28AA9] inline p-1 m-1 rounded">
+							<p class="text-sm border border-[#F28AA9] inline p-1 m-0 sm:m-1 rounded whitespace-nowrap">
 								{{ t('about.twnt') }}
 							</p>
 							<p class="mt-2">
@@ -75,7 +75,7 @@ watch(selected, (nv) => {
 							<h3 class=" text-lg font-medium leading-tight mb-2">
 								{{ t('about.cbpf') }}
 							</h3>
-							<p class="text-sm border border-[#F28AA9] inline p-1 m-1 rounded">
+							<p class="text-sm border border-[#F28AA9] inline p-1 m-0 sm:m-1 rounded whitespace-nowrap">
 								{{ t('about.twnt') }}
 							</p>
 							<p class="mt-2">
@@ -85,11 +85,11 @@ watch(selected, (nv) => {
 					</ol>
 				</div>
 			</div>
-			<div class="border-b border-gray-300 dark:border-gray-700 pb-10">
+			<div class="border-b border-gray-300 dark:border-gray-700 pb-10 text-center sm:text-start">
 				<p class="text-[#4C4F69] dark:text-[#CDD5F4] text-4xl border-b-2 border-[#F28AA9] inline">
 					{{ t('about.pictures') }}
 				</p>
-				<div class="grid grid-cols-1 lg:grid-cols-5 place-items-center">
+				<div class="grid grid-cols-1 sm:grid-cols-2 md:grod-cols-3 lg:grid-cols-4 place-items-center">
 					<div v-for="img in imgs" :key="img.url" class="cursor-zoom-in m-5" @click="openPopup(img)">
 						<div class="w-64 rounded-2xl overflow-hidden">
 							<img
@@ -101,40 +101,13 @@ watch(selected, (nv) => {
 					</div>
 				</div>
 			</div>
-			<div class="border-b border-gray-300 dark:border-gray-700 pb-10">
+			<div class="border-b border-gray-300 dark:border-gray-700 pb-10 text-center sm:text-start">
 				<p class="text-[#4C4F69] dark:text-[#CDD5F4] text-4xl border-b-2 border-[#F28AA9] inline">
 					{{ t('about.stack') }}
 				</p>
 				<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-5 place-items-center pt-8">
 					<NuxtLink v-for="stack in stacks" :key="stack.title" :to="stack.url" external target="_blank">
 						<img :src="stack.imgurl" :alt="`${stack.title} Logo`" class="w-24 hover:cursor-pointer" :title="stack.title">
-					</NuxtLink>
-				</div>
-			</div>
-			<div class="border-b border-gray-300 dark:border-gray-700 pb-10">
-				<p class="text-[#4C4F69] dark:text-[#CDD5F4] text-4xl border-b-2 border-[#F28AA9] inline">
-					{{ t('about.certificates') }}
-				</p>
-				<div class="grid grid-cols-1 lg:grid-cols-5 place-items-center">
-					<NuxtLink
-						v-for="certificate in certificates"
-						:key="certificate.title"
-						:to="certificate.href"
-						target="_blank"
-						class="relative cursor-pointer group"
-					>
-						<img :src="certificate.img" :alt="certificate.alt" class="rounded-2xl w-64 h-[12.25rem] m-5">
-						<figcaption class="absolute top-0 left-0 rounded-2xl w-64 h-[12.25rem] m-5 text-center bg-black bg-opacity-70 text-white py-2 hidden group-hover:block">
-							<h3 v-if="certificate.title" class="mt-10 font-bold text-lg !font-sans">
-								{{ certificate.title }}
-							</h3>
-							<h4 v-if="certificate.subtitle" class="font-semibold !font-sans">
-								{{ certificate.subtitle }}
-							</h4>
-							<p v-if="certificate.anotherTitle" class="font-semibold text-sm !font-sans">
-								{{ certificate.anotherTitle }}
-							</p>
-						</figcaption>
 					</NuxtLink>
 				</div>
 			</div>

@@ -3,6 +3,7 @@ export default {
 		logo: 'Letter G logo',
 		home: 'Home',
 		about: 'About me',
+		certificates: 'Certificates',
 		projects: 'Projects',
 		blog: 'Blog',
 	},
@@ -24,7 +25,10 @@ export default {
 		twnt: '2019 - present',
 		stack: 'Tech Stack',
 		pictures: 'Pictures',
-		certificates: 'Certificates',
+	},
+	certificates: {
+		title: 'Certificates',
+		description: 'Explore my certificates.',
 	},
 	projects: {
 		title: 'Projects',

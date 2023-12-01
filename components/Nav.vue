@@ -27,6 +27,7 @@ function checkRoute(current: string = '', nav: string[]) {
 const routes = ref([
 	{ path: '/', locales: ['/', '/pt'], text: t('nav.home') },
 	{ path: '/about', locales: ['/about', '/pt/about'], text: t('nav.about') },
+	{ path: '/certificates', locales: ['/certificates', '/pt/certificates'], text: t('nav.certificates') },
 	{ path: '/projects', locales: ['/projects', '/pt/projects'], text: t('nav.projects') },
 	{ path: '/blog', locales: ['/blog', '/pt/blog'], text: t('nav.blog') },
 ])
@@ -35,6 +36,7 @@ watch(locale, () => {
 	routes.value = [
 		{ path: '/', locales: ['/', '/pt'], text: t('nav.home') },
 		{ path: '/about', locales: ['/about', '/pt/about'], text: t('nav.about') },
+		{ path: '/certificates', locales: ['/certificates', '/pt/certificates'], text: t('nav.certificates') },
 		{ path: '/projects', locales: ['/projects', '/pt/projects'], text: t('nav.projects') },
 		{ path: '/blog', locales: ['/blog', '/pt/blog'], text: t('nav.blog') },
 	]

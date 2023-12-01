@@ -3,6 +3,7 @@ export default {
 		logo: 'Logo contendo uma letra G',
 		home: 'Início',
 		about: 'Sobre mim',
+		certificates: 'Certificados',
 		projects: 'Projetos',
 		blog: 'Blog',
 	},
@@ -24,7 +25,10 @@ export default {
 		twnt: '2019 - presente',
 		stack: 'Tecnologias',
 		pictures: 'Fotos',
-		certificates: 'Certificados',
+	},
+	certificates: {
+		title: 'Certificados',
+		description: 'Explore meus certificados.',
 	},
 	projects: {
 		title: 'Projetos',

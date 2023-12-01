@@ -20,29 +20,29 @@ html, body {
     padding: 0;
 }
 body::-webkit-scrollbar, .sidebar::-webkit-scrollbar {
-    background-color: #F3F4F6;
+    background-color: #EFF1F5;
     width: 16px;
 }
 body::-webkit-scrollbar-track, .sidebar::-webkit-scrollbar-track {
-    background-color: #F3F4F6;
+    background-color: #EFF1F5;
 }
 body::-webkit-scrollbar-thumb, .sidebar::-webkit-scrollbar-thumb {
     background-color: #babac0;
     border-radius: 16px;
-    border: 4px solid #F3F4F6;
+    border: 4px solid #EFF1F5;
 }
 body::-webkit-scrollbar-button, .sidebar::-webkit-scrollbar-button {
     display: none;
 }
 .dark body::-webkit-scrollbar, .dark .sidebar::-webkit-scrollbar {
-    background-color: #111827;
+    background-color: #1E1E2E;
 }
 .dark body::-webkit-scrollbar-track, .dark .sidebar::-webkit-scrollbar-track {
-    background-color: #111827;
+    background-color: #1E1E2E;
 }
 .dark body::-webkit-scrollbar-thumb, .dark .sidebar::-webkit-scrollbar-thumb {
     background-color: #718096;
-    border-color: #111827;
+    border-color: #1E1E2E;
 }
 .dark body::-webkit-scrollbar-button, .dark .sidebar::-webkit-scrollbar-button {
     display: none;
