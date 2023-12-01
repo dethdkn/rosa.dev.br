@@ -10,7 +10,7 @@ useSeoMeta({
 })
 
 defineOgImage({
-	component: 'Projects',
+	component: 'Techs',
 	title: t('projects.title'),
 })
 </script>

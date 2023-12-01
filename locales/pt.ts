@@ -28,7 +28,7 @@ export default {
 	},
 	certificates: {
 		title: 'Certificados',
-		description: 'Explore meus certificados.',
+		description: 'Explore minha coleção de certificados de cursos, eles mostra meu compromisso com o aprendizado e o crescimento.',
 	},
 	projects: {
 		title: 'Projetos',
