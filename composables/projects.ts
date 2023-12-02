@@ -68,5 +68,7 @@ export default ref([
 			{ url: 'https://github.com/dethdkn/rosa.dev.br', external: true, icon: 'iconoir:github-circle', aria: 'Github Repo' },
 		],
 		descriptionKey: 'projects.rosa_description',
+		locale: true,
+		self: true,
 	},
 ])

@@ -13,7 +13,7 @@ useHead({
 				<h1 class="text-[#4C4F69] dark:text-[#CDD5F4] text-8xl border-b-2 border-[#F28AA9] inline">
 					{{ statusCode }}
 				</h1>
-				<h1 class="text-[#4C4F69] dark:text-[#CDD5F4] text-4xl">
+				<h1 class="text-[#4C4F69] dark:text-[#CDD5F4] text-xl">
 					{{ message }}
 				</h1>
 			</div>

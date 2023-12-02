@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-const { title, titleKey, badges, urls, description, descriptionKey } = defineProps({
+const { title, titleKey, badges, urls, description, descriptionKey, locale, self } = defineProps({
 	title: String,
 	titleKey: String,
 	badges: {
@@ -12,6 +12,8 @@ const { title, titleKey, badges, urls, description, descriptionKey } = definePro
 	},
 	description: String,
 	descriptionKey: String,
+	locale: Boolean,
+	self: Boolean,
 })
 
 const { t } = useI18n()
@@ -28,7 +30,7 @@ const localePath = useLocalePath()
 			<Badge v-for="badge in badges" :key="badge.title" :title="badge.title" :icon="badge.icon" :color="badge.color" />
 		</div>
 		<div class="flex justify-start items-center space-x-4">
-			<NuxtLink v-for="url in urls" :key="url.url" :to="url.url === '/' ? localePath('/') : url.url" :external="url.external" :target="url.url === '/' ? '_self' : '_blank'" :aria-label="url.aria" class="text-[#4C4F69] dark:text-[#CDD5F4] hover:text-[#F28AA9] dark:hover:text-[#F28AA9] text-3xl">
+			<NuxtLink v-for="url in urls" :key="url.url" :to="locale ? localePath(url.url) : url.url" :external="url.external" :target="self ? '_self' : '_blank'" :aria-label="url.aria" class="text-[#4C4F69] dark:text-[#CDD5F4] hover:text-[#F28AA9] dark:hover:text-[#F28AA9] text-3xl">
 				<Icon :name="url.icon" />
 			</NuxtLink>
 		</div>

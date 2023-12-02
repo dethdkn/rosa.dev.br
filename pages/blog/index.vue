@@ -6,19 +6,20 @@ useHead({
 })
 
 useSeoMeta({
-	description: t('blog.dev'),
+	description: t('blog.description'),
 })
 
 defineOgImage({
-	component: 'Simple',
+	component: 'Techs',
 	title: t('blog.title'),
 })
 </script>
 
 <template>
-	<div class="min-h-[calc(100vh-273px)] flex items-center justify-center">
+	<div class="px-20 py-5 space-y-10 lg:space-y-20 text-center sm:text-start">
 		<p class="text-[#4C4F69] dark:text-[#CDD5F4] text-4xl border-b-2 border-[#F28AA9] inline">
-			{{ t('blog.dev') }}
+			{{ t('blog.title') }}
 		</p>
+		<List v-for="post in posts" :key="post.titleKey" :title-key="post.titleKey" :badges="post.badges" :urls="post.urls" :description-key="post.descriptionKey" :locale="post.locale" :self="post.self" />
 	</div>
 </template>

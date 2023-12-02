@@ -45,6 +45,25 @@ export default {
 	},
 	blog: {
 		title: 'Blog',
-		dev: 'In Development',
+		description: 'Here I share tips and solutions for programming challenges. Discover practical insights and effective approaches to enhance your skills.',
+	},
+	posts: {
+		primevue_locale_dynamic: {
+			title: 'How to switch PrimeVue locale dynamically',
+			description: 'Learn to seamlessly adapt your PrimeVue application to different languages.',
+			paragraph1: 'Today, while working on a project built with the Nuxt.js, I found myself in the need to implement internationalization (i18n) to support both Portuguese and English languages. To achieve this goal, I integrated the {\'@\'}nuxtjs/i18n module, which facilitates the localization of the application.',
+			paragraph2: 'Additionally, the project makes use of nuxt-primevue, a comprehensive set of components for Nuxt. In order to provide a fully localized experience, it was necessary to configure not only the translation of the application but also the components provided by PrimeVue.',
+			paragraph3: 'Fortunately, PrimeVue already offers localization files for various languages in its official repository, simplifying the integration with different language settings.',
+			paragraph4: 'The configuration for internationalization in PrimeVue is relatively straightforward. However, an additional challenge arose: the need to dynamically change the language of PrimeVue without reloading the page. While {\'@\'}nuxtjs/i18n enabled this dynamic language switching for the application, achieving the same functionality for PrimeVue components posed some difficulties.',
+			paragraph5: 'This article aims to share the challenges encountered during this process and provide solutions for these specific problems. The detailed approach outlined here is intended to facilitate the successful implementation of internationalization for both the application and PrimeVue components, enabling a seamlessly localized and dynamic user experience.',
+			paragraph6: 'One of the initial issues I encountered was actually related to {\'@\'}nuxtjs/i18n. The module configuration was initially set up as follows:',
+			paragraph7: 'As you can see, the i18n was configured to read the \'locales\' folder, and one detail about this module that I wasn\'t aware of is that it reads and modifies all files contained in that folder. Unaware of this detail, I placed the PrimeVue locales within this folder in the following manner:',
+			paragraph8: 'In this manner, when applying one of these locales to PrimeVue, the components text appeared as follows:',
+			paragraph9: 'As mentioned above, i18n will modify all files in the \'locale\' folder, including the PrimeVue locale. So, the first solution is NOT to place the PrimeVue locale in the same folder as the i18n module. In my case, I placed it in the \'utils\' folder, allowing it to be automatically imported when I dynamically changed the locale.',
+			paragraph10: 'The second issue occurred because I was not calling usePrimeVue() at the top of the setup block; instead, I placed it inside a function. In summary, if your code is structured in the following way, you will encounter an error, as usePrimeVue() utilizes Vue\'s inject(), which is only available at the top of the setup block.',
+			paragraph11: 'The solution is to follow the code example below, executing usePrimeVue at the top of the setup block and assigning its value to a variable that can be used later within the function responsible for changing the language. Additionally, it is possible to change the language of i18n simultaneously.',
+			paragraph12: 'And voilà, your code is now working perfectly, with the language dynamically changing in both the i18n and PrimeVue modules! 😊',
+			paragraph13: 'If you have any questions or would like to get in touch, feel free to reach out to me on any of the social media platforms listed below. Thank you very much for reading!',
+		},
 	},
 }
