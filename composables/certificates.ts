@@ -11,7 +11,6 @@ export default ref([
 			{ title: 'PowerPoint', icon: 'vscode-icons:file-type-powerpoint', color: '#ED6C47' },
 		],
 	},
-
 	{
 		href: '/certificados/English_High_Advanced_Says.pdf',
 		title: 'English - High Advanced',
@@ -21,7 +20,6 @@ export default ref([
 			{ title: 'English', icon: 'streamline:dictionary-language-book', color: '#2B7CD3' },
 		],
 	},
-
 	{
 		href: '/certificados/English_Especialization_Says.pdf',
 		title: 'English - Specialization Course',
@@ -31,7 +29,6 @@ export default ref([
 			{ title: 'English', icon: 'streamline:dictionary-language-book', color: '#2B7CD3' },
 		],
 	},
-
 	{
 		href: '/certificados/Algoritmo0_Estudonauta.pdf',
 		title: 'PROGRAMAÇÃO BÁSICA - MÓDULO 00: PRIMEIROS PASSOS',
@@ -41,7 +38,6 @@ export default ref([
 			{ title: 'Algorithm', icon: 'fa6-solid:code-merge', color: '#2FA366' },
 		],
 	},
-
 	{
 		href: '/certificados/Algoritmo1_Estudonauta.pdf',
 		title: 'PROGRAMAÇÃO BÁSICA - MÓDULO 01: PRIMEIROS COMANDOS',
@@ -51,7 +47,6 @@ export default ref([
 			{ title: 'Algorithm', icon: 'fa6-solid:code-merge', color: '#2FA366' },
 		],
 	},
-
 	{
 		href: '/certificados/Linux0_Estudonauta.pdf',
 		title: 'LINUX - MÓDULO 00: PRIMEIROS PASSOS',
@@ -61,7 +56,6 @@ export default ref([
 			{ title: 'Linux', icon: 'devicon:linux', color: '#FCD134' },
 		],
 	},
-
 	{
 		href: '/certificados/Linux1_Estudonauta.pdf',
 		title: 'LINUX - MÓDULO 01: INTERFACE E TERMINAL',
@@ -71,7 +65,6 @@ export default ref([
 			{ title: 'Linux', icon: 'devicon:linux', color: '#FCD134' },
 		],
 	},
-
 	{
 		href: '/certificados/Linux2_Estudonauta.pdf',
 		title: 'LINUX - MÓDULO 02: PACOTES E GESTÃO DE PROCESSOS',
@@ -81,7 +74,6 @@ export default ref([
 			{ title: 'Linux', icon: 'devicon:linux', color: '#FCD134' },
 		],
 	},
-
 	{
 		href: '/certificados/Linux3_Estudonauta.pdf',
 		title: 'LINUX - MÓDULO 03: PROGRAMAÇÃO COM LINUX',
@@ -91,7 +83,6 @@ export default ref([
 			{ title: 'Linux', icon: 'devicon:linux', color: '#FCD134' },
 		],
 	},
-
 	{
 		href: '/certificados/Linux4_Estudonauta.pdf',
 		title: 'LINUX - MÓDULO 04: TERMINAL AVANÇADO',
@@ -101,7 +92,6 @@ export default ref([
 			{ title: 'Linux', icon: 'devicon:linux', color: '#FCD134' },
 		],
 	},
-
 	{
 		href: '/certificados/Linux5_Estudonauta.pdf',
 		title: 'LINUX - MÓDULO 05: DISCOS E RAID',
@@ -111,7 +101,6 @@ export default ref([
 			{ title: 'Linux', icon: 'devicon:linux', color: '#FCD134' },
 		],
 	},
-
 	{
 		href: '/certificados/Linux_Curso_em_Video.pdf',
 		title: 'LINUX',
@@ -121,7 +110,6 @@ export default ref([
 			{ title: 'Linux', icon: 'devicon:linux', color: '#FCD134' },
 		],
 	},
-
 	{
 		href: '/certificados/Algoritmo_Curso_em_Video.pdf',
 		title: 'ALGORITMO',
@@ -131,7 +119,6 @@ export default ref([
 			{ title: 'Algorithm', icon: 'fa6-solid:code-merge', color: '#2FA366' },
 		],
 	},
-
 	{
 		href: '/certificados/Hardware_Curso_em_Video.pdf',
 		title: 'HARDWARE',
@@ -141,7 +128,6 @@ export default ref([
 			{ title: 'Hardware', icon: 'ion:hardware-chip-outline', color: '#ED6C47' },
 		],
 	},
-
 	{
 		href: '/certificados/Algoritmo2_Estudonauta.pdf',
 		title: 'PROGRAMAÇÃO BÁSICA - MÓDULO 02: CONDICIONAIS',
@@ -151,7 +137,6 @@ export default ref([
 			{ title: 'Algorithm', icon: 'fa6-solid:code-merge', color: '#2FA366' },
 		],
 	},
-
 	{
 		href: '/certificados/Algoritmo3_Estudonauta.pdf',
 		title: 'PROGRAMAÇÃO BÁSICA - MÓDULO 03: REPETIÇÕES',
@@ -161,7 +146,6 @@ export default ref([
 			{ title: 'Algorithm', icon: 'fa6-solid:code-merge', color: '#2FA366' },
 		],
 	},
-
 	{
 		href: '/certificados/Algoritmo4_Estudonauta.pdf',
 		title: 'PROGRAMAÇÃO BÁSICA - MÓDULO 04: VARIÁVEIS COMPOSTAS',
@@ -171,7 +155,6 @@ export default ref([
 			{ title: 'Algorithm', icon: 'fa6-solid:code-merge', color: '#2FA366' },
 		],
 	},
-
 	{
 		href: '/certificados/Algoritmo5_Estudonauta.pdf',
 		title: 'PROGRAMAÇÃO BÁSICA - MÓDULO 05: ROTINAS',
@@ -181,7 +164,6 @@ export default ref([
 			{ title: 'Algorithm', icon: 'fa6-solid:code-merge', color: '#2FA366' },
 		],
 	},
-
 	{
 		href: '/certificados/C0_Estudonauta.pdf',
 		title: 'LINGUAGEM C - MÓDULO 00: PRIMEIROS PASSOS',
@@ -191,7 +173,6 @@ export default ref([
 			{ title: 'C', icon: 'devicon:c', color: '#659AD3' },
 		],
 	},
-
 	{
 		href: '/certificados/C1_Estudonauta.pdf',
 		title: 'LINGUAGEM C - MÓDULO 01: ESTRUTURAS BÁSICAS',
@@ -201,7 +182,6 @@ export default ref([
 			{ title: 'C', icon: 'devicon:c', color: '#659AD3' },
 		],
 	},
-
 	{
 		href: '/certificados/C2_Estudonauta.pdf',
 		title: 'LINGUAGEM C - MÓDULO 02: OPERADORES',
@@ -211,7 +191,6 @@ export default ref([
 			{ title: 'C', icon: 'devicon:c', color: '#659AD3' },
 		],
 	},
-
 	{
 		href: '/certificados/C3_Estudonauta.pdf',
 		title: 'LINGUAGEM C - MÓDULO 03: ESTRUTURAS DE CONTROLE (CONDIÇÕES)',
@@ -221,7 +200,6 @@ export default ref([
 			{ title: 'C', icon: 'devicon:c', color: '#659AD3' },
 		],
 	},
-
 	{
 		href: '/certificados/Redes0_Estudonauta.pdf',
 		title: 'REDES DE COMPUTADORES - MÓDULO 00: FUNDAMENTOS DE REDE',
@@ -231,7 +209,6 @@ export default ref([
 			{ title: 'Network', icon: 'iconoir:network', color: '#FCD134' },
 		],
 	},
-
 	{
 		href: '/certificados/Web1_Estudonauta.pdf',
 		title: 'DESENVOLVIMENTO WEB 2020 (HTML5+CSS3): MÓDULO 1 DE 5',
@@ -242,7 +219,6 @@ export default ref([
 			{ title: 'CSS3', icon: 'vscode-icons:file-type-css', color: '#2072B5' },
 		],
 	},
-
 	{
 		href: '/certificados/Web2_Estudonauta.pdf',
 		title: 'DESENVOLVIMENTO WEB 2020 (HTML5+CSS3): MÓDULO 2 DE 5',
@@ -253,7 +229,6 @@ export default ref([
 			{ title: 'CSS3', icon: 'vscode-icons:file-type-css', color: '#2072B5' },
 		],
 	},
-
 	{
 		href: '/certificados/Windows_Prompt_Comando_Alura.pdf',
 		title: 'Windows Prompt: Trabalhando na linha de comando',
@@ -264,7 +239,6 @@ export default ref([
 			{ title: 'CMD', icon: 'humbleicons:prompt', color: '#2FA366' },
 		],
 	},
-
 	{
 		href: '/certificados/Linux1_Alura.pdf',
 		title: 'Linux I: conhecendo e utilizando o terminal',
@@ -275,7 +249,6 @@ export default ref([
 			{ title: 'Terminal', icon: 'humbleicons:prompt', color: '#2FA366' },
 		],
 	},
-
 	{
 		href: '/certificados/Tecnologia_de_Redes_WTR.pdf',
 		title: 'Workshop de Tecnologia de Redes do Ponto de Presença da RNP no Rio de Janeiro',
@@ -285,7 +258,6 @@ export default ref([
 			{ title: 'Network', icon: 'iconoir:network', color: '#FCD134' },
 		],
 	},
-
 	{
 		href: '/certificados/Office365_Linkedin.pdf',
 		title: 'Descubra o Microsoft Office 365',
@@ -297,7 +269,6 @@ export default ref([
 			{ title: 'PowerPoint', icon: 'vscode-icons:file-type-powerpoint', color: '#ED6C47' },
 		],
 	},
-
 	{
 		href: '/certificados/JavaScript0_Alura.pdf',
 		title: 'JavaScript: explorando a linguagem',
@@ -307,7 +278,6 @@ export default ref([
 			{ title: 'Javascript', icon: 'devicon:javascript', color: '#F0DB4F' },
 		],
 	},
-
 	{
 		href: '/certificados/Linux2_Alura.pdf',
 		title: 'Linux II: programas, processos e pacotes',
@@ -317,7 +287,6 @@ export default ref([
 			{ title: 'Linux', icon: 'devicon:linux', color: '#FCD134' },
 		],
 	},
-
 	{
 		href: '/certificados/Git_Linkedin.pdf',
 		title: 'Git e GitHub: Formação Básica',
@@ -328,7 +297,6 @@ export default ref([
 			{ title: 'Github', icon: 'eva:github-fill', color: '#2B7CD3' },
 		],
 	},
-
 	{
 		href: '/certificados/NodeJS_MVC_RestAPI_GraphQL_Deno_Udemy.pdf',
 		title: 'NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)',
@@ -340,7 +308,6 @@ export default ref([
 			{ title: 'Express', icon: 'simple-icons:express', color: '#2FA366' },
 		],
 	},
-
 	{
 		href: '/certificados/Nginx_Apache_ssl_Udemy.pdf',
 		title: 'NGINX, Apache, SSL Encryption - Certification Course',
@@ -352,7 +319,6 @@ export default ref([
 			{ title: 'SSL', icon: 'fxemoji:lock', color: '#FAB636' },
 		],
 	},
-
 	{
 		href: '/certificados/Git_Github_Udemy.pdf',
 		title: 'Git & GitHub - The Practical Guide',
@@ -363,7 +329,6 @@ export default ref([
 			{ title: 'Github', icon: 'eva:github-fill', color: '#2B7CD3' },
 		],
 	},
-
 	{
 		href: '/certificados/Javascript_Jquery_VueJS_Udemy.pdf',
 		title: 'Complete Javascript & jQuery Course with Bonus VueJS Intro',
@@ -375,7 +340,6 @@ export default ref([
 			{ title: 'Vue.JS', icon: 'vscode-icons:file-type-vue', color: '#41B883' },
 		],
 	},
-
 	{
 		href: '/certificados/JavaScript_Beginner%2BAdvanced_Udemy.pdf',
 		title: 'JavaScript - The Complete Guide 2023 (Beginner + Advanced)',
@@ -385,7 +349,6 @@ export default ref([
 			{ title: 'Javascript', icon: 'devicon:javascript', color: '#F0DB4F' },
 		],
 	},
-
 	{
 		href: '/certificados/SQL_MySQL%2BPostgreSQL_Udemy.pdf',
 		title: `SQL - The Complete Developer's Guide (Mysql, PostgreSQL)`,
@@ -396,7 +359,6 @@ export default ref([
 			{ title: 'PostgreSQL', icon: 'devicon:postgresql', color: '#336791' },
 		],
 	},
-
 	{
 		href: '/certificados/MongoDB_Udemy.pdf',
 		title: `MongoDB - The Complete Developer's Guide 2023`,
@@ -407,7 +369,6 @@ export default ref([
 			{ title: 'Mongoose', icon: 'devicon:mongoose', color: '#840000' },
 		],
 	},
-
 	{
 		href: '/certificados/MERN_Fullstack_Udemy.pdf',
 		title: 'React, NodeJS, Express & MongoDB - The MERN Fullstack Guide',
@@ -420,7 +381,6 @@ export default ref([
 			{ title: 'MongoDB', icon: 'vscode-icons:file-type-mongo', color: '#4FA94C' },
 		],
 	},
-
 	{
 		href: '/certificados/CSS_SASS_Udemy.pdf',
 		title: 'CSS - The Complete Guide 2023 (incl. Flexbox, Grid & Sass)',
@@ -431,7 +391,6 @@ export default ref([
 			{ title: 'Sass', icon: 'devicon:sass', color: '#CB6698' },
 		],
 	},
-
 	{
 		href: '/certificados/TypeScript_Udemy.pdf',
 		title: 'Understanding TypeScript',
@@ -441,7 +400,6 @@ export default ref([
 			{ title: 'Typescript', icon: 'devicon:typescript', color: '#137ACC' },
 		],
 	},
-
 	{
 		href: '/certificados/VueJS_Router_CompositionAPI_Udemy.pdf',
 		title: 'Vue - The Complete Guide (incl. Router & Composition API)',
@@ -451,7 +409,6 @@ export default ref([
 			{ title: 'Vue.JS', icon: 'vscode-icons:file-type-vue', color: '#41B883' },
 		],
 	},
-
 	{
 		href: '/certificados/Nuxt3_Udemy.pdf',
 		title: 'The Nuxt 3 Bootcamp - The Complete Developer Guide',
@@ -461,7 +418,6 @@ export default ref([
 			{ title: 'Nuxt.JS', icon: 'vscode-icons:file-type-nuxt', color: '#2DDC82' },
 		],
 	},
-
 	{
 		href: '/certificados/Javascript_Unit_Testing_Udemy.pdf',
 		title: 'JavaScript Unit Testing - The Practical Guide',

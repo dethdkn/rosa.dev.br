@@ -65,5 +65,12 @@ export default {
 			paragraph12: 'And voilà, your code is now working perfectly, with the language dynamically changing in both the i18n and PrimeVue modules! 😊',
 			paragraph13: 'If you have any questions or would like to get in touch, feel free to reach out to me on any of the social media platforms listed below. Thank you very much for reading!',
 		},
+		installing_arch_linux: {
+			title: 'Installing Arch Linux (the easiest YouTube guide)',
+			description: 'Effortlessly install Arch Linux with this YouTube guide, simplifying the process for a seamless setup.',
+			paragraph1: 'Unfortunately, I didn\'t create an English version for this video. However, below, you\'ll find all the commands used. Perhaps it\'s possible to follow along just by watching.',
+			paragraph2: 'Hope this helps! 😉',
+			paragraph3: 'If you have any questions or would like to get in touch, feel free to reach out to me on any of the social media platforms listed below. Thank you very much for reading!',
+		},
 	},
 }
