@@ -24,7 +24,7 @@
 		"sass": "^1.69.5"
 	},
 	"devDependencies": {
-		"@antfu/eslint-config": "^2.1.1",
+		"@antfu/eslint-config": "^2.2.1",
 		"@nuxt/devtools": "latest",
 		"eslint": "^8.54.0",
 		"nuxt": "^3.8.2",

@@ -63,14 +63,18 @@ export default {
 			paragraph10: 'The second issue occurred because I was not calling usePrimeVue() at the top of the setup block; instead, I placed it inside a function. In summary, if your code is structured in the following way, you will encounter an error, as usePrimeVue() utilizes Vue\'s inject(), which is only available at the top of the setup block.',
 			paragraph11: 'The solution is to follow the code example below, executing usePrimeVue at the top of the setup block and assigning its value to a variable that can be used later within the function responsible for changing the language. Additionally, it is possible to change the language of i18n simultaneously.',
 			paragraph12: 'And voilà, your code is now working perfectly, with the language dynamically changing in both the i18n and PrimeVue modules! 😊',
-			paragraph13: 'If you have any questions or would like to get in touch, feel free to reach out to me on any of the social media platforms listed below. Thank you very much for reading!',
 		},
 		installing_arch_linux: {
 			title: 'Installing Arch Linux (the easiest YouTube guide)',
 			description: 'Effortlessly install Arch Linux with this YouTube guide, simplifying the process for a seamless setup.',
 			paragraph1: 'Unfortunately, I didn\'t create an English version for this video. However, below, you\'ll find all the commands used. Perhaps it\'s possible to follow along just by watching.',
 			paragraph2: 'Hope this helps! 😉',
-			paragraph3: 'If you have any questions or would like to get in touch, feel free to reach out to me on any of the social media platforms listed below. Thank you very much for reading!',
 		},
+		customizable_multiboot_pendrive: {
+			title: 'Customizable Multiboot Pendrive (to show off to your IT friends and not teach them how to do it)',
+			description: 'Create your personalized Multiboot USB in minutes! Impress your IT friends with this super easy tutorial.',
+			paragraph1: 'Unfortunately, I didn\'t create an English version for this video. However, below, you\'ll find all the files used. Perhaps it\'s possible to follow along just by watching.',
+		},
+		final_paragraph: 'If you have any questions or would like to get in touch, feel free to reach out to me on any of the social media platforms listed below. Thank you very much for reading!',
 	},
 }

@@ -1,5 +1,17 @@
 export default ref([
 	{
+		titleKey: 'posts.customizable_multiboot_pendrive.title',
+		badges: [
+			{ title: 'Ventoy', icon: 'material-symbols:usb', color: '#FCD134' },
+		],
+		urls: [
+			{ url: '/blog/customizable-multiboot-pendrive', external: false, icon: 'iconoir:open-in-browser', aria: 'URL' },
+		],
+		descriptionKey: 'posts.customizable_multiboot_pendrive.description',
+		locale: true,
+		self: true,
+	},
+	{
 		titleKey: 'posts.installing_arch_linux.title',
 		badges: [
 			{ title: 'Linux', icon: 'devicon:linux', color: '#FCD134' },

@@ -63,14 +63,18 @@ export default {
 			paragraph10: 'O segundo problema ocorreu porque eu não estava chamando o usePrimeVue() no topo do bloco setup, mas sim, dentro de uma função. Resumindo o problema, se o seu código estiver da seguinte forma, você encontrará um erro, pois o usePrimeVue() utiliza o inject() do Vue, que está disponível apenas no topo do bloco setup.',
 			paragraph11: 'A solução é realizar conforme exemplificado no código abaixo, executando o usePrimeVue no início do bloco setup e atribuindo o seu valor a uma variável que pode ser utilizada posteriormente dentro da função responsável por alterar o idioma. Além disso, é possível aproveitar para modificar o idioma do i18n.',
 			paragraph12: 'E voilà, seu código agora estará funcionando perfeitamente, com o idioma sendo alterado dinamicamente, tanto no módulo do i18n quanto no do PrimeVue! 😊',
-			paragraph13: 'Se você tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade para me encontrar em qualquer uma das redes sociais listadas abaixo. Muito obrigado por ler!',
 		},
 		installing_arch_linux: {
 			title: 'Instalando o Arch Linux (o guia mais fácil do youtube)',
 			description: 'Instale o Arch Linux facilmente com este guia no YouTube, simplificando o processo para uma configuração sem complicações.',
 			paragraph1: 'Abaixo, você encontrará todos os comandos utilizados neste vídeo.',
 			paragraph2: 'Espero ter ajudado! 😉',
-			paragraph3: 'Se você tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade para me encontrar em qualquer uma das redes sociais listadas abaixo. Muito obrigado por ler!',
 		},
+		customizable_multiboot_pendrive: {
+			title: 'Pendrive Multiboot Personalizável (pra mostrar pros seus amiguinhos do TI e não ensinar a fazer)',
+			description: 'Crie seu Pendrive Multiboot personalizado em minutos! Surpreenda os amigos do TI com este tutorial super fácil.',
+			paragraph1: 'Abaixo, você encontrará todos os arquivos utilizados neste vídeo.',
+		},
+		final_paragraph: 'Se você tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade para me encontrar em qualquer uma das redes sociais listadas abaixo. Muito obrigado por ler!',
 	},
 }

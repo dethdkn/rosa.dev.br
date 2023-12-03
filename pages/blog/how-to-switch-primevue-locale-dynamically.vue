@@ -116,7 +116,7 @@ function changeLang() {
 			<p>{{ t('posts.primevue_locale_dynamic.paragraph11') }}</p>
 			<CodeHighlight file-name="/components/Navbar.vue" :code="code4" />
 			<p>{{ t('posts.primevue_locale_dynamic.paragraph12') }}</p>
-			<p>{{ t('posts.primevue_locale_dynamic.paragraph13') }}</p>
+			<p>{{ t('posts.final_paragraph') }}</p>
 		</div>
 	</div>
 </template>
