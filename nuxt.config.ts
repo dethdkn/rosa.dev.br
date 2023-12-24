@@ -4,9 +4,9 @@ export default defineNuxtConfig({
 	app: {
 		head: {
 			templateParams: {
-			  separator: '•',
+				separator: '•',
 			},
-		  },
+		},
 	},
 	colorMode: {
 		preference: 'dark',
@@ -29,7 +29,6 @@ export default defineNuxtConfig({
 		],
 	},
 	site: {
-
 		url: 'https://rosa.dev.br/',
 		name: 'Gabriel Rosa',
 		description: 'Full Stack Developer',

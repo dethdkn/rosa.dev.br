@@ -46,10 +46,23 @@ export default ref([
 		descriptionKey: 'projects.ldapsha512_description',
 	},
 	{
+		title: 'hamiltonmarcenaria.com',
+		badges: [
+			{ title: 'Vue.JS', icon: 'vscode-icons:file-type-vue', color: '#41B883' },
+			{ title: 'Nuxt.JS', icon: 'vscode-icons:file-type-nuxt', color: '#2DDC82' },
+			{ title: 'TailwindCSS', icon: 'devicon:tailwindcss', color: '#38BDF8' },
+		],
+		urls: [
+			{ url: 'https://hamiltonmarcenaria.com', external: true, icon: 'iconoir:open-new-window', aria: 'URL' },
+		],
+		descriptionKey: 'projects.hamilton_description',
+	},
+	{
 		title: 'karinebarbosa.com',
 		badges: [
-			{ title: 'Bootstrap', icon: 'devicon:bootstrap', color: '#8419FA' },
-			{ title: 'Jquery', icon: 'devicon:jquery', color: '#0E68AB' },
+			{ title: 'Vue.JS', icon: 'vscode-icons:file-type-vue', color: '#41B883' },
+			{ title: 'Nuxt.JS', icon: 'vscode-icons:file-type-nuxt', color: '#2DDC82' },
+			{ title: 'TailwindCSS', icon: 'devicon:tailwindcss', color: '#38BDF8' },
 		],
 		urls: [
 			{ url: 'https://karinebarbosa.com', external: true, icon: 'iconoir:open-new-window', aria: 'URL' },

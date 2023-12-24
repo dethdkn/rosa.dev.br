@@ -39,6 +39,7 @@ export default {
 		description: 'Explore my projects, built with Nuxt, Vue, Tailwind CSS, and other cool technologies.',
 		rosa_description: '🧑🏻‍💼 My personal webpage',
 		karine_description: '👩🏻‍💼 My girlfriend\'s page',
+		hamilton_description: '👷 Landing page for Hamilton Marcenaria Moderna',
 		ldapsha512_description: '🔑 Ldap sha512-crypt password generator for node',
 		idcbpf_description: '👥 Ldap account management',
 		agenda_auditorios_description: '🏟 Streamlining and organizing auditorium events with ease and efficiency',

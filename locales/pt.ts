@@ -39,6 +39,7 @@ export default {
 		description: 'Explore meus projetos, elaborados com Nuxt, Vue, Tailwind CSS e outras tecnologias interessantes.',
 		rosa_description: '🧑🏻‍💼 Minha página web',
 		karine_description: '👩🏻‍💼 Página web da minha namorada',
+		hamilton_description: '👷 Página web do Hamilton Marcenaria Moderna',
 		ldapsha512_description: '🔑 Gerador de senha Ldap sha512-crypt para o node',
 		idcbpf_description: '👥 Gerenciador de contas Ldap',
 		agenda_auditorios_description: '🏟 Simplificando e organizando eventos de auditório com facilidade e eficiência',

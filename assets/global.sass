@@ -20,23 +20,22 @@ html.light
     @include meta.load-css("highlight.js/styles/github.min.css")
 html.dark
     @include meta.load-css("highlight.js/styles/github-dark.min.css")
-body::-webkit-scrollbar, .sidebar::-webkit-scrollbar
+body::-webkit-scrollbar-button, .dark body::-webkit-scrollbar-button
+    display: none
+body::-webkit-scrollbar
     background-color: #EFF1F5
     width: 16px
-body::-webkit-scrollbar-track, .sidebar::-webkit-scrollbar-track
+body::-webkit-scrollbar-track
     background-color: #EFF1F5
-body::-webkit-scrollbar-thumb, .sidebar::-webkit-scrollbar-thumb
+body::-webkit-scrollbar-thumb
     background-color: #babac0
     border-radius: 16px
     border: 4px solid #EFF1F5
-body::-webkit-scrollbar-button, .sidebar::-webkit-scrollbar-button
-    display: none
-.dark body::-webkit-scrollbar, .dark .sidebar::-webkit-scrollbar
+.dark body::-webkit-scrollbar
     background-color: #1E1E2E
-.dark body::-webkit-scrollbar-track, .dark .sidebar::-webkit-scrollbar-track
+    width: 16px
+.dark body::-webkit-scrollbar-track
     background-color: #1E1E2E
-.dark body::-webkit-scrollbar-thumb, .dark .sidebar::-webkit-scrollbar-thumb
+.dark body::-webkit-scrollbar-thumb
     background-color: #718096
     border-color: #1E1E2E
-.dark body::-webkit-scrollbar-button, .dark .sidebar::-webkit-scrollbar-button
-    display: none
