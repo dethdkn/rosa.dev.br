@@ -54,6 +54,7 @@ export default ref([
 		],
 		urls: [
 			{ url: 'https://hamiltonmarcenaria.com', external: true, icon: 'iconoir:open-new-window', aria: 'URL' },
+			{ url: 'https://github.com/dethdkn/hamiltonmarcenaria.com', external: true, icon: 'iconoir:github-circle', aria: 'Github Repo' },
 		],
 		descriptionKey: 'projects.hamilton_description',
 	},
@@ -66,6 +67,7 @@ export default ref([
 		],
 		urls: [
 			{ url: 'https://karinebarbosa.com', external: true, icon: 'iconoir:open-new-window', aria: 'URL' },
+			{ url: 'https://github.com/dethdkn/karinebarbosa.com', external: true, icon: 'iconoir:github-circle', aria: 'Github Repo' },
 		],
 		descriptionKey: 'projects.karine_description',
 	},
