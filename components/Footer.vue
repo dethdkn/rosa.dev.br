@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const isDark = computed(() => useColorMode().value === 'dark')
+</script>
+
 <template>
 	<footer class="bg-[#EFF1F5] dark:bg-[#1E1E2E] space-y-4 pt-20 pb-10">
 		<div class="grid grid-cols-3 sm:grid-cols-6 gap-4 place-items-center lg:flex lg:justify-center lg:items-center lg:space-x-8">
@@ -14,8 +18,10 @@
 				</NuxtLink>
 				<span class="mx-2">—</span>
 				Hosted on&nbsp;
-				<NuxtLink to="https://vercel.com/home" external target="_blank" class="text-[#000000] transition-all duration-300 vercel">
-					<Icon name="logos:vercel-icon" class="mb-1" /> Vercel
+				<NuxtLink to="https://vercel.com/home" external target="_blank" class="text-[#000000] dark:text-[#FDFDFD] transition-all duration-300 vercel">
+					<Icon v-if="isDark" name="vscode-icons:file-type-vercel" class="mb-1" />
+					<Icon v-else name="logos:vercel-icon" class="mb-1" />
+					Vercel
 				</NuxtLink>
 			</p>
 		</div>
