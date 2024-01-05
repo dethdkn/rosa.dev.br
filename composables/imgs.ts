@@ -6,5 +6,5 @@ export default ref([
 	{ url: '/images/reuniao.png', alt: 'Reunião - CBPF' },
 	{ url: '/images/almoco_sistemas.png', alt: 'Almoço Equipe de Sistemas' },
 	{ url: '/images/studio.png', alt: 'Estúdio' },
-	{ url: '/images/cleaning_server.png', alt: 'Limpando Servidor' },
+	{ url: '/images/pc_setup.png', alt: 'Limpando Servidor' },
 ])

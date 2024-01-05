@@ -109,7 +109,7 @@ watch(selected, (nv) => {
 				</p>
 				<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-5 place-items-center pt-8">
 					<NuxtLink v-for="stack in stacks" :key="stack.title" :to="stack.url" external target="_blank">
-						<NuxtImg :src="stack.imgurl" :alt="`${stack.title} Logo`" class="w-24 hover:cursor-pointer" :title="stack.title" placeholder loading="lazy" />
+						<NuxtImg :src="stack.imgurl" :alt="`${stack.title} Logo`" class="w-24 hover:cursor-pointer transition-all duration-300" :class="stack.class" :title="stack.title" placeholder loading="lazy" />
 					</NuxtLink>
 				</div>
 			</div>
@@ -120,3 +120,18 @@ watch(selected, (nv) => {
 		</div>
 	</div>
 </template>
+
+<style scoped lang="sass">
+.vue:hover
+	filter: drop-shadow(0 0 2em #41B883aa)
+.nuxt:hover
+	filter: drop-shadow(0 0 2em #43DD7Daa)
+.typescript:hover
+	filter: drop-shadow(0 0 2em #0086D6aa)
+.tailwind:hover
+	filter: drop-shadow(0 0 2em #00BADAaa)
+.mongo:hover
+	filter: drop-shadow(0 0 2em #00AC34aa)
+.nginx:hover
+	filter: drop-shadow(0 0 2em #00972Caa)
+</style>
