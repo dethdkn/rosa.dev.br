@@ -30,7 +30,11 @@ const isDark = computed(() => useColorMode().value === 'dark')
 
 <style scoped lang="sass">
 .nuxt:hover
+	filter: drop-shadow(0 0 5px #43DD7D)
+.dark .nuxt:hover
 	filter: drop-shadow(0 0 5px #43DD7Daa)
 .vercel:hover
-	filter: drop-shadow(0 0 5px #000000aa)
+	filter: drop-shadow(0 0 5px #000000)
+.dark .vercel:hover
+	filter: drop-shadow(0 0 5px #FDFDFDaa)
 </style>

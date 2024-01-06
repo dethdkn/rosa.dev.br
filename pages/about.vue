@@ -123,15 +123,27 @@ watch(selected, (nv) => {
 
 <style scoped lang="sass">
 .vue:hover
+	filter: drop-shadow(0 0 2em #41B883)
+.dark .vue:hover
 	filter: drop-shadow(0 0 2em #41B883aa)
 .nuxt:hover
+	filter: drop-shadow(0 0 2em #43DD7D)
+.dark .nuxt:hover
 	filter: drop-shadow(0 0 2em #43DD7Daa)
 .typescript:hover
+	filter: drop-shadow(0 0 2em #0086D6)
+.dark .typescript:hover
 	filter: drop-shadow(0 0 2em #0086D6aa)
 .tailwind:hover
+	filter: drop-shadow(0 0 2em #00BADA)
+.dark .tailwind:hover
 	filter: drop-shadow(0 0 2em #00BADAaa)
 .mongo:hover
+	filter: drop-shadow(0 0 2em #00AC34)
+.dark .mongo:hover
 	filter: drop-shadow(0 0 2em #00AC34aa)
 .nginx:hover
+	filter: drop-shadow(0 0 2em #00972C)
+.dark .nginx:hover
 	filter: drop-shadow(0 0 2em #00972Caa)
 </style>
