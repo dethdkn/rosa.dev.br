@@ -60,7 +60,7 @@ watch(selected, (nv) => {
 								{{ t('about.unicarioca') }}
 							</h3>
 							<p class="text-sm border border-[#F28AA9] inline p-1 m-0 sm:m-1 rounded whitespace-nowrap">
-								{{ t('about.twnt') }}
+								{{ t('about.ongoing') }}
 							</p>
 							<p class="mt-2">
 								{{ t('about.cs') }}

@@ -23,6 +23,7 @@ export default {
 		learner: 'Sou um autodidata dedicado, sempre ansioso para aprender novas tecnologias e abordagens. Minha capacidade de aprendizado rápido me permite acompanhar as tendências em constante evolução da tecnologia.',
 		experience: 'Experiência',
 		unicarioca: 'Centro Universitário Unicarioca',
+		ongoing: 'Em Andamento',
 		cs: 'Ciências da Computação',
 		cbpf: 'Centro Brasileiro de Pesquisas Físicas',
 		full_stack: 'Desenvolvedor Full Stack',

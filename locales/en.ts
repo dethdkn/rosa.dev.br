@@ -23,6 +23,7 @@ export default {
 		learner: 'I\'m a dedicated self-learner, always eager to grasp new technologies and approaches. My ability to learn quickly enables me to keep up with the ever-evolving trends in tech.',
 		experience: 'Experience',
 		unicarioca: 'Centro Universitário Unicarioca',
+		ongoing: 'Ongoing',
 		cs: 'Computer Science',
 		cbpf: 'Brazilian Center for Physics Research',
 		full_stack: 'Full Stack Developer',
