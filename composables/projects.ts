@@ -33,17 +33,18 @@ export default ref([
 		descriptionKey: 'projects.idcbpf_description',
 	},
 	{
-		title: 'Ldap-Sha512',
+		title: 'Ldap-Passwords',
 		badges: [
 			{ title: 'NodeJS', icon: 'vscode-icons:file-type-node', color: '#83CD29' },
 			{ title: 'Typescript', icon: 'devicon:typescript', color: '#137ACC' },
 			{ title: 'Vitest', icon: 'devicon:vitest', color: '#FCC72B' },
 		],
 		urls: [
-			{ url: 'https://www.npmjs.com/package/ldap-sha512', external: true, icon: 'iconoir:npm', aria: 'NPM Package' },
-			{ url: 'https://github.com/dethdkn/ldap-sha512', external: true, icon: 'iconoir:github-circle', aria: 'Github Repo' },
+			{ url: 'https://ldap-passwords.com', external: true, icon: 'iconoir:open-new-window', aria: 'URL' },
+			{ url: 'https://www.npmjs.com/package/ldap-passwords', external: true, icon: 'iconoir:npm', aria: 'NPM Package' },
+			{ url: 'https://github.com/dethdkn/ldap-passwords', external: true, icon: 'iconoir:github-circle', aria: 'Github Repo' },
 		],
-		descriptionKey: 'projects.ldapsha512_description',
+		descriptionKey: 'projects.ldappasswords_description',
 	},
 	{
 		title: 'hamiltonmarcenaria.com',

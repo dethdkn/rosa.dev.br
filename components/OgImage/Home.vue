@@ -19,7 +19,7 @@ const { title, subtitle, im, aka } = defineProps({
 			{{ title }}
 		</h1>
 		<div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-			<img src="/gsr.png" alt="Gabriel Rosa" style="border: 2px  solid #F28AA9; border-radius: 9999px; width: 13rem; height: 13rem;">
+			<img src="/gsr.png" alt="Gabriel Rosa" style="border: 2px  solid #F28AA9; border-radius: 9999px; width: 13rem; height: 13rem; margin-right: 30px;">
 			<div style="margin-inline-start: 1.5rem">
 				<h2 style="font-size: 40px; color: #CDD5F4;">
 					<span style="margin-right: 10px;">{{ im }}</span>

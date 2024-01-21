@@ -9,8 +9,7 @@ useSeoMeta({
 	description: t('certificates.description'),
 })
 
-defineOgImage({
-	component: 'Techs',
+defineOgImageComponent('Techs', {
 	title: t('certificates.title'),
 })
 </script>

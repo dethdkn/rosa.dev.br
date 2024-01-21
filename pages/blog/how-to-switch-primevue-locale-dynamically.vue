@@ -9,8 +9,7 @@ useSeoMeta({
 	description: t('posts.primevue_locale_dynamic.description'),
 })
 
-defineOgImage({
-	component: 'Simple',
+defineOgImageComponent('Simple', {
 	title: t('posts.primevue_locale_dynamic.title'),
 })
 

@@ -9,8 +9,7 @@ useSeoMeta({
 	description: t('posts.installing_arch_linux.description'),
 })
 
-defineOgImage({
-	component: 'Simple',
+defineOgImageComponent('Simple', {
 	title: t('posts.installing_arch_linux.title'),
 })
 

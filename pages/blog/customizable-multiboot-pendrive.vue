@@ -9,8 +9,7 @@ useSeoMeta({
 	description: t('posts.customizable_multiboot_pendrive.description'),
 })
 
-defineOgImage({
-	component: 'Simple',
+defineOgImageComponent('Simple', {
 	title: t('posts.customizable_multiboot_pendrive.title'),
 })
 </script>

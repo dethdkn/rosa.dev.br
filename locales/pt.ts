@@ -41,7 +41,7 @@ export default {
 		rosa_description: '🧑🏻‍💼 Minha página web',
 		karine_description: '👩🏻‍💼 Página web da minha namorada',
 		hamilton_description: '👷 Página web do Hamilton Marcenaria Moderna',
-		ldapsha512_description: '🔑 Gerador de senha Ldap sha512-crypt para o node',
+		ldappasswords_description: '🔑 Hashing e verificação de senhas usando algoritmos de senha do LDAP.',
 		idcbpf_description: '👥 Gerenciador de contas Ldap',
 		agenda_auditorios_description: '🏟 Simplificando e organizando eventos de auditório com facilidade e eficiência',
 	},
