@@ -1,4 +1,6 @@
 <script setup lang='ts'>
+import { codeToHtml } from 'shikiji'
+
 const { t } = useI18n()
 
 useHead({
@@ -13,7 +15,7 @@ defineOgImageComponent('Simple', {
 	title: t('posts.primevue_locale_dynamic.title'),
 })
 
-const code1 = `export default defineNuxtConfig({
+const code1 = await codeToHtml(`export default defineNuxtConfig({
 	i18n: {
 		baseUrl: 'https://example.com/',
 		defaultLocale: 'en',
@@ -23,16 +25,17 @@ const code1 = `export default defineNuxtConfig({
 			{ code: 'pt', iso: 'pt-BR', name: 'Português (BR)', file: 'pt.ts' },
 		],
 	},
-})`
+})`, { lang: 'ts', themes: { light: 'material-theme-lighter', dark: 'tokyo-night' } })
 
-const code2 = `{ "type": 0, "start": 0, "end": 2, "loc": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 3, "offset": 2 }, "source": "Fr" }, "body": { "type": 2, "start": 0, "end": 2, "loc": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 3, "offset": 2 } }, "items": [ { "type": 3, "start": 0, "end": 2, "loc": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 3, "offset": 2 } } } ], "static": "Fr" } }`
+const code2 = await codeToHtml(`{ "type": 0, "start": 0, "end": 2, "loc": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 3, "offset": 2 }, "source": "Fr" }, "body": { "type": 2, "start": 0, "end": 2, "loc": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 3, "offset": 2 } }, "items": [ { "type": 3, "start": 0, "end": 2, "loc": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 3, "offset": 2 } } } ], "static": "Fr" } }`, { lang: 'json', themes: { light: 'material-theme-lighter', dark: 'tokyo-night' } })
 
-const code3 = `<script setup lang="ts">
+const code3 = await codeToHtml(`<script setup lang="ts">
 const { locale, setLocale, t } = useI18n()
 
 function changeLang() {
 	const primeConfig = usePrimeVue()
-	// Warns [Vue warn]: inject() can only be used inside setup() or functional components. 
+	// @error: Throw error, javascript is not loaded
+	// Warns [Vue warn]: inject() can only be used inside setup() or functional components.
 	// Throws Uncaught Error: PrimeVue is not installed!
 	if (locale.value === 'en') {
 		setLocale('pt')
@@ -43,9 +46,9 @@ function changeLang() {
 		primeConfig.config.locale = primeen
 	}
 }
-<\/script>`
+<\/script>`, { lang: 'vue', themes: { light: 'material-theme-lighter', dark: 'tokyo-night' } })
 
-const code4 = `<script setup lang="ts">
+const code4 = await codeToHtml(`<script setup lang="ts">
 const { locale, setLocale, t } = useI18n()
 
 const primeConfig = usePrimeVue()
@@ -76,7 +79,7 @@ function changeLang() {
 			size="24"
 		/>
 	<\/button>
-<\/template>`
+<\/template>`, { lang: 'vue', themes: { light: 'material-theme-lighter', dark: 'tokyo-night' } })
 </script>
 
 <template>
@@ -97,7 +100,9 @@ function changeLang() {
 			<p>{{ t('posts.primevue_locale_dynamic.paragraph5') }}</p>
 			<hr class="h-px my-8 bg-gray-300 border-0 dark:bg-gray-600">
 			<p>{{ t('posts.primevue_locale_dynamic.paragraph6') }}</p>
-			<CodeHighlight file-name="nuxt.config.ts" :code="code1" />
+			<CodeHighlight file-name="nuxt.config.ts">
+				<div v-html="code1" />
+			</CodeHighlight>
 			<p>{{ t('posts.primevue_locale_dynamic.paragraph7') }}</p>
 			<pre>
 /locales
@@ -107,13 +112,19 @@ function changeLang() {
 ----/primePT.ts
 			</pre>
 			<p>{{ t('posts.primevue_locale_dynamic.paragraph8') }}</p>
-			<CodeHighlight file-name="Primevue Component Text" :code="code2" lang="json" />
+			<CodeHighlight file-name="Primevue Component Text">
+				<div v-html="code2" />
+			</CodeHighlight>
 			<p>{{ t('posts.primevue_locale_dynamic.paragraph9') }}</p>
 			<hr class="h-px my-8 bg-gray-300 border-0 dark:bg-gray-600">
 			<p>{{ t('posts.primevue_locale_dynamic.paragraph10') }}</p>
-			<CodeHighlight file-name="/components/Navbar.vue" :code="code3" />
+			<CodeHighlight file-name="components/Navbar.vue">
+				<div v-html="code3" />
+			</CodeHighlight>
 			<p>{{ t('posts.primevue_locale_dynamic.paragraph11') }}</p>
-			<CodeHighlight file-name="/components/Navbar.vue" :code="code4" />
+			<CodeHighlight file-name="components/Navbar.vue">
+				<div v-html="code4" />
+			</CodeHighlight>
 			<p>{{ t('posts.primevue_locale_dynamic.paragraph12') }}</p>
 			<p>{{ t('posts.final_paragraph') }}</p>
 		</div>

@@ -35,6 +35,10 @@
      <img src="https://nuxt.com/icon.png" alt="Nuxt" width="12">
         Nuxt Icon
   </a>
+- <a href="https://shikiji.netlify.app/" target="_blank">
+     <img src="https://shikiji.netlify.app/logo.svg" alt="Shikiji" width="12">
+        Shikiji
+  </a>
 
 ## 📝 License
 
