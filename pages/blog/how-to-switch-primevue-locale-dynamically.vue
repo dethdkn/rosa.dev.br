@@ -34,7 +34,6 @@ const { locale, setLocale, t } = useI18n()
 
 function changeLang() {
 	const primeConfig = usePrimeVue()
-	// @error: Throw error, javascript is not loaded
 	// Warns [Vue warn]: inject() can only be used inside setup() or functional components.
 	// Throws Uncaught Error: PrimeVue is not installed!
 	if (locale.value === 'en') {
