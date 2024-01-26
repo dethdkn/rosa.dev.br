@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
 	css: ['~/assets/global.sass'],
-	modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/google-fonts', '@nuxtjs/i18n', '@vueuse/nuxt', 'nuxt-icon', '@nuxtseo/module', '@nuxt/image'],
+	modules: ['@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/seo', '@nuxtjs/google-fonts', '@nuxtjs/i18n', '@vueuse/nuxt', 'nuxt-icon'],
 	app: {
 		head: {
 			templateParams: {
