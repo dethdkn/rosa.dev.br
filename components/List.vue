@@ -24,9 +24,9 @@ const localePath = useLocalePath()
 <template>
 	<div class="flex justify-center items-center sm:justify-start sm:items-start flex-col mt-8 border-b border-gray-300 dark:border-gray-700 pb-5 space-y-4">
 		<div class="space-x-3 flex flex-col justify-center items-center sm:block">
-			<p class="text-[#4C4F69] dark:text-[#CDD5F4] text-2xl border-b-2 border-[#4C4F69] dark:border-[#CDD5F4] inline">
+			<h2 class="text-[#4C4F69] dark:text-[#CDD5F4] text-2xl border-b-2 border-[#4C4F69] dark:border-[#CDD5F4] inline">
 				{{ titleKey ? t(titleKey) : title }}
-			</p>
+			</h2>
 			<Badge v-for="badge in badges" :key="badge.title" :title="badge.title" :icon="badge.icon" :color="badge.color" />
 		</div>
 		<div class="flex justify-start items-center space-x-4">

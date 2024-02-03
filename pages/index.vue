@@ -6,7 +6,7 @@ useHead({
 })
 
 useSeoMeta({
-	description: `${t('home.im')} Gabriel Rosa ${t('home.aka')} Deth`,
+	description: `${t('home.im')} Gabriel Rosa ${t('home.aka')} Deth - ${t('home.subtitle')}`,
 })
 
 defineOgImageComponent('Home', {

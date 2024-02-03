@@ -16,9 +16,9 @@ defineOgImageComponent('Techs', {
 
 <template>
 	<div class="px-20 py-5 space-y-10 lg:space-y-20 text-center sm:text-start">
-		<p class="text-[#4C4F69] dark:text-[#CDD5F4] text-4xl border-b-2 border-[#F28AA9] inline">
+		<h1 class="text-[#4C4F69] dark:text-[#CDD5F4] text-4xl border-b-2 border-[#F28AA9] inline">
 			{{ t('blog.title') }}
-		</p>
+		</h1>
 		<List v-for="post in posts" :key="post.titleKey" :title-key="post.titleKey" :badges="post.badges" :urls="post.urls" :description-key="post.descriptionKey" :locale="post.locale" :self="post.self" />
 	</div>
 </template>
