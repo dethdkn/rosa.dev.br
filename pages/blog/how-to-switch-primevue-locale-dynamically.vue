@@ -82,13 +82,13 @@ function changeLang() {
 </script>
 
 <template>
-	<div>
+	<div class="max-w-7xl mx-auto">
 		<div class="px-20 py-5 space-y-10 text-center lg:space-y-20 sm:text-start">
 			<h1 class="text-[#4C4F69] dark:text-[#CDD5F4] text-4xl border-b-2 border-[#F28AA9] inline">
 				{{ t('posts.primevue_locale_dynamic.title') }}
 			</h1>
 		</div>
-		<div class="text-[#4C4F69] dark:text-[#CDD5F4] mt-10 px-10 md:px-40 space-y-5">
+		<div class="text-[#4C4F69] dark:text-[#CDD5F4] mt-10 px-10 space-y-5">
 			<p>{{ t('posts.primevue_locale_dynamic.paragraph1') }}</p>
 			<p>{{ t('posts.primevue_locale_dynamic.paragraph2') }}</p>
 			<p>{{ t('posts.primevue_locale_dynamic.paragraph3') }}</p>

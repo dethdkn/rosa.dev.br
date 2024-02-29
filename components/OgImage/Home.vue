@@ -13,9 +13,7 @@ const { title, subtitle, im, aka } = defineProps({
 
 <template>
 	<div style="width: 100%; height: 100%; background-color: #1E1E2E;">
-		<h1
-			style="border-bottom: 2px solid #F28AA9; font-size: 60px; color: #CDD5F4; position: absolute; left: 50%; top: 10%; transform: translate(-50%, -50%);"
-		>
+		<h1 style="border-bottom: 2px solid #F28AA9; font-size: 60px; color: #CDD5F4; position: absolute; left: 50%; top: 10%; transform: translate(-50%, -50%);">
 			{{ title }}
 		</h1>
 		<div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">

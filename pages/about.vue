@@ -35,7 +35,7 @@ watch(selected, (nv) => {
 </script>
 
 <template>
-	<div>
+	<div class="max-w-7xl mx-auto">
 		<div class="px-20 py-5 space-y-10 lg:space-y-20">
 			<div class="border-b border-gray-300 dark:border-gray-700 pb-10 text-center sm:text-start">
 				<h1 class="text-[#4C4F69] dark:text-[#CDD5F4] text-4xl border-b-2 border-[#F28AA9] inline">
@@ -49,7 +49,7 @@ watch(selected, (nv) => {
 				<h2 class="text-[#4C4F69] dark:text-[#CDD5F4] text-4xl border-b-2 border-[#F28AA9] inline">
 					{{ t('about.experience') }}
 				</h2>
-				<div class="flex justify-center items-center space-x-20 mt-8 lg:px-20">
+				<div class="flex flex-col md:flex-row justify-center items-center md:space-x-20 mt-8 lg:px-20">
 					<ol class="relative text-gray-500 border-s border-gray-200 dark:border-gray-700 dark:text-gray-400">
 						<li class="mb-4 ms-6">
 							<span class="absolute flex items-center justify-center w-8 h-8 rounded-full -start-4 bg-[#F28AA9]">
@@ -120,29 +120,41 @@ watch(selected, (nv) => {
 	</div>
 </template>
 
-<style scoped lang="sass">
-.vue:hover
-	filter: drop-shadow(0 0 2em #41B883)
-.dark .vue:hover
-	filter: drop-shadow(0 0 2em #41B883aa)
-.nuxt:hover
-	filter: drop-shadow(0 0 2em #43DD7D)
-.dark .nuxt:hover
-	filter: drop-shadow(0 0 2em #43DD7Daa)
-.typescript:hover
-	filter: drop-shadow(0 0 2em #0086D6)
-.dark .typescript:hover
-	filter: drop-shadow(0 0 2em #0086D6aa)
-.tailwind:hover
-	filter: drop-shadow(0 0 2em #00BADA)
-.dark .tailwind:hover
-	filter: drop-shadow(0 0 2em #00BADAaa)
-.mongo:hover
-	filter: drop-shadow(0 0 2em #00AC34)
-.dark .mongo:hover
-	filter: drop-shadow(0 0 2em #00AC34aa)
-.nginx:hover
-	filter: drop-shadow(0 0 2em #00972C)
-.dark .nginx:hover
-	filter: drop-shadow(0 0 2em #00972Caa)
+<style scoped>
+.vue:hover {
+	filter: drop-shadow(0 0 2em #41B883);
+}
+.dark .vue:hover {
+	filter: drop-shadow(0 0 2em #41B883aa);
+}
+.nuxt:hover {
+	filter: drop-shadow(0 0 2em #43DD7D);
+}
+.dark .nuxt:hover {
+	filter: drop-shadow(0 0 2em #43DD7Daa);
+}
+.typescript:hover {
+	filter: drop-shadow(0 0 2em #0086D6);
+}
+.dark .typescript:hover {
+	filter: drop-shadow(0 0 2em #0086D6aa);
+}
+.tailwind:hover {
+	filter: drop-shadow(0 0 2em #00BADA);
+}
+.dark .tailwind:hover {
+	filter: drop-shadow(0 0 2em #00BADAaa);
+}
+.mongo:hover {
+	filter: drop-shadow(0 0 2em #00AC34);
+}
+.dark .mongo:hover {
+	filter: drop-shadow(0 0 2em #00AC34aa);
+}
+.nginx:hover {
+	filter: drop-shadow(0 0 2em #00972C);
+}
+.dark .nginx:hover {
+	filter: drop-shadow(0 0 2em #00972Caa);
+}
 </style>

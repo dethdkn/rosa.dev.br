@@ -12,7 +12,6 @@ export default ref([
 		urls: [
 			{ url: 'https://auditorios.cbpf.br', external: true, icon: 'iconoir:open-new-window', aria: 'URL' },
 			{ url: 'https://youtu.be/14zR8I2AYcM', external: true, icon: 'iconoir:media-video', aria: 'Video' },
-			{ url: 'https://github.com/dethdkn/agenda-de-auditorios', external: true, icon: 'iconoir:github-circle', aria: 'Github Repo' },
 		],
 		descriptionKey: 'projects.agenda_auditorios_description',
 	},
@@ -28,7 +27,6 @@ export default ref([
 		],
 		urls: [
 			{ url: 'https://youtu.be/Zq7PwGxcsLg', external: true, icon: 'iconoir:media-video', aria: 'Video' },
-			{ url: 'https://github.com/dethdkn/idcbpf', external: true, icon: 'iconoir:github-circle', aria: 'Github Repo' },
 		],
 		descriptionKey: 'projects.idcbpf_description',
 	},

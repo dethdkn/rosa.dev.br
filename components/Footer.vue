@@ -28,13 +28,17 @@ const isDark = computed(() => useColorMode().value === 'dark')
 	</footer>
 </template>
 
-<style scoped lang="sass">
-.nuxt:hover
-	filter: drop-shadow(0 0 5px #43DD7D)
-.dark .nuxt:hover
-	filter: drop-shadow(0 0 5px #43DD7Daa)
-.vercel:hover
-	filter: drop-shadow(0 0 5px #000000)
-.dark .vercel:hover
-	filter: drop-shadow(0 0 5px #FDFDFDaa)
+<style scoped>
+.nuxt:hover {
+	filter: drop-shadow(0 0 5px #43DD7D);
+}
+.dark .nuxt:hover {
+	filter: drop-shadow(0 0 5px #43DD7Daa);
+}
+.vercel:hover {
+	filter: drop-shadow(0 0 5px #000000);
+}
+.dark .vercel:hover {
+	filter: drop-shadow(0 0 5px #FDFDFDaa);
+}
 </style>

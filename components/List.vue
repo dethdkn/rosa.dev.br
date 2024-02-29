@@ -2,14 +2,8 @@
 const { title, titleKey, badges, urls, description, descriptionKey, locale, self } = defineProps({
 	title: String,
 	titleKey: String,
-	badges: {
-		type: Array as () => { title: string, icon: string, color: string }[],
-		required: true,
-	},
-	urls: {
-		type: Array as () => { url: string, external: boolean, icon: string, aria: string }[],
-		required: true,
-	},
+	badges: { type: Array as PropType<{ title: string, icon: string, color: string }[]>, required: true },
+	urls: { type: Array as PropType<{ url: string, external: boolean, icon: string, aria: string }[]>, required: true },
 	description: String,
 	descriptionKey: String,
 	locale: Boolean,

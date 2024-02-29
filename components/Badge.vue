@@ -1,17 +1,8 @@
 <script setup lang='ts'>
 const { title, icon, color } = defineProps({
-	title: {
-		type: String,
-		required: true,
-	},
-	icon: {
-		type: String,
-		required: true,
-	},
-	color: {
-		type: String,
-		required: true,
-	},
+	title: { type: String, required: true },
+	icon: { type: String, required: true },
+	color: { type: String, required: true },
 })
 </script>
 

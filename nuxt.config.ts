@@ -1,23 +1,11 @@
 export default defineNuxtConfig({
-	css: ['~/assets/global.sass'],
-	modules: ['@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/seo', '@nuxtjs/google-fonts', '@nuxtjs/i18n', '@vueuse/nuxt', 'nuxt-icon'],
-	app: {
-		head: {
-			templateParams: {
-				separator: '•',
-			},
-		},
-	},
+	modules: ['@nuxt/fonts', '@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/seo', '@nuxtjs/i18n', '@vueuse/nuxt', 'nuxt-icon'],
+	app: { head: { templateParams: { separator: '•' } } },
+	css: ['~/assets/global.css'],
 	colorMode: {
 		preference: 'dark',
 		fallback: 'dark',
 		classSuffix: '',
-	},
-	googleFonts: {
-		families: {
-			'Montserrat+Alternates': true,
-			'Delius+Unicase': true,
-		},
 	},
 	i18n: {
 		baseUrl: 'https://rosa.dev.br/',
@@ -34,14 +22,8 @@ export default defineNuxtConfig({
 		description: 'Full Stack Developer',
 		defaultLocale: 'en',
 		twitter: '@DethDKN',
-		identity: {
-			type: 'Person',
-		},
+		identity: { type: 'Person' },
 	},
-	linkChecker: {
-		enabled: false,
-	},
-	devtools: {
-		enabled: true,
-	},
+	linkChecker: { enabled: false },
+	devtools: { enabled: true },
 })

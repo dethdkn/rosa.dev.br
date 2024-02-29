@@ -56,14 +56,14 @@ pacman -S neofetch`, { lang: 'shell', themes: { light: 'material-theme-lighter',
 </script>
 
 <template>
-	<div>
+	<div class="max-w-7xl mx-auto">
 		<div class="px-20 py-5 space-y-10 text-center lg:space-y-20 sm:text-start">
 			<h1 class="text-[#4C4F69] dark:text-[#CDD5F4] text-4xl border-b-2 border-[#F28AA9] inline">
 				{{ t('posts.installing_arch_linux.title') }}
 			</h1>
 		</div>
-		<div class="text-[#4C4F69] dark:text-[#CDD5F4] mt-10 px-10 md:px-40 space-y-5">
-			<iframe class="m-auto w-full h-[15rem] sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[40rem]" src="https://www.youtube.com/embed/YGX3None2y8" title="Instalando o Arch Linux (o guia mais fácil do youtube)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+		<div class="text-[#4C4F69] dark:text-[#CDD5F4] mt-10 px-10 space-y-5">
+			<iframe class="m-auto w-full h-[15rem] sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[40rem] rounded-lg" src="https://www.youtube.com/embed/YGX3None2y8" title="Instalando o Arch Linux (o guia mais fácil do youtube)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
 			<p>{{ t('posts.installing_arch_linux.paragraph1') }}</p>
 			<CodeHighlight file-name="Arch Install">
 				<div v-html="code1" />

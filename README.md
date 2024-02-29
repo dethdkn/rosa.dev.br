@@ -23,9 +23,9 @@
      <img src="https://vuejs.org/logo.svg" alt="Vue" width="11">
         Vue
   </a>
-- <a href="https://kazupon.github.io/vue-i18n" target="_blank">
-     <img src="https://kazupon.github.io/vue-i18n/vue-i18n-logo.png" alt="Vue I18n" width="11">
-        Vue I18n
+- <a href="https://i18n.nuxtjs.org/" target="_blank">
+     <img src="https://kazupon.github.io/vue-i18n/vue-i18n-logo.png" alt="Nuxt I18n" width="11">
+        Nuxt I18n
   </a>
 - <a href="https://tailwindcss.com" target="_blank">
      <img src="https://tailwindcss.com/favicons/favicon-16x16.png" alt="Tailwind CSS" width="11">
