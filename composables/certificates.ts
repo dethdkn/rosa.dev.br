@@ -427,5 +427,13 @@ export default ref([
 			{ title: 'Vitest', icon: 'devicon:vitest', color: '#FCC72B' },
 		],
 	},
-
+		{
+		href: '/certificados/Nginx_Udemy.pdf',
+		title: 'NGINX Fundamentals: High Performance Servers from Scratch',
+		subtitle: '🎓 Udemy',
+		concluded: '03/2024',
+		badges: [
+			{ title: 'Nginx', icon: 'vscode-icons:file-type-nginx', color: '#2A9639' },
+		],
+	},
 ])
