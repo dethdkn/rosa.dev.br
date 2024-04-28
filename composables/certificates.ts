@@ -427,7 +427,7 @@ export default ref([
 			{ title: 'Vitest', icon: 'devicon:vitest', color: '#FCC72B' },
 		],
 	},
-		{
+	{
 		href: '/certificados/Nginx_Udemy.pdf',
 		title: 'NGINX Fundamentals: High Performance Servers from Scratch',
 		subtitle: '🎓 Udemy',
