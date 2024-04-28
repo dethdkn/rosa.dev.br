@@ -12,7 +12,7 @@
 	},
 	"home": {
 		"title": "Home",
-		"im": "I'm",
+		"im": "I'm {0} aka {1}",
 		"simple_im": "Im",
 		"aka": "aka",
 		"subtitle": "Full Stack Developer • IT Technician • Persona Fan"
@@ -39,11 +39,11 @@
 		"title": "Projects",
 		"description": "Explore my projects, built with Nuxt, Vue, Tailwind CSS, and other cool technologies.",
 		"rosa_description": "🧑🏻‍💼 My personal webpage",
-		"karine_description": "👩🏻‍💼 My girlfriend's page",
 		"hamilton_description": "👷 Landing page for Hamilton Marcenaria Moderna",
 		"ldappasswords_description": "🔑 Secure password hashing and verification using LDAP passwords algorithms",
 		"idcbpf_description": "👥 Ldap account management",
-		"agenda_auditorios_description": "🏟 Streamlining and organizing auditorium events with ease and efficiency"
+		"agenda_auditorios_description": "🏟 Streamlining and organizing auditorium events with ease and efficiency",
+		"rsdc_agenda_description": "📅 Scheduling manager for the Rio Science Data Center with integrated calendar and dashboard."
 	},
 	"blog": {
 		"title": "Blog",

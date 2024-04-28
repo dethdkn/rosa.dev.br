@@ -12,7 +12,7 @@
 	},
 	"home": {
 		"title": "Início",
-		"im": "Eu sou o",
+		"im": "Eu sou o {0} ou {1}",
 		"simple_im": "Eu sou o",
 		"aka": "ou",
 		"subtitle": "Desenvolvedor Full Stack • Técnico em Informática • Fã de Persona"
@@ -39,11 +39,11 @@
 		"title": "Projetos",
 		"description": "Explore meus projetos, elaborados com Nuxt, Vue, Tailwind CSS e outras tecnologias interessantes.",
 		"rosa_description": "🧑🏻‍💼 Minha página web",
-		"karine_description": "👩🏻‍💼 Página web da minha namorada",
 		"hamilton_description": "👷 Página web do Hamilton Marcenaria Moderna",
 		"ldappasswords_description": "🔑 Hashing e verificação de senhas usando algoritmos de senha do LDAP.",
 		"idcbpf_description": "👥 Gerenciador de contas Ldap",
-		"agenda_auditorios_description": "🏟 Simplificando e organizando eventos de auditório com facilidade e eficiência"
+		"agenda_auditorios_description": "🏟 Simplificando e organizando eventos de auditório com facilidade e eficiência",
+		"rsdc_agenda_description": "📅 Gerenciador de agendamento do Rio Science Data Center com calendário integrado e dashboard."
 	},
 	"blog": {
 		"title": "Blog",

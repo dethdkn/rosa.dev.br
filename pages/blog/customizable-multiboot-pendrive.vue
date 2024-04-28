@@ -1,17 +1,11 @@
 <script setup lang='ts'>
 const { t } = useI18n()
 
-useHead({
-	title: t('posts.customizable_multiboot_pendrive.title'),
-})
+useHead({ title: t('posts.customizable_multiboot_pendrive.title') })
 
-useSeoMeta({
-	description: t('posts.customizable_multiboot_pendrive.description'),
-})
+useSeoMeta({ description: t('posts.customizable_multiboot_pendrive.description') })
 
-defineOgImageComponent('Simple', {
-	title: t('posts.customizable_multiboot_pendrive.title'),
-})
+defineOgImageComponent('Simple', { title: t('posts.customizable_multiboot_pendrive.title') })
 </script>
 
 <template>

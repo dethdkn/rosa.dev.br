@@ -1,19 +1,13 @@
 <script setup lang='ts'>
-import { codeToHtml } from 'shikiji'
+import { codeToHtml } from 'shiki'
 
 const { t } = useI18n()
 
-useHead({
-	title: t('posts.installing_arch_linux.title'),
-})
+useHead({ title: t('posts.installing_arch_linux.title') })
 
-useSeoMeta({
-	description: t('posts.installing_arch_linux.description'),
-})
+useSeoMeta({ description: t('posts.installing_arch_linux.description') })
 
-defineOgImageComponent('Simple', {
-	title: t('posts.installing_arch_linux.title'),
-})
+defineOgImageComponent('Simple', { title: t('posts.installing_arch_linux.title') })
 
 const code1 = await codeToHtml(`ping cbpf.br
 timedatectl set-ntp true

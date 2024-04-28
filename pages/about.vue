@@ -1,17 +1,11 @@
 <script setup lang='ts'>
 const { t } = useI18n()
 
-useHead({
-	title: t('about.title'),
-})
+useHead({ title: t('about.title') })
 
-useSeoMeta({
-	description: t('about.description'),
-})
+useSeoMeta({ description: t('about.description') })
 
-defineOgImageComponent('Simple', {
-	title: t('about.title'),
-})
+defineOgImageComponent('Simple', { title: t('about.title') })
 
 const selected = ref({ img: '', alt: '', hidden: true })
 
@@ -21,7 +15,7 @@ function openPopup(img: { url: string, alt: string }) {
 
 function closePopup(e: Event) {
 	const target = e.target as HTMLImageElement
-	if (target.id !== 'popup-img')
+	if (target && target.id !== 'popup-img')
 		selected.value = { img: '', alt: '', hidden: true }
 }
 

@@ -3,7 +3,7 @@
 
 <p align="center">
    <a href="https://rosa.dev.br">
-      <img src="https://img.shields.io/badge/check me!-👻-06b6d4" alt="rosa.dev.br"/>
+      <img src="https://img.shields.io/badge/check me!-👻-F28AA9" alt="rosa.dev.br"/>
    </a>
    <a href="https://github.com/dethdkn/rosa.dev.br/blob/main/LICENSE">
       <img src="https://img.shields.io/github/license/dethdkn/rosa.dev.br?color=%233da639&logo=open%20source%20initiative" alt="License"/>
@@ -35,9 +35,9 @@
      <img src="https://nuxt.com/icon.png" alt="Nuxt" width="12">
         Nuxt Icon
   </a>
-- <a href="https://shikiji.netlify.app/" target="_blank">
-     <img src="https://shikiji.netlify.app/logo.svg" alt="Shikiji" width="12">
-        Shikiji
+- <a href="https://shiki.style/" target="_blank">
+     <img src="https://shiki.style/logo.svg" alt="Shiki 式" width="12">
+        Shiki 式
   </a>
 
 ## 📝 License

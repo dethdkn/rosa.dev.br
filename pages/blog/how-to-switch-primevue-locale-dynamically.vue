@@ -1,19 +1,13 @@
 <script setup lang='ts'>
-import { codeToHtml } from 'shikiji'
+import { codeToHtml } from 'shiki'
 
 const { t } = useI18n()
 
-useHead({
-	title: t('posts.primevue_locale_dynamic.title'),
-})
+useHead({ title: t('posts.primevue_locale_dynamic.title') })
 
-useSeoMeta({
-	description: t('posts.primevue_locale_dynamic.description'),
-})
+useSeoMeta({ description: t('posts.primevue_locale_dynamic.description') })
 
-defineOgImageComponent('Simple', {
-	title: t('posts.primevue_locale_dynamic.title'),
-})
+defineOgImageComponent('Simple', { title: t('posts.primevue_locale_dynamic.title') })
 
 const code1 = await codeToHtml(`export default defineNuxtConfig({
 	i18n: {

@@ -1,17 +1,11 @@
 <script setup lang='ts'>
 const { t } = useI18n()
 
-useHead({
-	title: t('projects.title'),
-})
+useHead({ title: t('projects.title') })
 
-useSeoMeta({
-	description: t('projects.description'),
-})
+useSeoMeta({ description: t('projects.description') })
 
-defineOgImageComponent('Techs', {
-	title: t('projects.title'),
-})
+defineOgImageComponent('Techs', { title: t('projects.title') })
 </script>
 
 <template>

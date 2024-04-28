@@ -1,5 +1,20 @@
 export default ref([
 	{
+		title: 'RSDC Agenda',
+		badges: [
+			{ title: 'Vue.JS', icon: 'vscode-icons:file-type-vue', color: '#41B883' },
+			{ title: 'Nuxt.JS', icon: 'vscode-icons:file-type-nuxt', color: '#2DDC82' },
+			{ title: 'Vuetify', icon: 'devicon:vuetify', color: '#2D97F6' },
+			{ title: 'TailwindCSS', icon: 'devicon:tailwindcss', color: '#38BDF8' },
+			{ title: 'LdapJS', icon: 'fxemoji:folder', color: '#59C9FC' },
+			{ title: 'Mongoose', icon: 'devicon:mongoose', color: '#840000' },
+		],
+		urls: [
+			{ url: 'https://youtu.be/i1UOcPqPjow', external: true, icon: 'iconoir:media-video', aria: 'Video' },
+		],
+		descriptionKey: 'projects.rsdc_agenda_description',
+	},
+	{
 		title: 'Agenda de Auditórios',
 		badges: [
 			{ title: 'Vue.JS', icon: 'vscode-icons:file-type-vue', color: '#41B883' },
@@ -26,7 +41,7 @@ export default ref([
 			{ title: 'Mongoose', icon: 'devicon:mongoose', color: '#840000' },
 		],
 		urls: [
-			{ url: 'https://youtu.be/Zq7PwGxcsLg', external: true, icon: 'iconoir:media-video', aria: 'Video' },
+			{ url: 'https://youtu.be/7pA9iAF2DkQ', external: true, icon: 'iconoir:media-video', aria: 'Video' },
 		],
 		descriptionKey: 'projects.idcbpf_description',
 	},
@@ -56,19 +71,6 @@ export default ref([
 			{ url: 'https://github.com/dethdkn/hamiltonmarcenaria.com', external: true, icon: 'iconoir:github-circle', aria: 'Github Repo' },
 		],
 		descriptionKey: 'projects.hamilton_description',
-	},
-	{
-		title: 'karinebarbosa.com',
-		badges: [
-			{ title: 'Vue.JS', icon: 'vscode-icons:file-type-vue', color: '#41B883' },
-			{ title: 'Nuxt.JS', icon: 'vscode-icons:file-type-nuxt', color: '#2DDC82' },
-			{ title: 'TailwindCSS', icon: 'devicon:tailwindcss', color: '#38BDF8' },
-		],
-		urls: [
-			{ url: 'https://karinebarbosa.com', external: true, icon: 'iconoir:open-new-window', aria: 'URL' },
-			{ url: 'https://github.com/dethdkn/karinebarbosa.com', external: true, icon: 'iconoir:github-circle', aria: 'Github Repo' },
-		],
-		descriptionKey: 'projects.karine_description',
 	},
 	{
 		title: 'rosa.dev.br',
