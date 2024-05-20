@@ -3,42 +3,33 @@ const isDark = computed(() => useColorMode().value === 'dark')
 </script>
 
 <template>
-	<footer class="bg-[#EFF1F5] dark:bg-[#1E1E2E] space-y-4 pt-20 pb-10">
-		<div class="grid grid-cols-3 sm:grid-cols-6 gap-4 place-items-center lg:flex lg:justify-center lg:items-center lg:space-x-8">
-			<NuxtLink v-for="social in socials" :key="social.url" :to="social.url" target="_blank" :aria-label="social.name">
-				<Icon :name="social.icon" size="3rem" class="text-[#4C4F69] dark:text-[#CDD5F4] hover:text-[#F28AA9] dark:hover:text-[#F28AA9]" />
-			</NuxtLink>
-		</div>
-		<div class="flex flex-col justify-center items-center text-[#4C4F69] dark:text-[#CDD5F4] space-y-2">
-			<p><Icon name="iconoir:copyright" class="mb-1" size="18" /> {{ new Date().getFullYear() }} <span class="mx-2">—</span> Gabriel 'DethDKN' Rosa</p>
-			<p>
-				Powered by&nbsp;
-				<NuxtLink to="https://nuxt.com" external target="_blank" class="text-[#43DD7D] transition-all duration-300 nuxt">
-					<Icon name="logos:nuxt-icon" class="mb-1" /> Nuxt
-				</NuxtLink>
-				<span class="mx-2">—</span>
-				Hosted on&nbsp;
-				<NuxtLink to="https://vercel.com/home" external target="_blank" class="text-[#000000] dark:text-[#FDFDFD] transition-all duration-300 vercel">
-					<Icon v-if="isDark" name="vscode-icons:file-type-vercel" class="mb-1" />
-					<Icon v-else name="logos:vercel-icon" class="mb-1" />
-					Vercel
-				</NuxtLink>
-			</p>
-		</div>
-	</footer>
+  <footer class="space-y-4 bg-[#EFF1F5] pb-10 pt-20 dark:bg-[#1E1E2E]">
+    <div class="grid grid-cols-3 place-items-center gap-4 sm:grid-cols-6 lg:flex lg:items-center lg:justify-center lg:space-x-8">
+      <NuxtLink v-for="social in socials" :key="social.url" :to="social.url" target="_blank" :aria-label="social.name">
+        <Icon :name="social.icon" size="3rem" class="text-[#4C4F69] hover:text-[#F28AA9] dark:text-[#CDD5F4] dark:hover:text-[#F28AA9]" />
+      </NuxtLink>
+    </div>
+    <div class="flex flex-col items-center justify-center space-y-2 text-[#4C4F69] dark:text-[#CDD5F4]">
+      <p class="flex justify-center items-center">
+        <Icon name="iconoir:copyright" :size="18" />&nbsp;
+        {{ new Date().getFullYear() }}
+        <span class="mx-2">—</span>
+        Gabriel 'DethDKN' Rosa
+      </p>
+      <p>
+        Powered by&nbsp;
+        <NuxtLink to="https://nuxt.com" external target="_blank" class="text-[#43DD7D] hover:drop-shadow-[0_0_5px_#43DD7D] transition-all duration-300 dark:hover:drop-shadow-[0_0_5px_#43DD7Daa]">
+          <Icon name="logos:nuxt-icon" :size="12" />
+          <span>&nbsp;Nuxt</span>
+        </NuxtLink>
+        <span class="mx-2">—</span>
+        Hosted on&nbsp;
+        <NuxtLink to="https://vercel.com/home" external target="_blank" class="text-[#000000] hover:drop-shadow-[0_0_5px_#000000] transition-all duration-300 dark:text-[#FDFDFD] dark:hover:drop-shadow-[0_0_5px_#FDFDFDaa]">
+          <Icon v-if="isDark" name="simple-icons:vercel" :size="12" />
+          <Icon v-else name="logos:vercel-icon" :size="12" />
+          <span>&nbsp;Vercel</span>
+        </NuxtLink>
+      </p>
+    </div>
+  </footer>
 </template>
-
-<style scoped>
-.nuxt:hover {
-	filter: drop-shadow(0 0 5px #43DD7D);
-}
-.dark .nuxt:hover {
-	filter: drop-shadow(0 0 5px #43DD7Daa);
-}
-.vercel:hover {
-	filter: drop-shadow(0 0 5px #000000);
-}
-.dark .vercel:hover {
-	filter: drop-shadow(0 0 5px #FDFDFDaa);
-}
-</style>

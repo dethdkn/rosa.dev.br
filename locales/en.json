@@ -1,82 +1,82 @@
 {
-	"nav": {
-		"logo": "Letter G logo",
-		"home": "Home",
-		"about": "About me",
-		"certificates": "Certificates",
-		"projects": "Projects",
-		"blog": "Blog",
-		"language": "Change language",
-		"theme": "Change theme",
-		"menu": "Open the menu"
-	},
-	"home": {
-		"title": "Home",
-		"im": "I'm {0} aka {1}",
-		"simple_im": "Im",
-		"aka": "aka",
-		"subtitle": "Full Stack Developer • IT Technician • Persona Fan"
-	},
-	"about": {
-		"title": "About me",
-		"description": "find out the techie stuff Im into, a bunch of pics, and the certificates that make me look legit. Its me in a nutshell, no fluff. Enjoy!",
-		"learner": "I'm a dedicated self-learner, always eager to grasp new technologies and approaches. My ability to learn quickly enables me to keep up with the ever-evolving trends in tech.",
-		"experience": "Experience",
-		"unicarioca": "Centro Universitário Unicarioca",
-		"ongoing": "Ongoing",
-		"cs": "Computer Science",
-		"cbpf": "Brazilian Center for Physics Research",
-		"full_stack": "Full Stack Developer",
-		"twnt": "2019 - present",
-		"stack": "Tech Stack",
-		"pictures": "Pictures"
-	},
-	"certificates": {
-		"title": "Certificates",
-		"description": "Explore my collection of course certificates, they show my commitment to learning and growth."
-	},
-	"projects": {
-		"title": "Projects",
-		"description": "Explore my projects, built with Nuxt, Vue, Tailwind CSS, and other cool technologies.",
-		"rosa_description": "🧑🏻‍💼 My personal webpage",
-		"hamilton_description": "👷 Landing page for Hamilton Marcenaria Moderna",
-		"ldappasswords_description": "🔑 Secure password hashing and verification using LDAP passwords algorithms",
-		"idcbpf_description": "👥 Ldap account management",
-		"agenda_auditorios_description": "🏟 Streamlining and organizing auditorium events with ease and efficiency",
-		"rsdc_agenda_description": "📅 Scheduling manager for the Rio Science Data Center with integrated calendar and dashboard."
-	},
-	"blog": {
-		"title": "Blog",
-		"description": "Here I share tips and solutions for programming challenges. Discover practical insights and effective approaches to enhance your skills."
-	},
-	"posts": {
-		"primevue_locale_dynamic": {
-			"title": "How to switch PrimeVue locale dynamically",
-			"description": "Learn to seamlessly adapt your PrimeVue application to different languages.",
-			"paragraph1": "Today, while working on a project built with the Nuxt.js, I found myself in the need to implement internationalization (i18n) to support both Portuguese and English languages. To achieve this goal, I integrated the {'@'}nuxtjs/i18n module, which facilitates the localization of the application.",
-			"paragraph2": "Additionally, the project makes use of nuxt-primevue, a comprehensive set of components for Nuxt. In order to provide a fully localized experience, it was necessary to configure not only the translation of the application but also the components provided by PrimeVue.",
-			"paragraph3": "Fortunately, PrimeVue already offers localization files for various languages in its official repository, simplifying the integration with different language settings.",
-			"paragraph4": "The configuration for internationalization in PrimeVue is relatively straightforward. However, an additional challenge arose: the need to dynamically change the language of PrimeVue without reloading the page. While {'@'}nuxtjs/i18n enabled this dynamic language switching for the application, achieving the same functionality for PrimeVue components posed some difficulties.",
-			"paragraph5": "This article aims to share the challenges encountered during this process and provide solutions for these specific problems. The detailed approach outlined here is intended to facilitate the successful implementation of internationalization for both the application and PrimeVue components, enabling a seamlessly localized and dynamic user experience.",
-			"paragraph6": "One of the initial issues I encountered was actually related to {'@'}nuxtjs/i18n. The module configuration was initially set up as follows:",
-			"paragraph7": "As you can see, the i18n was configured to read the 'locales' folder, and one detail about this module that I wasn't aware of is that it reads and modifies all files contained in that folder. Unaware of this detail, I placed the PrimeVue locales within this folder in the following manner:",
-			"paragraph8": "In this manner, when applying one of these locales to PrimeVue, the components text appeared as follows:",
-			"paragraph9": "As mentioned above, i18n will modify all files in the 'locale' folder, including the PrimeVue locale. So, the first solution is NOT to place the PrimeVue locale in the same folder as the i18n module. In my case, I placed it in the 'utils' folder, allowing it to be automatically imported when I dynamically changed the locale.",
-			"paragraph10": "The second issue occurred because I was not calling usePrimeVue() at the top of the setup block; instead, I placed it inside a function. In summary, if your code is structured in the following way, you will encounter an error, as usePrimeVue() utilizes Vue's inject(), which is only available at the top of the setup block.",
-			"paragraph11": "The solution is to follow the code example below, executing usePrimeVue at the top of the setup block and assigning its value to a variable that can be used later within the function responsible for changing the language. Additionally, it is possible to change the language of i18n simultaneously.",
-			"paragraph12": "And voilà, your code is now working perfectly, with the language dynamically changing in both the i18n and PrimeVue modules! 😊"
-		},
-		"installing_arch_linux": {
-			"title": "Installing Arch Linux (the easiest YouTube guide)",
-			"description": "Effortlessly install Arch Linux with this YouTube guide, simplifying the process for a seamless setup.",
-			"paragraph1": "Unfortunately, I didn't create an English version for this video. However, below, you'll find all the commands used. Perhaps it's possible to follow along just by watching.",
-			"paragraph2": "Hope this helps! 😉"
-		},
-		"customizable_multiboot_pendrive": {
-			"title": "Customizable Multiboot Pendrive (to show off to your IT friends and not teach them how to do it)",
-			"description": "Create your personalized Multiboot USB in minutes! Impress your IT friends with this super easy tutorial.",
-			"paragraph1": "Unfortunately, I didn't create an English version for this video. However, below, you'll find all the files used. Perhaps it's possible to follow along just by watching."
-		},
-		"final_paragraph": "If you have any questions or would like to get in touch, feel free to reach out to me on any of the social media platforms listed below. Thank you very much for reading!"
-	}
+  "nav": {
+    "logo": "Letter G logo",
+    "home": "Home",
+    "about": "About me",
+    "certificates": "Certificates",
+    "projects": "Projects",
+    "blog": "Blog",
+    "language": "Change language",
+    "theme": "Change theme",
+    "menu": "Open the menu"
+  },
+  "home": {
+    "title": "Home",
+    "im": "I'm {0} aka {1}",
+    "simple_im": "Im",
+    "aka": "aka",
+    "subtitle": "Full Stack Developer • IT Technician • Persona Fan"
+  },
+  "about": {
+    "title": "About me",
+    "description": "find out the techie stuff Im into, a bunch of pics, and the certificates that make me look legit. Its me in a nutshell, no fluff. Enjoy!",
+    "learner": "I'm a dedicated self-learner, always eager to grasp new technologies and approaches. My ability to learn quickly enables me to keep up with the ever-evolving trends in tech.",
+    "experience": "Experience",
+    "unicarioca": "Centro Universitário Unicarioca",
+    "ongoing": "Ongoing",
+    "cs": "Computer Science",
+    "cbpf": "Brazilian Center for Physics Research",
+    "full_stack": "Full Stack Developer",
+    "twnt": "2019 - present",
+    "stack": "Tech Stack",
+    "pictures": "Pictures"
+  },
+  "certificates": {
+    "title": "Certificates",
+    "description": "Explore my collection of course certificates, they show my commitment to learning and growth."
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Explore my projects, built with Nuxt, Vue, Tailwind CSS, and other cool technologies.",
+    "rosa_description": "🧑🏻‍💼 My personal webpage",
+    "hamilton_description": "👷 Landing page for Hamilton Marcenaria Moderna",
+    "ldappasswords_description": "🔑 Secure password hashing and verification using LDAP passwords algorithms",
+    "idcbpf_description": "👥 Ldap account management",
+    "agenda_auditorios_description": "🏟 Streamlining and organizing auditorium events with ease and efficiency",
+    "rsdc_agenda_description": "📅 Scheduling manager for the Rio Science Data Center with integrated calendar and dashboard."
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Here I share tips and solutions for programming challenges. Discover practical insights and effective approaches to enhance your skills."
+  },
+  "posts": {
+    "primevue_locale_dynamic": {
+      "title": "How to switch PrimeVue locale dynamically",
+      "description": "Learn to seamlessly adapt your PrimeVue application to different languages.",
+      "paragraph1": "Today, while working on a project built with the Nuxt.js, I found myself in the need to implement internationalization (i18n) to support both Portuguese and English languages. To achieve this goal, I integrated the {'@'}nuxtjs/i18n module, which facilitates the localization of the application.",
+      "paragraph2": "Additionally, the project makes use of nuxt-primevue, a comprehensive set of components for Nuxt. In order to provide a fully localized experience, it was necessary to configure not only the translation of the application but also the components provided by PrimeVue.",
+      "paragraph3": "Fortunately, PrimeVue already offers localization files for various languages in its official repository, simplifying the integration with different language settings.",
+      "paragraph4": "The configuration for internationalization in PrimeVue is relatively straightforward. However, an additional challenge arose: the need to dynamically change the language of PrimeVue without reloading the page. While {'@'}nuxtjs/i18n enabled this dynamic language switching for the application, achieving the same functionality for PrimeVue components posed some difficulties.",
+      "paragraph5": "This article aims to share the challenges encountered during this process and provide solutions for these specific problems. The detailed approach outlined here is intended to facilitate the successful implementation of internationalization for both the application and PrimeVue components, enabling a seamlessly localized and dynamic user experience.",
+      "paragraph6": "One of the initial issues I encountered was actually related to {'@'}nuxtjs/i18n. The module configuration was initially set up as follows:",
+      "paragraph7": "As you can see, the i18n was configured to read the 'locales' folder, and one detail about this module that I wasn't aware of is that it reads and modifies all files contained in that folder. Unaware of this detail, I placed the PrimeVue locales within this folder in the following manner:",
+      "paragraph8": "In this manner, when applying one of these locales to PrimeVue, the components text appeared as follows:",
+      "paragraph9": "As mentioned above, i18n will modify all files in the 'locale' folder, including the PrimeVue locale. So, the first solution is NOT to place the PrimeVue locale in the same folder as the i18n module. In my case, I placed it in the 'utils' folder, allowing it to be automatically imported when I dynamically changed the locale.",
+      "paragraph10": "The second issue occurred because I was not calling usePrimeVue() at the top of the setup block; instead, I placed it inside a function. In summary, if your code is structured in the following way, you will encounter an error, as usePrimeVue() utilizes Vue's inject(), which is only available at the top of the setup block.",
+      "paragraph11": "The solution is to follow the code example below, executing usePrimeVue at the top of the setup block and assigning its value to a variable that can be used later within the function responsible for changing the language. Additionally, it is possible to change the language of i18n simultaneously.",
+      "paragraph12": "And voilà, your code is now working perfectly, with the language dynamically changing in both the i18n and PrimeVue modules! 😊"
+    },
+    "installing_arch_linux": {
+      "title": "Installing Arch Linux (the easiest YouTube guide)",
+      "description": "Effortlessly install Arch Linux with this YouTube guide, simplifying the process for a seamless setup.",
+      "paragraph1": "Unfortunately, I didn't create an English version for this video. However, below, you'll find all the commands used. Perhaps it's possible to follow along just by watching.",
+      "paragraph2": "Hope this helps! 😉"
+    },
+    "customizable_multiboot_pendrive": {
+      "title": "Customizable Multiboot Pendrive (to show off to your IT friends and not teach them how to do it)",
+      "description": "Create your personalized Multiboot USB in minutes! Impress your IT friends with this super easy tutorial.",
+      "paragraph1": "Unfortunately, I didn't create an English version for this video. However, below, you'll find all the files used. Perhaps it's possible to follow along just by watching."
+    },
+    "final_paragraph": "If you have any questions or would like to get in touch, feel free to reach out to me on any of the social media platforms listed below. Thank you very much for reading!"
+  }
 }
