@@ -28,7 +28,6 @@
     "cbpf": "Centro Brasileiro de Pesquisas Físicas",
     "full_stack": "Desenvolvedor Full Stack",
     "twnt": "2019 - presente",
-    "stack": "Tecnologias",
     "pictures": "Fotos"
   },
   "certificates": {
@@ -43,7 +42,8 @@
     "ldappasswords_description": "🔑 Hashing e verificação de senhas usando algoritmos de senha do LDAP.",
     "idcbpf_description": "👥 Gerenciador de contas Ldap",
     "agenda_auditorios_description": "🏟 Simplificando e organizando eventos de auditório com facilidade e eficiência",
-    "rsdc_agenda_description": "📅 Gerenciador de agendamento do Rio Science Data Center com calendário integrado e dashboard."
+    "rsdc_agenda_description": "📅 Gerenciador de agendamento do Rio Science Data Center com calendário integrado e dashboard.",
+    "eslint_config": "🧹 Minha Configuração ESLint Personalizada"
   },
   "blog": {
     "title": "Blog",

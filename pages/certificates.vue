@@ -13,6 +13,6 @@ defineOgImageComponent('Techs', { title: t('certificates.title') })
     <h1 class="inline border-b-2 border-[#F28AA9] text-4xl text-[#4C4F69] dark:text-[#CDD5F4]">
       {{ t('certificates.title') }}
     </h1>
-    <List v-for="certificate in certificates" :key="certificate.href" :title="certificate.title" :badges="certificate.badges" :urls="[{ url: certificate.href, icon: 'iconoir:doc-star-in', external: false, aria: 'PDF' }]" :description="`${certificate.subtitle} • ${certificate.concluded}`" />
+    <List v-for="{href, title, subtitle, concluded, badges} in certificates" :key="href" :title :badges :urls="[{ url: href, icon: 'iconoir:doc-star-in', external: false, aria: 'PDF' }]" :description="`${subtitle} • ${concluded}`" />
   </div>
 </template>

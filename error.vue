@@ -5,7 +5,7 @@ const localePath = useLocalePath()
 const statusCode = ref(500)
 const message = ref('Something went wrong...')
 
-if (error.value && 'statusCode' in error.value && 'message' in error.value) {
+if(error.value && 'statusCode' in error.value && 'message' in error.value){
   statusCode.value = error.value.statusCode
   message.value = error.value.message
 }
@@ -25,6 +25,7 @@ useHead({
         <h1 class="text-xl text-[#4C4F69] dark:text-[#CDD5F4]">
           {{ message }}
         </h1>
+        <!-- eslint-disable-next-line vue/no-bare-strings-in-template -->
         <button class="gap-x-1.5 rounded-md bg-[#F28AA9] px-2.5 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-[#e7688e]" @click="clearError({ redirect: localePath('/') })">
           Home
         </button>

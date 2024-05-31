@@ -1,11 +1,15 @@
 <script setup lang="ts">
 defineOptions({ inheritAttrs: false })
 
-const { title, description } = defineProps({ title: String, description: String })
+defineProps({
+  title: { type: String, default: 'Gabriel Rosa' },
+  description: { type: String, default: '' },
+})
 </script>
 
 <template>
   <!-- eslint-disable vue/no-restricted-static-attribute -->
+  <!-- eslint-disable vue/no-bare-strings-in-template -->
   <div style="width: 100%; height: 100%; background-color: #1E1E2E;">
     <h1 style="border-bottom: 2px solid #F28AA9; font-size: 60px; color: #CDD5F4; position: absolute; left: 50%; top: 10%; transform: translate(-50%, -50%);">
       {{ title }}

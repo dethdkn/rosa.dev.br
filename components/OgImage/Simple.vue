@@ -1,7 +1,10 @@
 <script setup lang="ts">
 defineOptions({ inheritAttrs: false })
 
-const { title, description } = defineProps({ title: String, description: String })
+defineProps({
+  title: { type: String, default: 'Gabriel Rosa' },
+  description: { type: String, default: '' },
+})
 </script>
 
 <template>

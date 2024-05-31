@@ -50,6 +50,7 @@ pacman -S neofetch`, { lang: 'shell', themes: { light: 'material-theme-lighter',
 </script>
 
 <template>
+  <!-- eslint-disable vue/no-v-html -->
   <div class="mx-auto max-w-7xl">
     <div class="space-y-10 px-20 py-5 text-center sm:text-start lg:space-y-20">
       <h1 class="inline border-b-2 border-[#F28AA9] text-4xl text-[#4C4F69] dark:text-[#CDD5F4]">
@@ -57,6 +58,7 @@ pacman -S neofetch`, { lang: 'shell', themes: { light: 'material-theme-lighter',
       </h1>
     </div>
     <div class="mt-10 space-y-5 px-10 text-[#4C4F69] dark:text-[#CDD5F4]">
+      <!-- eslint-disable-next-line vue/no-bare-strings-in-template -->
       <iframe class="m-auto h-60 w-full rounded-lg sm:h-80 md:h-[25rem] lg:h-[30rem] xl:h-[40rem]" src="https://www.youtube.com/embed/YGX3None2y8" title="Instalando o Arch Linux (o guia mais fácil do youtube)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
       <p>{{ t('posts.installing_arch_linux.paragraph1') }}</p>
       <CodeHighlight file-name="Arch Install">

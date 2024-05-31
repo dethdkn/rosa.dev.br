@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-const { fileName } = defineProps({
+defineProps({
   fileName: { type: String, required: true },
 })
 </script>

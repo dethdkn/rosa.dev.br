@@ -271,7 +271,7 @@ export default ref([
   },
   {
     href: '/certificados/JavaScript0_Alura.pdf',
-    title: 'JavaScript: explorando a linguagem',
+    title: 'JavaScript explorando a linguagem',
     subtitle: '🎓 Alura',
     concluded: '09/2022',
     badges: [

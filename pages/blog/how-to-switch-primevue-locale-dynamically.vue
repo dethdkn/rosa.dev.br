@@ -1,4 +1,6 @@
 <script setup lang='ts'>
+// no-useless-escape false positive
+/* eslint-disable no-useless-escape */
 import { codeToHtml } from 'shiki'
 
 const { t } = useI18n()
@@ -76,6 +78,7 @@ function changeLang() {
 </script>
 
 <template>
+  <!-- eslint-disable vue/no-v-html -->
   <div class="mx-auto max-w-7xl">
     <div class="space-y-10 px-20 py-5 text-center sm:text-start lg:space-y-20">
       <h1 class="inline border-b-2 border-[#F28AA9] text-4xl text-[#4C4F69] dark:text-[#CDD5F4]">
@@ -86,6 +89,7 @@ function changeLang() {
       <p>{{ t('posts.primevue_locale_dynamic.paragraph1') }}</p>
       <p>{{ t('posts.primevue_locale_dynamic.paragraph2') }}</p>
       <p>{{ t('posts.primevue_locale_dynamic.paragraph3') }}</p>
+      <!-- eslint-disable-next-line vue/no-bare-strings-in-template -->
       <NuxtLink to="https://github.com/primefaces/primelocale" external target="_blank" class="inline-block border-b-2 text-[#4C4F69] hover:border-[#F28AA9] hover:text-[#F28AA9] dark:text-[#CDD5F4] hover:dark:border-[#F28AA9] dark:hover:text-[#F28AA9]">
         primefaces / primelocale
       </NuxtLink>
@@ -97,6 +101,7 @@ function changeLang() {
         <div v-html="code1" />
       </CodeHighlight>
       <p>{{ t('posts.primevue_locale_dynamic.paragraph7') }}</p>
+      <!-- eslint-disable-next-line vue/no-bare-strings-in-template -->
       <pre>
 /locales
 ----/en.ts
