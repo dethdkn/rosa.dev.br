@@ -7,6 +7,7 @@ defineProps({
 </script>
 
 <template>
+  <!-- eslint-disable-next-line vue/no-restricted-v-bind -->
   <div class="mt-2 inline rounded border p-1 text-[10px] sm:mt-0" :style="{ color, 'border-color': color }">
     <span class="inline-flex items-center justify-center space-x-1">
       <Icon :name="icon" :size="10" />
