@@ -50,8 +50,8 @@ pacman -S neofetch`, { lang: 'shell', themes: { light: 'material-theme-lighter',
 </script>
 
 <template>
-  <!-- eslint-disable vue/no-v-html -->
   <div class="mx-auto max-w-7xl">
+    <!-- eslint-disable vue/no-v-html -->
     <div class="space-y-10 px-20 py-5 text-center sm:text-start lg:space-y-20">
       <h1 class="inline border-b-2 border-[#F28AA9] text-4xl text-[#4C4F69] dark:text-[#CDD5F4]">
         {{ t('posts.installing_arch_linux.title') }}
