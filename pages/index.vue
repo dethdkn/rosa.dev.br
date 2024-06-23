@@ -10,7 +10,7 @@ useSeoMeta({ description: t('home.subtitle') })
 defineOgImageComponent('Home', { title: t('home.title'), im: t('home.simple_im'), aka: t('home.aka'), subtitle: t('home.subtitle') })
 
 function pinkBlast(){
-  const { cancel } = emojiBlasts({ interval: 40, emojis: ['🌹', '🌸', '💗', '💓', '💖', '💕', '💞', '💝', '👚', '👛', '🦩', '💘', '🩷', '🌷', '🌺', '🎀', '👙', '🩰', '🍧', '🛼'] })
+  const { cancel } = emojiBlasts({ interval: 40, emojis: ['🌹', '🌸', '💗', '💓', '💖', '💕', '💞', '💝', '🦩', '💘', '🩷', '🌷', '🌺'] })
   setTimeout(cancel, 3000)
 }
 

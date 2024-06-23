@@ -9,6 +9,19 @@ defineOgImageComponent('Techs', { title: t('projects.title') })
 
 const projects = computed(() => [
   {
+    title: 'Litcomp-AI',
+    badges: [
+      { title: 'Vue.JS', icon: 'vscode-icons:file-type-vue', color: '#41B883' },
+      { title: 'Nuxt.JS', icon: 'vscode-icons:file-type-nuxt', color: '#2DDC82' },
+      { title: 'Nuxt UI', icon: 'vscode-icons:file-type-nuxt', color: '#2DDC82' },
+      { title: 'TailwindCSS', icon: 'devicon:tailwindcss', color: '#38BDF8' },
+    ],
+    urls: [
+      { url: 'https://litcomp.cbpf.br/ai', external: true, icon: 'iconoir:open-new-window', aria: 'URL' },
+    ],
+    description: t('projects.litcomp_ai'),
+  },
+  {
     title: 'ESLint Config',
     badges: [
       { title: 'Typescript', icon: 'devicon:typescript', color: '#137ACC' },

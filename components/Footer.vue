@@ -6,8 +6,8 @@ const isDark = computed(() => useColorMode().value === 'dark')
   <!-- eslint-disable vue/no-bare-strings-in-template -->
   <footer class="space-y-4 bg-[#EFF1F5] pb-10 pt-20 dark:bg-[#1E1E2E]">
     <div class="grid grid-cols-3 place-items-center gap-4 sm:grid-cols-6 lg:flex lg:items-center lg:justify-center lg:space-x-8">
-      <NuxtLink v-for="social in socials" :key="social.url" :to="social.url" target="_blank" :aria-label="social.name">
-        <Icon :name="social.icon" size="3rem" class="text-[#4C4F69] hover:text-[#F28AA9] dark:text-[#CDD5F4] dark:hover:text-[#F28AA9]" />
+      <NuxtLink v-for="social in socials" :key="social.url" :to="social.url" target="_blank" :aria-label="social.name" class="transition-all duration-300 hover:drop-shadow-[0_0_5px_#F28AA9]">
+        <Icon :name="social.icon" size="3rem" class="text-[#4C4F69] transition-all duration-300 hover:text-[#F28AA9] dark:text-[#CDD5F4] dark:hover:text-[#F28AA9]" />
       </NuxtLink>
     </div>
     <div class="flex flex-col items-center justify-center space-y-2 text-[#4C4F69] dark:text-[#CDD5F4]">
