@@ -31,7 +31,7 @@
      <img src="https://tailwindcss.com/favicons/favicon-16x16.png" alt="Tailwind CSS" width="11">
         Tailwind CSS
   </a>
-- <a href="https://github.com/nuxt-modules/icon" target="_blank">
+- <a href="https://github.com/nuxt/icon" target="_blank">
      <img src="https://nuxt.com/icon.png" alt="Nuxt" width="12">
         Nuxt Icon
   </a>
