@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ['@nuxt/fonts', '@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/seo', '@nuxtjs/i18n', '@vueuse/nuxt', 'nuxt-icon'],
+  modules: ['@nuxt/fonts', '@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/seo', '@nuxtjs/i18n', '@vueuse/nuxt', '@nuxt/icon'],
   app: { head: { templateParams: { separator: '•' } } },
   css: ['~/assets/global.css'],
   colorMode: {
