@@ -60,7 +60,6 @@ const projects = computed(() => [
     ],
     urls: [
       { url: 'https://auditorios.cbpf.br', external: true, icon: 'iconoir:open-new-window', aria: 'URL' },
-      { url: 'https://youtu.be/14zR8I2AYcM', external: true, icon: 'iconoir:media-video', aria: 'Video' },
     ],
     description: t('projects.agenda_auditorios_description'),
   },
