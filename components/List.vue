@@ -4,11 +4,7 @@ defineProps({
   badges: { type: Array as PropType<{ title: string, icon: string, color: string }[]>, required: true },
   urls: { type: Array as PropType<{ url: string, external: boolean, icon: string, aria: string }[]>, required: true },
   description: { type: String, default: '' },
-  locale: Boolean,
-  self: Boolean,
 })
-
-const localePath = useLocalePath()
 </script>
 
 <template>
@@ -20,9 +16,14 @@ const localePath = useLocalePath()
       <Badge v-for="badge in badges" :key="badge.title" :title="badge.title" :icon="badge.icon" :color="badge.color" />
     </div>
     <div class="flex items-center justify-start space-x-4">
-      <NuxtLink v-for="url in urls" :key="url.url" :to="locale ? localePath(url.url) : url.url" :external="url.external" :target="self ? '_self' : '_blank'" :aria-label="url.aria" class="text-3xl text-[#4C4F69] hover:text-[#F28AA9] dark:text-[#CDD5F4] dark:hover:text-[#F28AA9]">
-        <Icon :name="url.icon" />
-      </NuxtLink>
+      <template v-for="url in urls" :key="url.url">
+        <NuxtLink v-if="url.external" :to="url.url" external target="_blank" :aria-label="url.aria" class="text-3xl text-[#4C4F69] transition-all duration-300 hover:text-[#F28AA9] hover:drop-shadow-[0_0_5px_#F28AA9] dark:text-[#CDD5F4] dark:hover:text-[#F28AA9]">
+          <Icon :name="url.icon" />
+        </NuxtLink>
+        <NuxtLinkLocale v-else :to="url.url" :aria-label="url.aria" class="text-3xl text-[#4C4F69] transition-all duration-300 hover:text-[#F28AA9] hover:drop-shadow-[0_0_5px_#F28AA9] dark:text-[#CDD5F4] dark:hover:text-[#F28AA9]">
+          <Icon :name="url.icon" />
+        </NuxtLinkLocale>
+      </template>
     </div>
     <p class="inline text-xl text-[#4C4F69] dark:text-[#CDD5F4]">
       {{ description }}

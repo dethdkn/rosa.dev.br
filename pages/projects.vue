@@ -118,8 +118,6 @@ const projects = computed(() => [
       { url: 'https://github.com/dethdkn/rosa.dev.br', external: true, icon: 'iconoir:github-circle', aria: 'Github Repo' },
     ],
     description: t('projects.rosa_description'),
-    locale: true,
-    self: true,
   },
 ])
 </script>
@@ -129,6 +127,6 @@ const projects = computed(() => [
     <h1 class="inline border-b-2 border-[#F28AA9] text-4xl text-[#4C4F69] dark:text-[#CDD5F4]">
       {{ t('projects.title') }}
     </h1>
-    <List v-for="{title, badges, urls, description, locale, self} in projects" :key="title" :title :badges :urls :description :locale :self />
+    <List v-for="{title, badges, urls, description} in projects" :key="title" :title :badges :urls :description />
   </div>
 </template>
