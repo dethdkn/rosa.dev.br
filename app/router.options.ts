@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 /* eslint-disable typescript/no-explicit-any */
 
 import type { RouterConfig } from '@nuxt/schema'

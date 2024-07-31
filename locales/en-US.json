@@ -12,10 +12,11 @@
   },
   "home": {
     "title": "Home",
-    "im": "I'm {0} aka {1}",
+    "im": "I'm {name} aka {nickname}",
     "simple_im": "Im",
     "aka": "aka",
-    "subtitle": "Full Stack Developer • IT Technician • Persona Fan"
+    "subtitle": "Full Stack Developer • IT Technician • Persona Fan",
+    "drawn_by": "Profile picture drawn by JuxFire"
   },
   "about": {
     "title": "About me",

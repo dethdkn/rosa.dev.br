@@ -12,10 +12,11 @@
   },
   "home": {
     "title": "Início",
-    "im": "Eu sou o {0} ou {1}",
+    "im": "Eu sou o {name} ou {nickname}",
     "simple_im": "Eu sou o",
     "aka": "ou",
-    "subtitle": "Desenvolvedor Full Stack • Técnico em Informática • Fã de Persona"
+    "subtitle": "Desenvolvedor Full Stack • Técnico em Informática • Fã de Persona",
+    "drawn_by": "Foto do perfil desenhada por JuxFire"
   },
   "about": {
     "title": "Sobre mim",
