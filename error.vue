@@ -10,9 +10,7 @@ if(error.value && 'statusCode' in error.value && 'message' in error.value){
   message.value = error.value.message
 }
 
-useHead({
-  title: `${statusCode.value}`,
-})
+useHead({ title: `${statusCode.value}` })
 </script>
 
 <template>

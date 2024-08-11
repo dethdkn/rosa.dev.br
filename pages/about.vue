@@ -7,6 +7,15 @@ useSeoMeta({ description: t('about.description') })
 
 defineOgImageComponent('Simple', { title: t('about.title') })
 
+const imgs = ref([
+  { url: '/images/santos_dumont.png', alt: 'Super Computador Santos Dumont' },
+  { url: '/images/data_center.png', alt: 'Rio Science Data Center' },
+  { url: '/images/cbpf_confraternizacao.png', alt: 'Confraternização do CBPF' },
+  { url: '/images/cbpf_cotec.png', alt: 'COTEC - CBPF' },
+  { url: '/images/reuniao.png', alt: 'Reunião - CBPF' },
+  { url: '/images/almoco_sistemas.png', alt: 'Almoço Equipe de Sistemas' },
+])
+
 const selected = ref({ img: '', alt: '', hidden: true })
 
 function openPopup(img: { url: string, alt: string }){
@@ -84,11 +93,11 @@ watch(selected, nv => {
         <h2 class="inline border-b-2 border-[#F28AA9] text-4xl text-[#4C4F69] dark:text-[#CDD5F4]">
           {{ t('about.pictures') }}
         </h2>
-        <div class="grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div class="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3">
           <!-- eslint-disable-next-line accessibility/click-events-have-key-events -->
           <div v-for="{url, alt} in imgs" :key="url" class="m-5 cursor-zoom-in" role="button" @click="openPopup({url, alt})">
             <div class="w-64 overflow-hidden rounded-2xl">
-              <NuxtImg :src="url" :alt class="w-full object-cover transition-all hover:scale-110" placeholder loading="lazy" />
+              <NuxtImg :src="url" :alt class="w-full object-cover transition-all duration-300 hover:scale-110" placeholder loading="lazy" />
             </div>
           </div>
         </div>

@@ -15,7 +15,7 @@
     "im": "I'm {name} aka {nickname}",
     "simple_im": "Im",
     "aka": "aka",
-    "subtitle": "Full Stack Developer • IT Technician • Persona Fan",
+    "subtitle": "Full Stack Developer",
     "drawn_by": "Profile picture drawn by JuxFire"
   },
   "about": {
@@ -41,11 +41,13 @@
     "rosa_description": "🧑🏻‍💼 My personal webpage",
     "hamilton_description": "👷 Landing page for Hamilton Marcenaria Moderna",
     "ldappasswords_description": "🔑 Secure password hashing and verification using LDAP passwords algorithms",
+    "govbr_description": "🔭 Landing page for Brazilian Center for Research in Physics",
     "idcbpf_description": "👥 Ldap account management",
     "agenda_auditorios_description": "🏟 Streamlining and organizing auditorium events with ease and efficiency",
     "rsdc_agenda_description": "📅 Scheduling manager for the Rio Science Data Center with integrated calendar and dashboard.",
-    "eslint_config": "🧹 My Opinionated ESLint Config",
-    "litcomp_ai": "🤖 Exploring the Future with Science and Intelligence"
+    "eslint_config_description": "🧹 My Opinionated ESLint Config",
+    "litcomp_ai_description": "🤖 Exploring the Future with Science and Intelligence",
+    "posgrad_description": "🧑‍🎓 COEDU (CBPF) postgraduate portal"
   },
   "blog": {
     "title": "Blog",

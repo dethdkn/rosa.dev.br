@@ -9,6 +9,21 @@ defineOgImageComponent('Techs', { title: t('projects.title') })
 
 const projects = computed(() => [
   {
+    title: 'Posgrad COEDU',
+    badges: [
+      { title: 'Vue.JS', icon: 'vscode-icons:file-type-vue', color: '#41B883' },
+      { title: 'Nuxt.JS', icon: 'vscode-icons:file-type-nuxt', color: '#2DDC82' },
+      { title: 'Primevue', icon: 'simple-icons:primeng', color: '#10B981' },
+      { title: 'TailwindCSS', icon: 'devicon:tailwindcss', color: '#38BDF8' },
+      { title: 'LdapJS', icon: 'fxemoji:folder', color: '#59C9FC' },
+      { title: 'Mongoose', icon: 'devicon:mongoose', color: '#840000' },
+    ],
+    urls: [
+      { url: 'https://posgrad.coedu.cbpf.br', external: true, icon: 'iconoir:open-new-window', aria: 'URL' },
+    ],
+    description: t('projects.posgrad_description'),
+  },
+  {
     title: 'Litcomp-AI',
     badges: [
       { title: 'Vue.JS', icon: 'vscode-icons:file-type-vue', color: '#41B883' },
@@ -19,7 +34,7 @@ const projects = computed(() => [
     urls: [
       { url: 'https://litcomp.cbpf.br/ai', external: true, icon: 'iconoir:open-new-window', aria: 'URL' },
     ],
-    description: t('projects.litcomp_ai'),
+    description: t('projects.litcomp_ai_description'),
   },
   {
     title: 'ESLint Config',
@@ -29,9 +44,10 @@ const projects = computed(() => [
     ],
     urls: [
       { url: 'https://github.com/dethdkn/eslint-config', external: true, icon: 'iconoir:github-circle', aria: 'Github Repo' },
+      { url: 'https://www.npmjs.com/package/@dethdkn/eslint-config', external: true, icon: 'iconoir:npm', aria: 'NPM Package' },
       { url: 'https://eslint.rosa.dev.br/configs', external: true, icon: 'iconoir:search', aria: 'Eslint Inspector' },
     ],
-    description: t('projects.eslint_config'),
+    description: t('projects.eslint_config_description'),
   },
   {
     title: 'RSDC Agenda',
@@ -79,6 +95,16 @@ const projects = computed(() => [
     description: t('projects.idcbpf_description'),
   },
   {
+    title: 'gov.br/cbpf (cbpf.br)',
+    badges: [
+      { title: 'Plone', icon: 'cc:plone', color: '#0095D3' },
+    ],
+    urls: [
+      { url: 'https://cbpf.br', external: true, icon: 'iconoir:open-new-window', aria: 'URL' },
+    ],
+    description: t('projects.govbr_description'),
+  },
+  {
     title: 'Ldap-Passwords',
     badges: [
       { title: 'NodeJS', icon: 'vscode-icons:file-type-node', color: '#83CD29' },
@@ -87,8 +113,8 @@ const projects = computed(() => [
     ],
     urls: [
       { url: 'https://ldap-passwords.com', external: true, icon: 'iconoir:open-new-window', aria: 'URL' },
-      { url: 'https://www.npmjs.com/package/ldap-passwords', external: true, icon: 'iconoir:npm', aria: 'NPM Package' },
       { url: 'https://github.com/dethdkn/ldap-passwords', external: true, icon: 'iconoir:github-circle', aria: 'Github Repo' },
+      { url: 'https://www.npmjs.com/package/ldap-passwords', external: true, icon: 'iconoir:npm', aria: 'NPM Package' },
     ],
     description: t('projects.ldappasswords_description'),
   },
