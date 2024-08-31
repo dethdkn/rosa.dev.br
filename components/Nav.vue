@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { locale, setLocale, t } = useI18n()
+const colorMode = useColorMode()
 
 const routes = computed(() => [
   { path: '/', text: t('nav.home') },
@@ -14,8 +15,8 @@ function changeLanguage(){
 }
 
 const isDark = computed({
-  get(){ return useColorMode().value === 'dark' },
-  set(){ useColorMode().preference = useColorMode().value === 'dark' ? 'light' : 'dark' },
+  get(){ return colorMode.value === 'dark' },
+  set(){ colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark' },
 })
 
 const menuClosed = ref(true)

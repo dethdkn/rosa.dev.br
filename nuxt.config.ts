@@ -2,11 +2,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/fonts', '@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/seo', '@nuxtjs/i18n', '@vueuse/nuxt', '@nuxt/icon'],
   app: { head: { templateParams: { separator: '•' } } },
   css: ['~/assets/global.css'],
-  colorMode: {
-    preference: 'dark',
-    fallback: 'dark',
-    classSuffix: '',
-  },
+  colorMode: { preference: 'dark', fallback: 'dark', classSuffix: '' },
   i18n: {
     baseUrl: 'https://rosa.dev.br/',
     defaultLocale: 'en',

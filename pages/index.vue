@@ -9,7 +9,7 @@ useSeoMeta({ description: t('home.subtitle') })
 
 defineOgImageComponent('Home', { title: t('home.title'), im: t('home.simple_im'), aka: t('home.aka'), subtitle: t('home.subtitle') })
 
-const image = ref()
+const image = ref<HTMLDivElement>()
 const hovered = useElementHover(image)
 
 function pinkBlast(){

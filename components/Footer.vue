@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const isDark = computed(() => useColorMode().value === 'dark')
+const colorMode = useColorMode()
+const isDark = computed(() => colorMode.value === 'dark')
 
 const socials = ref([
   { url: 'mailto:gabriel@rosa.dev.br', icon: 'iconoir:at-sign', name: 'Email' },

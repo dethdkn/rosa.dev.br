@@ -1,7 +1,5 @@
 <script setup lang='ts'>
-defineProps({
-  fileName: { type: String, required: true },
-})
+defineProps({ fileName: { type: String, required: true } })
 </script>
 
 <template>
