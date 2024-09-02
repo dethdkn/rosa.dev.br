@@ -13,19 +13,19 @@
     "lint:fix": "eslint . --fix && stylelint \"**/*.css\" --fix"
   },
   "dependencies": {
-    "@iconify-json/devicon": "^1.1.51",
-    "@iconify-json/eva": "^1.1.11",
-    "@iconify-json/fa6-solid": "^1.1.24",
-    "@iconify-json/fxemoji": "^1.1.9",
-    "@iconify-json/humbleicons": "^1.1.11",
-    "@iconify-json/iconoir": "^1.1.46",
-    "@iconify-json/ion": "^1.1.19",
-    "@iconify-json/logos": "^1.1.44",
-    "@iconify-json/material-symbols": "^1.1.89",
-    "@iconify-json/prime": "^1.1.13",
-    "@iconify-json/simple-icons": "^1.1.115",
-    "@iconify-json/streamline": "^1.1.9",
-    "@iconify-json/vscode-icons": "^1.1.37",
+    "@iconify-json/devicon": "^1.2.0",
+    "@iconify-json/eva": "^1.2.0",
+    "@iconify-json/fa6-solid": "^1.2.0",
+    "@iconify-json/fxemoji": "^1.2.0",
+    "@iconify-json/humbleicons": "^1.2.0",
+    "@iconify-json/iconoir": "^1.2.0",
+    "@iconify-json/ion": "^1.2.0",
+    "@iconify-json/logos": "^1.2.0",
+    "@iconify-json/material-symbols": "^1.2.0",
+    "@iconify-json/prime": "^1.2.0",
+    "@iconify-json/simple-icons": "^1.2.1",
+    "@iconify-json/streamline": "^1.2.0",
+    "@iconify-json/vscode-icons": "^1.2.0",
     "@nuxt/fonts": "^0.7.2",
     "@nuxt/icon": "^1.5.0",
     "@nuxt/image": "^1.8.0",
@@ -38,7 +38,7 @@
     "@vueuse/nuxt": "^11.0.3",
     "emoji-blast": "^0.10.1",
     "nuxt": "^3.13.0",
-    "shiki": "^1.15.2",
+    "shiki": "^1.16.1",
     "vue": "^3.4.38",
     "vue-router": "^4.4.3"
   },
@@ -47,6 +47,6 @@
     "eslint": "9.9.1",
     "stylelint": "^16.9.0",
     "stylelint-config-standard": "^36.0.1",
-    "vue-tsc": "^2.1.2"
+    "vue-tsc": "^2.1.4"
   }
 }
