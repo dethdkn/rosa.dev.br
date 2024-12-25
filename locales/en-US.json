@@ -47,7 +47,8 @@
     "rsdc_agenda_description": "📅 Scheduling manager for the Rio Science Data Center with integrated calendar and dashboard.",
     "eslint_config_description": "🧹 My Opinionated ESLint Config",
     "litcomp_ai_description": "🤖 Exploring the Future with Science and Intelligence",
-    "posgrad_description": "🧑‍🎓 COEDU (CBPF) postgraduate portal"
+    "posgrad_description": "🧑‍🎓 COEDU (CBPF) postgraduate portal",
+    "cotectemp_description": "🌡️ Real-time monitoring of temperatures and smoke sensors for the racks at Rio Science Data Center."
   },
   "blog": {
     "title": "Blog",

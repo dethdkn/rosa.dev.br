@@ -8,6 +8,20 @@ useSeoMeta({ description: t('projects.description') })
 defineOgImageComponent('Techs', { title: t('projects.title') })
 
 const projects = computed(() => [
+  // {
+  //   title: 'CotecTemp',
+  //   badges: [
+  //     { title: 'Vue.JS', icon: 'vscode-icons:file-type-vue', color: '#41B883' },
+  //     { title: 'Nuxt.JS', icon: 'vscode-icons:file-type-nuxt', color: '#2DDC82' },
+  //     { title: 'TailwindCSS', icon: 'devicon:tailwindcss', color: '#38BDF8' },
+  //     { title: 'SNMP', icon: 'lineicons:cloud-iot-2', color: '#FCC72B' },
+  //     { title: 'Telegram', icon: 'logos:telegram', color: '#28A8E9' },
+  //   ],
+  //   urls: [
+  //     { url: 'https://youtu.be/test', external: true, icon: 'iconoir:media-video', aria: 'Video' },
+  //   ],
+  //   description: t('projects.cotectemp_description'),
+  // },
   {
     title: 'Posgrad COEDU',
     badges: [
