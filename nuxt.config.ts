@@ -12,11 +12,11 @@ export default defineNuxtConfig({
     identity: { type: 'Person' },
   },
   colorMode: { preference: 'dark', fallback: 'dark', classSuffix: '' },
-  compatibilityDate: '2024-08-08',
+  future: { compatibilityVersion: 4 },
+  compatibilityDate: '2025-01-14',
   i18n: {
     baseUrl: 'https://rosa.dev.br/',
     defaultLocale: 'en',
-    langDir: 'locales',
     locales: [
       { code: 'en', language: 'en-US', name: 'English (US)', file: 'en-US.json' },
       { code: 'pt', language: 'pt-BR', name: 'Português (BR)', file: 'pt-BR.json' },
