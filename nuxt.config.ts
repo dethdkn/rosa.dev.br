@@ -2,7 +2,6 @@ export default defineNuxtConfig({
   modules: ['@nuxt/fonts', '@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/seo', '@nuxtjs/i18n', '@vueuse/nuxt', '@nuxt/icon'],
   devtools: { enabled: true },
   app: { head: { templateParams: { separator: '•' } } },
-  css: ['~/assets/global.css'],
   site: {
     url: 'https://rosa.dev.br/',
     name: 'Gabriel Rosa',
@@ -23,6 +22,6 @@ export default defineNuxtConfig({
     ],
     skipSettingLocaleOnNavigate: true,
   },
-  icon: { customCollections: [{ prefix: 'cc', dir: './assets/custom-icons' }] },
+  icon: { customCollections: [{ prefix: 'cc', dir: 'app/assets/custom-icons' }] },
   linkChecker: { enabled: false },
 })

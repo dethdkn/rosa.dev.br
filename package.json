@@ -9,8 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "typecheck": "nuxi typecheck",
-    "lint": "eslint . && stylelint \"**/*.css\"",
-    "lint:fix": "eslint . --fix && stylelint \"**/*.css\" --fix"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@iconify-json/devicon": "^1.2.11",
@@ -38,16 +38,14 @@
     "@vercel/speed-insights": "^1.1.0",
     "@vueuse/nuxt": "^12.4.0",
     "emoji-blast": "^0.10.2",
-    "nuxt": "3.15.1",
-    "shiki": "1.27.0",
+    "nuxt": "3.15.2",
+    "shiki": "1.27.2",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@dethdkn/eslint-config": "^1.9.1",
     "eslint": "9.18.0",
-    "stylelint": "^16.13.2",
-    "stylelint-config-standard": "^37.0.0",
     "vue-tsc": "^2.2.0"
   }
 }
