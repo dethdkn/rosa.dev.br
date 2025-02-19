@@ -454,6 +454,16 @@ const certificates = ref([
       { title: 'React', icon: 'vscode-icons:file-type-reactjs', color: '#00D8FF' },
     ],
   },
+  {
+    href: '/certificados/React_Typescript_Udemy.pdf',
+    title: 'React & TypeScript - The Practical Guide',
+    subtitle: '🎓 Udemy',
+    concluded: '02/2025',
+    badges: [
+      { title: 'React', icon: 'vscode-icons:file-type-reactjs', color: '#00D8FF' },
+      { title: 'Typescript', icon: 'devicon:typescript', color: '#137ACC' },
+    ],
+  },
 ])
 </script>
 
