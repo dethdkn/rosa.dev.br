@@ -445,6 +445,15 @@ const certificates = ref([
       { title: 'Nginx', icon: 'vscode-icons:file-type-nginx', color: '#2A9639' },
     ],
   },
+  {
+    href: '/certificados/React_Udemy.pdf',
+    title: 'React - The Complete Guide 2025 (incl. Next.js, Redux)',
+    subtitle: '🎓 Udemy',
+    concluded: '02/2025',
+    badges: [
+      { title: 'React', icon: 'vscode-icons:file-type-reactjs', color: '#00D8FF' },
+    ],
+  },
 ])
 </script>
 

@@ -94,7 +94,7 @@ watch(selected, nv => {
           {{ t('about.pictures') }}
         </h2>
         <div class="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3">
-          <!-- eslint-disable-next-line accessibility/click-events-have-key-events -->
+          <!-- eslint-disable-next-line vue-a11y/click-events-have-key-events -->
           <div v-for="{url, alt} in imgs" :key="url" class="m-5 cursor-zoom-in" role="button" @click="openPopup({url, alt})">
             <div class="w-64 overflow-hidden rounded-2xl">
               <NuxtImg :src="url" :alt class="w-full object-cover transition-all duration-300 hover:scale-110" placeholder loading="lazy" />
