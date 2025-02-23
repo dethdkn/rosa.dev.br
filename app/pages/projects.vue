@@ -139,7 +139,7 @@ const projects = computed(() => [
       { title: 'Vitest', icon: 'devicon:vitest', color: '#FCC72B' },
     ],
     urls: [
-      { url: 'https://ldap-passwords.com', external: true, icon: 'iconoir:open-new-window', aria: 'URL' },
+      { url: 'https://ldap-passwords.vercel.app/', external: true, icon: 'iconoir:open-new-window', aria: 'URL' },
       { url: 'https://github.com/dethdkn/ldap-passwords', external: true, icon: 'iconoir:github-circle', aria: 'Github Repo' },
       { url: 'https://www.npmjs.com/package/ldap-passwords', external: true, icon: 'iconoir:npm', aria: 'NPM Package' },
     ],
