@@ -475,6 +475,21 @@ const certificates = ref([
       { title: 'React', icon: 'vscode-icons:file-type-reactjs', color: '#00D8FF' },
     ],
   },
+  {
+    href: '/certificates/AWS_Udemy.pdf',
+    title: 'AWS Serverless APIs & Apps',
+    subtitle: '🎓 Udemy',
+    concluded: '02/2025',
+    badges: [
+      { title: 'AWS', icon: 'logos:aws', color: '#F90' },
+      { title: 'API Gateway', icon: 'logos:aws-api-gateway', color: '#FF4F8B' },
+      { title: 'Lambda', icon: 'logos:aws-lambda', color: '#F90' },
+      { title: 'DynamoDB', icon: 'logos:aws-dynamodb', color: '#527FFF' },
+      { title: 'Cognito', icon: 'logos:aws-cognito', color: '#FF5252' },
+      { title: 'Route 53', icon: 'logos:aws-route53', color: '#A166FF' },
+      { title: 'Cloudfront', icon: 'logos:aws-cloudfront', color: '#A166FF' },
+    ],
+  },
 ])
 </script>
 

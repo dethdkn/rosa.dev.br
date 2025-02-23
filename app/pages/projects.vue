@@ -9,6 +9,19 @@ defineOgImageComponent('Techs', { title: t('projects.title') })
 
 const projects = computed(() => [
   {
+    title: 'Lazuli Artefatos',
+    badges: [
+      { title: 'React', icon: 'vscode-icons:file-type-reactjs', color: '#00D8FF' },
+      { title: 'Next', icon: 'vscode-icons:file-type-next', color: '#FFFFFF' },
+      { title: 'TailwindCSS', icon: 'devicon:tailwindcss', color: '#38BDF8' },
+    ],
+    urls: [
+      { url: 'https://lazuliartefatos.com', external: true, icon: 'iconoir:open-new-window', aria: 'URL' },
+      { url: 'https://github.com/dethdkn/lazuliartefatos.com', external: true, icon: 'iconoir:github-circle', aria: 'Github Repo' },
+    ],
+    description: t('projects.lazuli_description'),
+  },
+  {
     title: 'CotecTemp',
     badges: [
       { title: 'Vue.JS', icon: 'vscode-icons:file-type-vue', color: '#41B883' },
