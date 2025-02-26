@@ -490,6 +490,16 @@ const certificates = ref([
       { title: 'Cloudfront', icon: 'logos:aws-cloudfront', color: '#A166FF' },
     ],
   },
+  {
+    href: '/certificates/Docker_Kubernetes_Udemy.pdf',
+    title: 'Docker & Kubernetes: The Practical Guide [2025 Edition]',
+    subtitle: '🎓 Udemy',
+    concluded: '02/2025',
+    badges: [
+      { title: 'Docker', icon: 'vscode-icons:file-type-docker', color: '#039CC7' },
+      { title: 'Kubernetes', icon: 'logos:kubernetes', color: '#326DE6' },
+    ],
+  },
 ])
 </script>
 
