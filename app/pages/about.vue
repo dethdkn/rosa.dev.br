@@ -54,23 +54,7 @@ watch(selected, nv => {
         <h2 class="inline border-b-2 border-[#F28AA9] text-4xl text-[#4C4F69] dark:text-[#CDD5F4]">
           {{ t('about.experience') }}
         </h2>
-        <div class="mt-8 flex flex-col items-center justify-center md:flex-row md:space-x-20 lg:px-20">
-          <ol class="relative border-s border-gray-200 text-gray-500 dark:border-gray-700 dark:text-gray-400">
-            <li class="mb-4 ms-6">
-              <span class="absolute -start-4 flex size-8 items-center justify-center rounded-full bg-[#F28AA9]">
-                <Icon name="iconoir:graduation-cap" size="1.5rem" class="text-[#EFF1F5] dark:text-[#1E1E2E]" />
-              </span>
-              <h3 class=" mb-2 text-lg font-medium leading-tight">
-                {{ t('about.unicarioca') }}
-              </h3>
-              <p class="m-0 inline whitespace-nowrap rounded border border-[#F28AA9] p-1 text-sm sm:m-1">
-                {{ t('about.ongoing') }}
-              </p>
-              <p class="mt-2">
-                {{ t('about.cs') }}
-              </p>
-            </li>
-          </ol>
+        <div class="mt-8 flex items-center justify-center lg:px-20">
           <ol class="relative border-s border-gray-200 text-gray-500 dark:border-gray-700 dark:text-gray-400">
             <li class="mb-4 ms-6">
               <span class="absolute -start-4 flex size-8 items-center justify-center rounded-full bg-[#F28AA9]">
