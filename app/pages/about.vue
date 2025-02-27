@@ -1,11 +1,14 @@
 <script setup lang='ts'>
 const { t } = useI18n()
+const colorMode = useColorMode()
 
 useHead({ title: t('about.title') })
 
 useSeoMeta({ description: t('about.description') })
 
 defineOgImageComponent('Simple', { title: t('about.title') })
+
+const isDark = computed(() => colorMode.value === 'dark')
 
 const imgs = ref([
   { url: '/images/santos_dumont.png', alt: 'Super Computador Santos Dumont' },
@@ -58,11 +61,17 @@ watch(selected, nv => {
           <ol class="relative border-s border-gray-200 text-gray-500 dark:border-gray-700 dark:text-gray-400">
             <li class="mb-4 ms-6">
               <span class="absolute -start-4 flex size-8 items-center justify-center rounded-full bg-[#F28AA9]">
-                <Icon name="iconoir:code" size="1.5rem" class="text-[#EFF1F5] dark:text-[#1E1E2E]" />
+                <ClientOnly>
+                  <Icon v-if="isDark" name="cc:cbpf-l" size="1.5rem" class="text-[#EFF1F5] dark:text-[#1E1E2E]" />
+                  <Icon v-else name="cc:cbpf-d" size="1.5rem" class="text-[#EFF1F5] dark:text-[#1E1E2E]" />
+                  <template #fallback>
+                    <Icon name="iconoir:refresh" size="1.5rem" class="animate-spin text-[#EFF1F5] dark:text-[#1E1E2E]" />
+                  </template>
+                </ClientOnly>
               </span>
-              <h3 class=" mb-2 text-lg font-medium leading-tight">
+              <NuxtLink to="https://cbpf.br" external target="_blank" class="mb-2 block cursor-pointer text-lg font-medium leading-tight text-[#4C4F69] transition-all duration-300 hover:text-[#F28AA9] hover:drop-shadow-[0_0_5px_#F28AA9] dark:border-[#CDD5F4] dark:text-[#CDD5F4] dark:hover:text-[#F28AA9]">
                 {{ t('about.cbpf') }}
-              </h3>
+              </NuxtLink>
               <p class="m-0 inline whitespace-nowrap rounded border border-[#F28AA9] p-1 text-sm sm:m-1">
                 {{ t('about.twnt') }}
               </p>

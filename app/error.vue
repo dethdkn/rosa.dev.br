@@ -14,8 +14,8 @@ useHead({ title: `${statusCode.value}` })
 </script>
 
 <template>
-  <main class="h-screen bg-[#EFF1F5] dark:bg-[#1E1E2E]">
-    <div class="flex h-screen items-center justify-center">
+  <NuxtLayout>
+    <div class="flex min-h-[calc(100vh-311px)] items-center justify-center">
       <div class="space-y-10 text-center">
         <h1 class="inline border-b-2 border-[#F28AA9] text-8xl text-[#4C4F69] dark:text-[#CDD5F4]">
           {{ statusCode }}
@@ -29,5 +29,5 @@ useHead({ title: `${statusCode.value}` })
         </button>
       </div>
     </div>
-  </main>
+  </NuxtLayout>
 </template>

@@ -932,8 +932,8 @@ packages:
     resolution: {integrity: sha512-q3L9i3HoNfz0SGpTIS4zTcKBbRkxzCRpd169eyiTuk3IwcPC3/85mzLHranlKo2b+HYT0gu37YxGB45aD8A3Tw==}
     engines: {node: '>=18.0.0'}
 
-  '@next/eslint-plugin-next@15.1.7':
-    resolution: {integrity: sha512-kRP7RjSxfTO13NE317ek3mSGzoZlI33nc/i5hs1KaWpK+egs85xg0DJ4p32QEiHnR0mVjuUfhRIun7awqfL7pQ==}
+  '@next/eslint-plugin-next@15.2.0':
+    resolution: {integrity: sha512-jHFUG2OwmAuOASqq253RAEG/5BYcPHn27p1NoWZDCf4OdvdK0yRYWX92YKkL+Mk2s+GyJrmd/GATlL5b2IySpw==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -2588,8 +2588,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.5.105:
-    resolution: {integrity: sha512-ccp7LocdXx3yBhwiG0qTQ7XFrK48Ua2pxIxBdJO8cbddp/MvbBtPFzvnTchtyHQTsgqqczO8cdmAIbpMa0u2+g==}
+  electron-to-chromium@1.5.106:
+    resolution: {integrity: sha512-12keJGdXQWPnfVOu6/6ZzZgPPNodiDOSe3LjA8qk2yXTjnCnw2LeGUsAmtlNAmH4UW0K7tOLcz0j9lI2eJCJRA==}
 
   emoji-blast@0.10.2:
     resolution: {integrity: sha512-3VrqajirPj8QeQxQeMHUfD+03H64XTEVPGRjxP5rjDCVEC5NGF3FgutMpU5scIOhcuzG23Qvs32k0Pnj+hRzGA==}
@@ -4464,8 +4464,8 @@ packages:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
 
-  portfinder@1.0.32:
-    resolution: {integrity: sha512-on2ZJVVDXRADWE6jnQaX0ioEylzgBpQk8r55NE4wjXW1ZxO+BgDlY6DXwj20i0V8eB4SenDQ00WEaxfiIQPcxg==}
+  portfinder@1.0.33:
+    resolution: {integrity: sha512-+2jndHT63cL5MdQOwDm9OT2dIe11zVpjV+0GGRXdtO1wpPxv260NfVqoEXtYAi/shanmm3W4+yLduIe55ektTw==}
     engines: {node: '>= 0.12.0'}
 
   possible-typed-array-names@1.1.0:
@@ -6214,7 +6214,7 @@ snapshots:
       '@eslint-react/eslint-plugin': 1.28.0(eslint@9.21.0(jiti@2.4.2))(ts-api-utils@2.0.1(typescript@5.7.3))(typescript@5.7.3)
       '@eslint/js': 9.21.0
       '@intlify/eslint-plugin-vue-i18n': 4.0.0-next.1(eslint@9.21.0(jiti@2.4.2))
-      '@next/eslint-plugin-next': 15.1.7
+      '@next/eslint-plugin-next': 15.2.0
       '@nuxt/eslint-plugin': 1.1.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.7.3)
       '@stylistic/eslint-plugin': 4.1.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.7.3)
       '@typescript-eslint/parser': 8.25.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.7.3)
@@ -6866,7 +6866,7 @@ snapshots:
       '@netlify/node-cookies': 0.1.0
       urlpattern-polyfill: 8.0.2
 
-  '@next/eslint-plugin-next@15.1.7':
+  '@next/eslint-plugin-next@15.2.0':
     dependencies:
       fast-glob: 3.3.1
 
@@ -8358,7 +8358,7 @@ snapshots:
   browserslist@4.24.4:
     dependencies:
       caniuse-lite: 1.0.30001701
-      electron-to-chromium: 1.5.105
+      electron-to-chromium: 1.5.106
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.24.4)
 
@@ -8933,7 +8933,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.5.105: {}
+  electron-to-chromium@1.5.106: {}
 
   emoji-blast@0.10.2: {}
 
@@ -11484,7 +11484,7 @@ snapshots:
 
   pluralize@8.0.0: {}
 
-  portfinder@1.0.32:
+  portfinder@1.0.33:
     dependencies:
       async: 2.6.4
       debug: 3.2.7
@@ -12451,7 +12451,7 @@ snapshots:
       koa: 2.15.4
       koa-static: 5.0.0
       open: 7.4.2
-      portfinder: 1.0.32
+      portfinder: 1.0.33
       replace-in-file: 6.3.5
       tailwindcss: 3.4.17
     transitivePeerDependencies:
