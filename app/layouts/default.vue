@@ -1,6 +1,6 @@
 <template>
   <Nav />
-  <main class="min-h-[calc(100vh-311px)] bg-[#EFF1F5] dark:bg-[#1E1E2E]">
+  <main class="min-h-content bg-pearl dark:bg-onyx">
     <slot />
   </main>
   <Footer />

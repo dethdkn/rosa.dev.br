@@ -14,13 +14,13 @@ const socials = ref([
 
 <template>
   <!-- eslint-disable vue/no-bare-strings-in-template -->
-  <footer class="space-y-4 bg-[#EFF1F5] pb-10 pt-20 dark:bg-[#1E1E2E]">
+  <footer class="space-y-4 bg-pearl pb-10 pt-20 dark:bg-onyx">
     <div class="grid grid-cols-3 place-items-center gap-4 sm:grid-cols-6 lg:flex lg:items-center lg:justify-center lg:space-x-8">
-      <NuxtLink v-for="social in socials" :key="social.url" :to="social.url" target="_blank" :aria-label="social.name" class="transition-all duration-300 hover:drop-shadow-[0_0_5px_#F28AA9]">
-        <Icon :name="social.icon" size="3rem" class="text-[#4C4F69] transition-all duration-300 hover:text-[#F28AA9] dark:text-[#CDD5F4] dark:hover:text-[#F28AA9]" />
+      <NuxtLink v-for="social in socials" :key="social.url" :to="social.url" target="_blank" :aria-label="social.name" class="transition-all duration-300 hover:drop-shadow-candy">
+        <Icon :name="social.icon" size="3rem" class="text-obsidian transition-all duration-300 hover:text-candy dark:text-snow dark:hover:text-candy" />
       </NuxtLink>
     </div>
-    <div class="flex flex-col items-center justify-center space-y-2 text-[#4C4F69] dark:text-[#CDD5F4]">
+    <div class="flex flex-col items-center justify-center space-y-2 text-obsidian dark:text-snow">
       <p class="flex items-center justify-center">
         <Icon name="iconoir:copyright" :size="18" />&nbsp;
         {{ new Date().getFullYear() }}
@@ -29,13 +29,13 @@ const socials = ref([
       </p>
       <p>
         Powered by&nbsp;
-        <NuxtLink to="https://nuxt.com" external target="_blank" class="text-[#43DD7D] transition-all duration-300 hover:drop-shadow-[0_0_5px_#43DD7D] dark:hover:drop-shadow-[0_0_5px_#43DD7Daa]">
+        <NuxtLink to="https://nuxt.com" external target="_blank" class="text-nuxt transition-all duration-300 hover:drop-shadow-nuxt dark:hover:drop-shadow-nuxtWhite">
           <Icon name="logos:nuxt-icon" :size="12" />
           <span>&nbsp;Nuxt</span>
         </NuxtLink>
         <span class="mx-2">—</span>
         Hosted on&nbsp;
-        <NuxtLink to="https://vercel.com/home" external target="_blank" class="text-[#000000] transition-all duration-300 hover:drop-shadow-[0_0_5px_#000000] dark:text-[#FDFDFD] dark:hover:drop-shadow-[0_0_5px_#FDFDFDaa]">
+        <NuxtLink to="https://vercel.com/home" external target="_blank" class="text-vercel transition-all duration-300 hover:drop-shadow-vercel dark:text-vercelWhite dark:hover:drop-shadow-vercelWhite">
           <Icon v-if="isDark" name="simple-icons:vercel" :size="12" />
           <Icon v-else name="logos:vercel-icon" :size="12" />
           <span>&nbsp;Vercel</span>

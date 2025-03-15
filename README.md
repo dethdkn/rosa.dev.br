@@ -24,7 +24,7 @@
         Vue
   </a>
 - <a href="https://i18n.nuxtjs.org/" target="_blank">
-     <img src="https://kazupon.github.io/vue-i18n/vue-i18n-logo.png" alt="Nuxt I18n" width="11">
+     <img src="https://i18n.nuxtjs.org/favicon.ico" alt="Nuxt I18n" width="11">
         Nuxt I18n
   </a>
 - <a href="https://tailwindcss.com" target="_blank">
@@ -32,7 +32,7 @@
         Tailwind CSS
   </a>
 - <a href="https://github.com/nuxt/icon" target="_blank">
-     <img src="https://nuxt.com/icon.png" alt="Nuxt" width="12">
+     <img src="https://iconify.design/favicon.ico" alt="Nuxt" width="12">
         Nuxt Icon
   </a>
 - <a href="https://shiki.style/" target="_blank">
@@ -42,5 +42,5 @@
 
 ## 📝 License
 
-Copyright © 2024 [Gabriel 'DethDKN' Rosa](https://github.com/dethdkn)\
+Copyright © 2025 [Gabriel 'DethDKN' Rosa](https://github.com/dethdkn)\
 This project is under [MIT license](https://github.com/dethdkn/rosa.dev.br/blob/main/LICENSE)

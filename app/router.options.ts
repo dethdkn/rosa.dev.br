@@ -1,23 +1,16 @@
 /* eslint-disable no-restricted-globals, typescript/no-explicit-any */
-
 import type { RouterConfig } from '@nuxt/schema'
 
-// https://router.vuejs.org/api/#routeroptions
-const RouteOptions: RouterConfig = {
+export default {
   scrollBehavior(to, from, savedPosition){
     const nuxtApp = useNuxtApp()
 
-    // If history back
-    if(savedPosition){
-      // Handle Suspense resolution
-      return new Promise(resolve => {
-        nuxtApp.hooks.hookOnce('page:finish', () => {
-          setTimeout(() => resolve(savedPosition), 50)
-        })
+    if(savedPosition) return new Promise(resolve => {
+      nuxtApp.hooks.hookOnce('page:finish', () => {
+        setTimeout(() => resolve(savedPosition), 50)
       })
-    }
+    })
 
-    // Scroll to heading on click
     if(to.hash){
       setTimeout(() => {
         let heading = document.querySelector(`[id="${to.hash.replace('#', '')}"]`) as any
@@ -28,14 +21,8 @@ const RouteOptions: RouterConfig = {
       return
     }
 
-    // route change
-    if(from.path !== to.path){
-      window.scrollTo({ top: 0, behavior: 'smooth' })
-      return
-    }
+    if(from.path !== to.path) return window.scrollTo({ top: 0, behavior: 'smooth' })
 
     return { top: 0 }
   },
-}
-
-export default RouteOptions
+} satisfies RouterConfig

@@ -15,16 +15,16 @@ useHead({ title: `${statusCode.value}` })
 
 <template>
   <NuxtLayout>
-    <div class="flex min-h-[calc(100vh-311px)] items-center justify-center">
+    <div class="flex min-h-content items-center justify-center">
       <div class="space-y-10 text-center">
-        <h1 class="inline border-b-2 border-[#F28AA9] text-8xl text-[#4C4F69] dark:text-[#CDD5F4]">
+        <h1 class="inline border-b-2 border-candy text-8xl text-obsidian dark:text-snow">
           {{ statusCode }}
         </h1>
-        <h1 class="text-xl text-[#4C4F69] dark:text-[#CDD5F4]">
+        <h1 class="text-xl text-obsidian dark:text-snow">
           {{ message }}
         </h1>
         <!-- eslint-disable-next-line vue/no-bare-strings-in-template -->
-        <button class="gap-x-1.5 rounded-md bg-[#F28AA9] px-2.5 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-[#e7688e]" @click="clearError({ redirect: localePath('/') })">
+        <button class="gap-x-1.5 rounded-md bg-candy px-2.5 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-bubblegum" @click="clearError({ redirect: localePath('/') })">
           Home
         </button>
       </div>

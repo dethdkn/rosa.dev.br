@@ -46,33 +46,33 @@ watch(selected, nv => {
   <div class="mx-auto max-w-7xl">
     <div class="space-y-10 px-20 py-5 lg:space-y-20">
       <div class="border-b border-gray-300 pb-10 text-center dark:border-gray-700 sm:text-start">
-        <h1 class="inline border-b-2 border-[#F28AA9] text-4xl text-[#4C4F69] dark:text-[#CDD5F4]">
+        <h1 class="inline border-b-2 border-candy text-4xl text-obsidian dark:text-snow">
           {{ t('about.title') }}
         </h1>
-        <p class="mt-8 block text-center text-xl text-[#4C4F69] dark:text-[#CDD5F4] lg:px-20">
+        <p class="mt-8 block text-center text-xl text-obsidian dark:text-snow lg:px-20">
           {{ t('about.learner') }}
         </p>
       </div>
       <div class="border-b border-gray-300 pb-10 text-center dark:border-gray-700 sm:text-start">
-        <h2 class="inline border-b-2 border-[#F28AA9] text-4xl text-[#4C4F69] dark:text-[#CDD5F4]">
+        <h2 class="inline border-b-2 border-candy text-4xl text-obsidian dark:text-snow">
           {{ t('about.experience') }}
         </h2>
         <div class="mt-8 flex items-center justify-center lg:px-20">
           <ol class="relative border-s border-gray-200 text-gray-500 dark:border-gray-700 dark:text-gray-400">
             <li class="mb-4 ms-6">
-              <span class="absolute -start-4 flex size-8 items-center justify-center rounded-full bg-[#F28AA9]">
+              <span class="absolute -start-4 flex size-8 items-center justify-center rounded-full bg-candy">
                 <ClientOnly>
-                  <Icon v-if="isDark" name="cc:cbpf-l" size="1.5rem" class="text-[#EFF1F5] dark:text-[#1E1E2E]" />
-                  <Icon v-else name="cc:cbpf-d" size="1.5rem" class="text-[#EFF1F5] dark:text-[#1E1E2E]" />
+                  <Icon v-if="isDark" name="cc:cbpf-l" size="1.5rem" class="text-pearl dark:text-onyx" />
+                  <Icon v-else name="cc:cbpf-d" size="1.5rem" class="text-pearl dark:text-onyx" />
                   <template #fallback>
-                    <Icon name="iconoir:refresh" size="1.5rem" class="animate-spin text-[#EFF1F5] dark:text-[#1E1E2E]" />
+                    <Icon name="iconoir:refresh" size="1.5rem" class="animate-spin text-pearl dark:text-onyx" />
                   </template>
                 </ClientOnly>
               </span>
-              <NuxtLink to="https://cbpf.br" external target="_blank" class="mb-2 block cursor-pointer text-lg font-medium leading-tight text-[#4C4F69] transition-all duration-300 hover:text-[#F28AA9] hover:drop-shadow-[0_0_5px_#F28AA9] dark:border-[#CDD5F4] dark:text-[#CDD5F4] dark:hover:text-[#F28AA9]">
+              <NuxtLink to="https://cbpf.br" external target="_blank" class="mb-2 block cursor-pointer text-lg font-medium leading-tight text-obsidian transition-all duration-300 hover:text-candy hover:drop-shadow-candy dark:border-snow dark:text-snow dark:hover:text-candy">
                 {{ t('about.cbpf') }}
               </NuxtLink>
-              <p class="m-0 inline whitespace-nowrap rounded border border-[#F28AA9] p-1 text-sm sm:m-1">
+              <p class="m-0 inline whitespace-nowrap rounded border border-candy p-1 text-sm sm:m-1">
                 {{ t('about.twnt') }}
               </p>
               <p class="mt-2">
@@ -83,7 +83,7 @@ watch(selected, nv => {
         </div>
       </div>
       <div class="border-b border-gray-300 pb-10 text-center dark:border-gray-700 sm:text-start">
-        <h2 class="inline border-b-2 border-[#F28AA9] text-4xl text-[#4C4F69] dark:text-[#CDD5F4]">
+        <h2 class="inline border-b-2 border-candy text-4xl text-obsidian dark:text-snow">
           {{ t('about.pictures') }}
         </h2>
         <div class="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3">
@@ -96,9 +96,9 @@ watch(selected, nv => {
         </div>
       </div>
     </div>
-    <div class="fixed left-0 top-0 z-[100] size-full bg-gray-950/30 transition-all" :class="{ hidden: selected.hidden }" role="button" @click="closePopup" @keypress.esc="closePopup">
-      <Icon v-show="!selected.hidden" name="iconoir:xmark-circle" size="30" class="absolute right-3 top-3 z-[101] cursor-pointer text-[#4C4F69] hover:text-[#F28AA9] dark:text-[#CDD5F4] dark:hover:text-[#F28AA9]" />
-      <img id="popup-img" :src="selected.img || '/images/placeholder.png'" :alt="selected.alt" class="absolute left-1/2 top-1/2 w-[95%] -translate-x-1/2 -translate-y-1/2 cursor-cell rounded-2xl border-[3px] border-solid border-[#F28AA9] object-cover md:w-[950px]">
+    <div class="fixed left-0 top-0 z-100 size-full bg-gray-950/30 transition-all" :class="{ hidden: selected.hidden }" role="button" @click="closePopup" @keypress.esc="closePopup">
+      <Icon v-show="!selected.hidden" name="iconoir:xmark-circle" size="30" class="absolute right-3 top-3 z-101 cursor-pointer text-obsidian hover:text-candy dark:text-snow dark:hover:text-candy" />
+      <img id="popup-img" :src="selected.img || '/images/placeholder.png'" :alt="selected.alt" class="absolute left-1/2 top-1/2 w-19/20 -translate-x-1/2 -translate-y-1/2 cursor-cell rounded-2xl border-3 border-solid border-candy object-cover md:w-950px">
     </div>
   </div>
 </template>
