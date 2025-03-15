@@ -225,7 +225,7 @@ const certificates = ref([
     concluded: '07/2022',
     badges: [
       { title: 'HTML5', icon: 'vscode-icons:file-type-html', color: '#E44F26' },
-      { title: 'CSS3', icon: 'vscode-icons:file-type-css', color: '#2072B5' },
+      { title: 'CSS3', icon: 'vscode-icons:file-type-css', color: '#639' },
     ],
   },
   {
@@ -235,7 +235,7 @@ const certificates = ref([
     concluded: '07/2022',
     badges: [
       { title: 'HTML5', icon: 'vscode-icons:file-type-html', color: '#E44F26' },
-      { title: 'CSS3', icon: 'vscode-icons:file-type-css', color: '#2072B5' },
+      { title: 'CSS3', icon: 'vscode-icons:file-type-css', color: '#639' },
     ],
   },
   {
@@ -396,7 +396,7 @@ const certificates = ref([
     subtitle: '🎓 Udemy',
     concluded: '04/2023',
     badges: [
-      { title: 'CSS3', icon: 'vscode-icons:file-type-css', color: '#2072B5' },
+      { title: 'CSS3', icon: 'vscode-icons:file-type-css', color: '#639' },
       { title: 'Sass', icon: 'devicon:sass', color: '#CB6698' },
     ],
   },
