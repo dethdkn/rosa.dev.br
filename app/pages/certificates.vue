@@ -508,6 +508,6 @@ const certificates = ref([
     <h1 class="inline border-b-2 border-candy text-4xl text-obsidian dark:text-snow">
       {{ t('certificates.title') }}
     </h1>
-    <List v-for="{href, title, subtitle, concluded, badges} in certificates" :key="href" :title :badges :urls="[{ url: href, icon: 'iconoir:doc-star-in', external: true, aria: 'PDF' }]" :description="`${subtitle} • ${concluded}`" />
+    <List v-for="{href, title, subtitle, concluded, badges} in certificates" :key="href" :title :badges :urls="[{ url: href, icon: 'iconoir:doc-star-in', external: true, aria: 'PDF' }]" :description="`${subtitle} • ${concluded}`" data-aos="fade-right" />
   </div>
 </template>

@@ -179,6 +179,6 @@ const projects = computed(() => [
     <h1 class="inline border-b-2 border-candy text-4xl text-obsidian dark:text-snow">
       {{ t('projects.title') }}
     </h1>
-    <List v-for="{title, badges, urls, description} in projects" :key="title" :title :badges :urls :description />
+    <List v-for="{title, badges, urls, description} in projects" :key="title" :title :badges :urls :description data-aos="fade-right" />
   </div>
 </template>

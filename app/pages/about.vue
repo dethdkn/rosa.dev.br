@@ -19,32 +19,18 @@ const imgs = ref([
   { url: '/images/almoco_sistemas.png', alt: 'Almoço Equipe de Sistemas' },
 ])
 
-const selected = ref({ img: '', alt: '', hidden: true })
+const dialog = ref(false)
+const selected = ref({ url: '', alt: '' })
 
-function openPopup(img: { url: string, alt: string }){
-  selected.value = { img: img.url, alt: img.alt, hidden: false }
+function openPopup({ url, alt }: { url: string, alt: string }){
+  selected.value = { url, alt }
+  dialog.value = true
 }
-
-function closePopup(e: Event){
-  const target = e.target as HTMLImageElement
-  if(target && target.id !== 'popup-img') selected.value = { img: '', alt: '', hidden: true }
-}
-
-watch(selected, nv => {
-  if(import.meta.client){
-    if(nv.hidden){
-      document.body.style.overflow = 'visible'
-      return document.body.style.paddingRight = '0px'
-    }
-    document.body.style.overflow = 'hidden'
-    return document.body.style.paddingRight = '16px'
-  }
-})
 </script>
 
 <template>
   <div class="mx-auto max-w-7xl">
-    <div class="space-y-10 px-20 py-5 lg:space-y-20">
+    <div class="space-y-10 px-20 py-5 lg:space-y-20" data-aos="fade-up">
       <div class="border-b border-gray-300 pb-10 text-center dark:border-gray-700 sm:text-start">
         <h1 class="inline border-b-2 border-candy text-4xl text-obsidian dark:text-snow">
           {{ t('about.title') }}
@@ -53,7 +39,7 @@ watch(selected, nv => {
           {{ t('about.learner') }}
         </p>
       </div>
-      <div class="border-b border-gray-300 pb-10 text-center dark:border-gray-700 sm:text-start">
+      <div class="border-b border-gray-300 pb-10 text-center dark:border-gray-700 sm:text-start" data-aos="fade-up">
         <h2 class="inline border-b-2 border-candy text-4xl text-obsidian dark:text-snow">
           {{ t('about.experience') }}
         </h2>
@@ -82,7 +68,7 @@ watch(selected, nv => {
           </ol>
         </div>
       </div>
-      <div class="border-b border-gray-300 pb-10 text-center dark:border-gray-700 sm:text-start">
+      <div class="border-b border-gray-300 pb-10 text-center dark:border-gray-700 sm:text-start" data-aos="fade-up">
         <h2 class="inline border-b-2 border-candy text-4xl text-obsidian dark:text-snow">
           {{ t('about.pictures') }}
         </h2>
@@ -96,9 +82,16 @@ watch(selected, nv => {
         </div>
       </div>
     </div>
-    <div class="fixed left-0 top-0 z-100 size-full bg-gray-950/30 transition-all" :class="{ hidden: selected.hidden }" role="button" @click="closePopup" @keypress.esc="closePopup">
+
+    <Dialog v-model="dialog" :title="t('about.pictures')" :description="selected.alt">
+      <img :src="selected.url || '/images/placeholder.png'" :alt="selected.alt">
+    </Dialog>
+
+    <!--
+      <div class="fixed left-0 top-0 z-100 size-full bg-gray-950/30 transition-all" :class="{ hidden: selected.hidden }" role="button" @click="closePopup" @keypress.esc="closePopup">
       <Icon v-show="!selected.hidden" name="iconoir:xmark-circle" size="30" class="absolute right-3 top-3 z-101 cursor-pointer text-obsidian hover:text-candy dark:text-snow dark:hover:text-candy" />
       <img id="popup-img" :src="selected.img || '/images/placeholder.png'" :alt="selected.alt" class="absolute left-1/2 top-1/2 w-19/20 -translate-x-1/2 -translate-y-1/2 cursor-cell rounded-2xl border-3 border-solid border-candy object-cover md:w-950px">
-    </div>
+      </div>
+    -->
   </div>
 </template>

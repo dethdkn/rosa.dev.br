@@ -56,6 +56,6 @@ const posts = computed(() => [
     <h1 class="inline border-b-2 border-candy text-4xl text-obsidian dark:text-snow">
       {{ t('blog.title') }}
     </h1>
-    <List v-for="{title, badges, urls, description, locale, self} in posts" :key="title" :title :badges :urls :description :locale :self />
+    <List v-for="{title, badges, urls, description, locale, self} in posts" :key="title" :title :badges :urls :description :locale :self data-aos="fade-right" />
   </div>
 </template>
