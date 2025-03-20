@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ['@nuxt/fonts', '@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/seo', '@nuxtjs/i18n', '@vueuse/nuxt', '@nuxt/icon'],
+  modules: ['@nuxt/fonts', '@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/seo', '@nuxtjs/i18n', '@vueuse/nuxt', '@nuxt/icon', 'nuxt-aos', 'reka-ui/nuxt'],
   imports: { imports: [
     { name: 'emojiBlasts', from: 'emoji-blast' },
     { name: 'codeToHtml', from: 'shiki' },
@@ -21,8 +21,8 @@ export default defineNuxtConfig({
     baseUrl: 'https://rosa.dev.br/',
     defaultLocale: 'en',
     locales: [
-      { code: 'en', language: 'en-US', name: 'English (US)', file: 'en-US.json' },
-      { code: 'pt', language: 'pt-BR', name: 'Português (BR)', file: 'pt-BR.json' },
+      { code: 'en', language: 'en-US', name: 'English (US)', file: 'en-US.json', flag: 'flag:us-4x3' },
+      { code: 'pt', language: 'pt-BR', name: 'Português (BR)', file: 'pt-BR.json', flag: 'flag:br-4x3' },
     ],
     skipSettingLocaleOnNavigate: true,
   },

@@ -46,7 +46,25 @@ export default <Partial<Config>>{
     },
     zIndex: {
       100: '100',
-      101: '101',
+    },
+    keyframes: {
+      overlayShow: {
+        from: { opacity: '0' },
+        to: { opacity: '1' },
+      },
+      contentShow: {
+        from: { opacity: '0', transform: 'translate(-50%, -50%) scale(0.01)' },
+        to: { opacity: '1', transform: 'translate(-50%, -50%) scale(1)' },
+      },
+      slideUpAndFade: {
+        from: { opacity: '0', transform: 'translateY(2px)' },
+        to: { opacity: '1', transform: 'translateY(0)' },
+      },
+    },
+    animation: {
+      overlayShow: 'overlayShow 300ms cubic-bezier(0.16, 1, 0.3, 1)',
+      contentShow: 'contentShow 300ms cubic-bezier(0.16, 1, 0.3, 1)',
+      slideUpAndFade: 'slideUpAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
     },
   } },
   darkMode: 'class',
