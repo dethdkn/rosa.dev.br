@@ -21,8 +21,8 @@ export default defineNuxtConfig({
     baseUrl: 'https://rosa.dev.br/',
     defaultLocale: 'en',
     locales: [
-      { code: 'en', language: 'en-US', name: 'English (US)', file: 'en-US.json' },
-      { code: 'pt', language: 'pt-BR', name: 'Português (BR)', file: 'pt-BR.json' },
+      { code: 'en', language: 'en-US', name: 'English (US)', file: 'en-US.json', flag: 'flag:us-4x3' },
+      { code: 'pt', language: 'pt-BR', name: 'Português (BR)', file: 'pt-BR.json', flag: 'flag:br-4x3' },
     ],
     skipSettingLocaleOnNavigate: true,
   },

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { locale, setLocale, t } = useI18n()
+const { locale, locales, setLocale, t } = useI18n()
 const colorMode = useColorMode()
 
 const routes = computed(() => [
@@ -10,14 +10,13 @@ const routes = computed(() => [
   { path: '/blog', text: t('nav.blog') },
 ])
 
-function changeLanguage(){
-  locale.value === 'en' ? setLocale('pt') : setLocale('en')
-}
+const languages = computed(() => locales.value.map(l => ({ text: l.name || '', icon: l.flag, click: () => setLocale(l.code), active: l.code === locale.value })))
 
-const isDark = computed({
-  get(){ return colorMode.value === 'dark' },
-  set(){ colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark' },
-})
+const themes = computed(() => [
+  { text: t('nav.system'), icon: 'iconoir:computer', click: () => colorMode.preference = 'system', active: colorMode.preference === 'system' },
+  { text: t('nav.light'), icon: 'iconoir:sun-light', click: () => colorMode.preference = 'light', active: colorMode.preference === 'light' },
+  { text: t('nav.dark'), icon: 'iconoir:moon-sat', click: () => colorMode.preference = 'dark', active: colorMode.preference === 'dark' },
+])
 
 const menuClosed = ref(true)
 </script>
@@ -31,13 +30,13 @@ const menuClosed = ref(true)
         <span class="self-center whitespace-nowrap font-delius text-2xl font-semibold text-obsidian group-hover:text-candy dark:text-snow dark:group-hover:text-candy">Gabriel Rosa</span>
       </NuxtLink>
       <div class="flex items-center space-x-4 sm:mt-0 lg:order-2">
-        <button :aria-label="t('nav.language')" class="flex items-center justify-center" @click="changeLanguage">
+        <Dropdown :options="languages" :aria-label="t('nav.language')">
           <Icon name="iconoir:chat-bubble-translate" :size="24" class="text-obsidian hover:text-candy dark:text-snow dark:hover:text-candy" />
-        </button>
+        </Dropdown>
         <ClientOnly>
-          <button :aria-label="t('nav.theme')" class="flex items-center justify-center" @click="isDark = !isDark">
-            <Icon :name="isDark ? 'iconoir:moon-sat' : 'iconoir:sun-light'" :size="24" class="text-obsidian hover:text-candy dark:text-snow dark:hover:text-candy" />
-          </button>
+          <Dropdown :options="themes" :icon-size="14" :aria-label="t('nav.theme')">
+            <Icon :name="colorMode.preference === 'system' ? themes[0]?.icon : colorMode.preference === 'dark' ? themes[2]?.icon : themes[1]?.icon" :size="24" class="text-obsidian hover:text-candy dark:text-snow dark:hover:text-candy" />
+          </Dropdown>
           <template #fallback>
             <div class="size-6 animate-pulse rounded-full bg-gray-200 dark:bg-gray-700" />
           </template>

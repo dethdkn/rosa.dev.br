@@ -19,8 +19,11 @@ const imgs = ref([
   { url: '/images/almoco_sistemas.png', alt: 'Almoço Equipe de Sistemas' },
 ])
 
-const dialog = ref(false)
 const selected = ref({ url: '', alt: '' })
+const dialog = computed({
+  get: () => selected.value.url !== '',
+  set: v => !v ? selected.value = { url: '', alt: '' } : null,
+})
 
 function openPopup({ url, alt }: { url: string, alt: string }){
   selected.value = { url, alt }
@@ -73,8 +76,7 @@ function openPopup({ url, alt }: { url: string, alt: string }){
           {{ t('about.pictures') }}
         </h2>
         <div class="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3">
-          <!-- eslint-disable-next-line vue-a11y/click-events-have-key-events -->
-          <div v-for="{url, alt} in imgs" :key="url" class="m-5 cursor-zoom-in" role="button" @click="openPopup({url, alt})">
+          <div v-for="{url, alt} in imgs" :key="url" class="m-5 cursor-zoom-in" role="button" @click="openPopup({url, alt})" @keydown.enter="openPopup({url, alt})">
             <div class="w-64 overflow-hidden rounded-2xl">
               <NuxtImg :src="url" :alt class="w-full object-cover transition-all duration-300 hover:scale-110" placeholder loading="lazy" />
             </div>
@@ -84,14 +86,7 @@ function openPopup({ url, alt }: { url: string, alt: string }){
     </div>
 
     <Dialog v-model="dialog" :title="t('about.pictures')" :description="selected.alt">
-      <img :src="selected.url || '/images/placeholder.png'" :alt="selected.alt">
+      <img :src="selected.url || '/images/placeholder.png'" :alt="selected.alt" class="cursor-cell rounded-2xl border-3 border-solid border-candy md:w-950px">
     </Dialog>
-
-    <!--
-      <div class="fixed left-0 top-0 z-100 size-full bg-gray-950/30 transition-all" :class="{ hidden: selected.hidden }" role="button" @click="closePopup" @keypress.esc="closePopup">
-      <Icon v-show="!selected.hidden" name="iconoir:xmark-circle" size="30" class="absolute right-3 top-3 z-101 cursor-pointer text-obsidian hover:text-candy dark:text-snow dark:hover:text-candy" />
-      <img id="popup-img" :src="selected.img || '/images/placeholder.png'" :alt="selected.alt" class="absolute left-1/2 top-1/2 w-19/20 -translate-x-1/2 -translate-y-1/2 cursor-cell rounded-2xl border-3 border-solid border-candy object-cover md:w-950px">
-      </div>
-    -->
   </div>
 </template>

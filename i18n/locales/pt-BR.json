@@ -8,6 +8,9 @@
     "blog": "Blog",
     "language": "Mudar idioma",
     "theme": "Mudar tema",
+    "system": "Sistema",
+    "light": "Claro",
+    "dark": "Escuro",
     "menu": "Abrir o menu"
   },
   "home": {
