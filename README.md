@@ -31,6 +31,10 @@
      <img src="https://tailwindcss.com/favicons/favicon-16x16.png" alt="Tailwind CSS" width="11">
         Tailwind CSS
   </a>
+- <a href="https://reka-ui.com/" target="_blank">
+     <img src="https://reka-ui.com/logo.png" alt="Reka UI" width="11">
+        Reka UI
+  </a>
 - <a href="https://github.com/nuxt/icon" target="_blank">
      <img src="https://iconify.design/favicon.ico" alt="Nuxt" width="12">
         Nuxt Icon

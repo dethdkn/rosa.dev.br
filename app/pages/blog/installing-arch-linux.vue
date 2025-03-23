@@ -7,7 +7,7 @@ useSeoMeta({ description: t('posts.installing_arch_linux.description') })
 
 defineOgImageComponent('Simple', { title: t('posts.installing_arch_linux.title') })
 
-const code1 = await codeToHtml(`ping cbpf.br
+const code1 = `ping cbpf.br
 timedatectl set-ntp true
 lsblk
 cfdisk /dev/sda
@@ -44,12 +44,11 @@ groupadd sudo
 usermod -aG sudo gabrielrosa
 nano /etc/sudoers
 pacman -Syu
-pacman -S neofetch`, { lang: 'shell', themes: { light: 'material-theme-lighter', dark: 'tokyo-night' } })
+pacman -S neofetch`
 </script>
 
 <template>
   <div class="mx-auto max-w-7xl">
-    <!-- eslint-disable vue/no-v-html -->
     <div class="space-y-10 px-20 py-5 text-center sm:text-start lg:space-y-20">
       <h1 class="inline border-b-2 border-candy text-4xl text-obsidian dark:text-snow">
         {{ t('posts.installing_arch_linux.title') }}
@@ -59,9 +58,7 @@ pacman -S neofetch`, { lang: 'shell', themes: { light: 'material-theme-lighter',
       <!-- eslint-disable-next-line vue/no-bare-strings-in-template -->
       <iframe class="m-auto h-60 w-full rounded-lg sm:h-80 md:h-100 lg:h-120 xl:h-160" src="https://www.youtube.com/embed/YGX3None2y8" title="Instalando o Arch Linux (o guia mais fácil do youtube)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
       <p>{{ t('posts.installing_arch_linux.paragraph1') }}</p>
-      <CodeHighlight file-name="Arch Install">
-        <div v-html="code1" />
-      </CodeHighlight>
+      <CodeHighlight file-name="Arch Install" :code="code1" lang="shell" />
       <p>{{ t('posts.installing_arch_linux.paragraph2') }}</p>
       <p>{{ t('posts.final_paragraph') }}</p>
     </div>
