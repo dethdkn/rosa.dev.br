@@ -24,10 +24,10 @@ defineProps({
           <span style="margin-right: 10px;">{{ aka }}</span>
           <span style="border-bottom: 2px solid #F28AA9;">Deth</span>
         </h2>
-        <h3 style="font-size: 20px; color: #CDD5F4; padding-top: 20px;">
-          {{ subtitle }}
-        </h3>
       </div>
+      <h3 style="font-size: 20px; color: #CDD5F4;">
+        {{ subtitle }}
+      </h3>
     </div>
   </div>
 </template>
