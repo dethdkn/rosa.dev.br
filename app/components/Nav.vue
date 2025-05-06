@@ -10,7 +10,7 @@ const routes = computed(() => [
   { path: '/blog', text: t('nav.blog') },
 ])
 
-const languages = computed(() => locales.value.map(l => ({ text: l.name || '', icon: l.flag, click: () => setLocale(l.code), active: l.code === locale.value })))
+const languages = computed(() => locales.value.map(l => ({ text: l.name || '', icon: l.flag as string, click: () => setLocale(l.code), active: l.code === locale.value })))
 
 const themes = computed(() => [
   { text: t('nav.system'), icon: 'iconoir:computer', click: () => colorMode.preference = 'system', active: colorMode.preference === 'system' },

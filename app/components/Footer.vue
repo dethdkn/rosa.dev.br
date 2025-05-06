@@ -8,7 +8,7 @@ const socials = ref([
   { url: 'https://www.linkedin.com/in/gabrielsdrosa', icon: 'iconoir:linkedin', name: 'Linkedin' },
   { url: 'https://www.youtube.com/@gabrielsdrosa', icon: 'iconoir:youtube', name: 'Youtube' },
   { url: 'https://www.behance.net/dethdkn', icon: 'iconoir:behance', name: 'Behance' },
-  { url: 'https://www.instagram.com/gabriel.sdrosa', icon: 'iconoir:instagram', name: 'Instagram' },
+  { url: 'https://www.instagram.com/deth.gsr', icon: 'iconoir:instagram', name: 'Instagram' },
 ])
 </script>
 

@@ -48,8 +48,7 @@
     "eslint_config_description": "🧹 Minha Configuração ESLint Personalizada",
     "litcomp_ai_description": "🤖 Explorando o Futuro com Ciência e Inteligência",
     "posgrad_description": "🧑‍🎓 Portal da pós graduação da COEDU (CBPF)",
-    "cotectemp_description": "🌡️ Monitor em tempo real das temperaturas e sensores de fumaça dos racks do Rio Science Data Center.",
-    "lazuli_description": "💎 Página web da Lazuli Artefatos"
+    "cotectemp_description": "🌡️ Monitor em tempo real das temperaturas e sensores de fumaça dos racks do Rio Science Data Center."
   },
   "blog": {
     "title": "Blog",
