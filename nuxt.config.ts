@@ -15,7 +15,6 @@ export default defineNuxtConfig({
     identity: { type: 'Person' },
   },
   colorMode: { preference: 'dark', fallback: 'dark', classSuffix: '' },
-  future: { compatibilityVersion: 4 },
   compatibilityDate: '2025-01-14',
   i18n: {
     baseUrl: 'https://rosa.dev.br/',
