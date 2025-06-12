@@ -1,6 +1,11 @@
 <script setup lang="ts">
-const { locale, locales, setLocale, t } = useI18n()
+const { locale, locales, setLocale, setLocaleCookie, t } = useI18n()
 const colorMode = useColorMode()
+
+function setLocaleAndCookie(code: 'en' | 'pt'){
+  setLocale(code)
+  setLocaleCookie(code)
+}
 
 const routes = computed(() => [
   { path: '/', text: t('nav.home') },
@@ -10,13 +15,15 @@ const routes = computed(() => [
   { path: '/blog', text: t('nav.blog') },
 ])
 
-const languages = computed(() => locales.value.map(l => ({ text: l.name || '', icon: l.flag as string, click: () => setLocale(l.code), active: l.code === locale.value })))
+const languages = computed(() => locales.value.map(l => ({ text: l.name || '', icon: l.flag as string, click: () => setLocaleAndCookie(l.code), active: l.code === locale.value })))
 
 const themes = computed(() => [
   { text: t('nav.system'), icon: 'iconoir:computer', click: () => colorMode.preference = 'system', active: colorMode.preference === 'system' },
   { text: t('nav.light'), icon: 'iconoir:sun-light', click: () => colorMode.preference = 'light', active: colorMode.preference === 'light' },
   { text: t('nav.dark'), icon: 'iconoir:moon-sat', click: () => colorMode.preference = 'dark', active: colorMode.preference === 'dark' },
 ])
+
+const activeIcon = computed(() => (colorMode.preference === 'system' ? themes.value[0]?.icon : colorMode.preference === 'dark' ? themes.value[2]?.icon : themes.value[1]?.icon) || 'iconoir:computer')
 
 const menuClosed = ref(true)
 </script>
@@ -35,7 +42,7 @@ const menuClosed = ref(true)
         </Dropdown>
         <ClientOnly>
           <Dropdown :options="themes" :icon-size="14" :aria-label="t('nav.theme')">
-            <Icon :name="colorMode.preference === 'system' ? themes[0]?.icon : colorMode.preference === 'dark' ? themes[2]?.icon : themes[1]?.icon" :size="24" class="text-obsidian hover:text-candy dark:text-snow dark:hover:text-candy" />
+            <Icon :name="activeIcon" :size="24" class="text-obsidian hover:text-candy dark:text-snow dark:hover:text-candy" />
           </Dropdown>
           <template #fallback>
             <div class="size-6 animate-pulse rounded-full bg-gray-200 dark:bg-gray-700" />

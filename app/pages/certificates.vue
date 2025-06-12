@@ -500,6 +500,15 @@ const certificates = ref([
       { title: 'Kubernetes', icon: 'logos:kubernetes', color: '#326DE6' },
     ],
   },
+  {
+    href: '/certificates/Clean_Code_Udemy.pdf',
+    title: 'Clean Code',
+    subtitle: '🎓 Udemy',
+    concluded: '06/2025',
+    badges: [
+      { title: 'Clean Code', icon: 'vscode-icons:file-type-json', color: '#F5DE19' },
+    ],
+  },
 ])
 </script>
 
