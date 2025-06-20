@@ -509,6 +509,15 @@ const certificates = ref([
       { title: 'Clean Code', icon: 'vscode-icons:file-type-json', color: '#F5DE19' },
     ],
   },
+  {
+    href: '/certificates/Htmx_Udemy.pdf',
+    title: 'HTMX - The Practical Guide',
+    subtitle: '🎓 Udemy',
+    concluded: '06/2025',
+    badges: [
+      { title: 'HTMX', icon: 'devicon:htmx', color: '#3465A4' },
+    ],
+  },
 ])
 </script>
 
