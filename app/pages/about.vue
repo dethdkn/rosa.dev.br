@@ -9,26 +9,6 @@ useSeoMeta({ description: t('about.description') })
 defineOgImageComponent('Simple', { title: t('about.title') })
 
 const isDark = computed(() => colorMode.value === 'dark')
-
-const imgs = ref([
-  { url: '/images/santos_dumont.png', alt: 'Super Computador Santos Dumont' },
-  { url: '/images/data_center.png', alt: 'Rio Science Data Center' },
-  { url: '/images/cbpf_confraternizacao.png', alt: 'Confraternização do CBPF' },
-  { url: '/images/cbpf_cotec.png', alt: 'COTEC - CBPF' },
-  { url: '/images/reuniao.png', alt: 'Reunião - CBPF' },
-  { url: '/images/almoco_sistemas.png', alt: 'Almoço Equipe de Sistemas' },
-])
-
-const selected = ref({ url: '', alt: '' })
-const dialog = computed({
-  get: () => selected.value.url !== '',
-  set: v => !v ? selected.value = { url: '', alt: '' } : null,
-})
-
-function openPopup({ url, alt }: { url: string, alt: string }){
-  selected.value = { url, alt }
-  dialog.value = true
-}
 </script>
 
 <template>
@@ -71,22 +51,6 @@ function openPopup({ url, alt }: { url: string, alt: string }){
           </ol>
         </div>
       </div>
-      <div class="border-b border-gray-300 pb-10 text-center dark:border-gray-700 sm:text-start" data-aos="fade-up">
-        <h2 class="inline border-b-2 border-candy text-4xl text-obsidian dark:text-snow">
-          {{ t('about.pictures') }}
-        </h2>
-        <div class="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3">
-          <div v-for="{url, alt} in imgs" :key="url" class="m-5 cursor-zoom-in" role="button" @click="openPopup({url, alt})" @keydown.enter="openPopup({url, alt})">
-            <div class="w-64 overflow-hidden rounded-2xl">
-              <NuxtImg :src="url" :alt class="w-full object-cover transition-all duration-300 hover:scale-110" placeholder loading="lazy" />
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-
-    <Dialog v-model="dialog" :title="t('about.pictures')" :description="selected.alt">
-      <img :src="selected.url || '/images/placeholder.png'" :alt="selected.alt" class="cursor-cell rounded-2xl border-3 border-solid border-candy md:w-950px">
-    </Dialog>
   </div>
 </template>

@@ -18,8 +18,7 @@
     "im": "Eu sou o {name} ou {nickname}",
     "simple_im": "Eu sou o",
     "aka": "ou",
-    "subtitle": "Desenvolvedor Full Stack",
-    "drawn_by": "Foto do perfil desenhada por JuxFire"
+    "subtitle": "Desenvolvedor Full Stack"
   },
   "about": {
     "title": "Sobre mim",
@@ -28,8 +27,7 @@
     "experience": "Experiência",
     "cbpf": "Centro Brasileiro de Pesquisas Físicas",
     "full_stack": "Desenvolvedor Full Stack",
-    "twnt": "2019 - presente",
-    "pictures": "Fotos"
+    "twnt": "2019 - presente"
   },
   "certificates": {
     "title": "Certificados",

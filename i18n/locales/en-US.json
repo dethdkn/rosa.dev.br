@@ -18,8 +18,7 @@
     "im": "I'm {name} aka {nickname}",
     "simple_im": "Im",
     "aka": "aka",
-    "subtitle": "Full Stack Developer",
-    "drawn_by": "Profile picture drawn by JuxFire"
+    "subtitle": "Full Stack Developer"
   },
   "about": {
     "title": "About me",
@@ -28,8 +27,7 @@
     "experience": "Experience",
     "cbpf": "Brazilian Center for Physics Research",
     "full_stack": "Full Stack Developer",
-    "twnt": "2019 - present",
-    "pictures": "Pictures"
+    "twnt": "2019 - present"
   },
   "certificates": {
     "title": "Certificates",
