@@ -45,7 +45,7 @@
     "nuxt": "^4.0.0",
     "nuxt-aos": "^1.2.5",
     "reka-ui": "^2.3.2",
-    "shiki": "3.8.0",
+    "shiki": "3.8.1",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
   },
@@ -53,6 +53,6 @@
     "@dethdkn/eslint-config": "^3.2.0",
     "bumpp": "^10.2.0",
     "eslint": "9.31.0",
-    "vue-tsc": "^3.0.1"
+    "vue-tsc": "^3.0.3"
   }
 }
