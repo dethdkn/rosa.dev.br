@@ -43,6 +43,7 @@
     "@vercel/speed-insights": "^1.2.0",
     "@vueuse/nuxt": "^13.5.0",
     "emoji-blast": "^0.10.2",
+    "mongodb": "^6.17.0",
     "nuxt": "^4.0.0",
     "nuxt-aos": "^1.2.5",
     "reka-ui": "^2.3.2",

@@ -1,5 +1,3 @@
-import process from 'node:process'
-
 export default defineNuxtConfig({
   modules: ['@nuxt/fonts', '@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/seo', '@nuxtjs/i18n', '@vueuse/nuxt', '@nuxt/icon', 'nuxt-aos', 'reka-ui/nuxt'],
   imports: { imports: [
@@ -13,14 +11,18 @@ export default defineNuxtConfig({
     name: 'Gabriel Rosa',
     description: 'Full Stack Developer',
     defaultLocale: 'en',
-    twitter: '@DethDKN',
+    twitter: '@deth_gr',
     identity: { type: 'Person' },
   },
   colorMode: { preference: 'dark', fallback: 'dark', classSuffix: '' },
   runtimeConfig: {
-    blobToken: process.env.BLOB_READ_WRITE_TOKEN,
+    blobReadWriteToken: '',
+    mongodbUri: '',
   },
-  compatibilityDate: '2025-01-14',
+  compatibilityDate: '2025-07-15',
+  nitro: {
+    imports: { imports: [{ name: 'head', from: '@vercel/blob' }] },
+  },
   i18n: {
     baseUrl: 'https://rosa.dev.br/',
     defaultLocale: 'en',
@@ -30,6 +32,7 @@ export default defineNuxtConfig({
     ],
     skipSettingLocaleOnNavigate: true,
     bundle: { optimizeTranslationDirective: false },
+    experimental: { localeDetector: 'localeDetector.ts' },
   },
   icon: { customCollections: [{ prefix: 'cc', dir: 'app/assets/custom-icons' }] },
   linkChecker: { enabled: false },
