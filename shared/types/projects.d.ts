@@ -1,6 +1,8 @@
+import type { Badges } from './badges'
+
 export interface Projects{
   title: string,
-  badges: { title: string, icon: string, color: string }[],
+  badges: Badges[],
   urls: { url: string, external: boolean, icon: string, aria: string }[],
   description: string,
 }
