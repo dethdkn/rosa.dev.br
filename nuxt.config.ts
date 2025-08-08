@@ -31,7 +31,6 @@ export default defineNuxtConfig({
       { code: 'pt', language: 'pt-BR', name: 'Português (BR)', file: 'pt-BR.json', flag: 'flag:br-4x3' },
     ],
     skipSettingLocaleOnNavigate: true,
-    bundle: { optimizeTranslationDirective: false },
     experimental: { localeDetector: 'localeDetector.ts' },
   },
   icon: { customCollections: [{ prefix: 'cc', dir: 'app/assets/custom-icons' }] },
