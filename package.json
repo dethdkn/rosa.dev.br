@@ -1,7 +1,7 @@
 {
   "name": "rosa.dev.br",
   "type": "module",
-  "version": "3.4.4",
+  "version": "3.4.5",
   "private": true,
   "packageManager": "pnpm@10.14.0",
   "scripts": {
