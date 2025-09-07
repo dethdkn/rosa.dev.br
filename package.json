@@ -3,7 +3,7 @@
   "type": "module",
   "version": "3.4.5",
   "private": true,
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.15.1",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -44,7 +44,7 @@
     "@vueuse/nuxt": "^13.9.0",
     "emoji-blast": "^0.10.2",
     "mongodb": "^6.19.0",
-    "nuxt": "^4.1.1",
+    "nuxt": "4.1.0",
     "nuxt-aos": "^1.2.5",
     "reka-ui": "^2.5.0",
     "shiki": "3.12.2",
