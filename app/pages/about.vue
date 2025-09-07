@@ -19,7 +19,13 @@ const isDark = computed(() => colorMode.value === 'dark')
           {{ t('about.title') }}
         </h1>
         <p class="mt-8 block text-center text-xl text-obsidian dark:text-snow lg:px-20">
-          {{ t('about.learner') }}
+          {{ t('about.paragraph1') }}
+        </p>
+        <p class="mt-8 block text-center text-xl text-obsidian dark:text-snow lg:px-20">
+          {{ t('about.paragraph2') }}
+        </p>
+        <p class="mt-8 block text-center text-xl text-obsidian dark:text-snow lg:px-20">
+          {{ t('about.paragraph3') }}
         </p>
       </div>
       <div class="border-b border-gray-300 pb-10 text-center dark:border-gray-700 sm:text-start" data-aos="fade-up">
@@ -45,7 +51,7 @@ const isDark = computed(() => colorMode.value === 'dark')
                 {{ t('about.twnt') }}
               </p>
               <p class="mt-2">
-                {{ t('about.full_stack') }}
+                {{ t('about.engineer_devops') }}
               </p>
             </li>
           </ol>

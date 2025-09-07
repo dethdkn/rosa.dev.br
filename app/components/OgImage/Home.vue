@@ -3,7 +3,7 @@ defineOptions({ inheritAttrs: false })
 
 defineProps({
   title: { type: String, default: 'Gabriel Rosa' },
-  subtitle: { type: String, default: 'Full Stack Dev' },
+  subtitle: { type: String, default: 'Software Engineer & DevOps' },
   im: { type: String, default: 'I\'m' },
   aka: { type: String, default: 'aka' },
 })

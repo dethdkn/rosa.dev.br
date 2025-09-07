@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   site: {
     url: 'https://rosa.dev.br/',
     name: 'Gabriel Rosa',
-    description: 'Full Stack Developer',
+    description: 'Software Engineer & DevOps',
     defaultLocale: 'en',
     twitter: '@deth_gr',
     identity: { type: 'Person' },

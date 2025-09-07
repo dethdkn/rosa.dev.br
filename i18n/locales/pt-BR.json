@@ -18,15 +18,17 @@
     "im": "Eu sou o {name} ou {nickname}",
     "simple_im": "Eu sou o",
     "aka": "ou",
-    "subtitle": "Desenvolvedor Full Stack"
+    "subtitle": "Engenheiro de Software & DevOps"
   },
   "about": {
     "title": "Sobre mim",
     "description": "Conheça minha jornada profissional, as coisas de tecnologia que curto, um monte de fotos e os certificados que me fazem parecer respeitável. É tudo sobre mim, sem enrolação. Aproveitem!",
-    "learner": "Sou um autodidata dedicado, sempre ansioso para aprender novas tecnologias e abordagens. Minha capacidade de aprendizado rápido me permite acompanhar as tendências em constante evolução da tecnologia.",
+    "paragraph1": "Sou Engenheiro de Software e DevOps, com experiência em desenvolvimento full-stack e infraestrutura. Trabalho tanto em frontend quanto em backend, sempre buscando soluções simples, escaláveis e fáceis de manter.",
+    "paragraph2": "Tenho experiência com Nuxt, Vue, Next, React, Node.js, Go e TypeScript, além de Tailwind CSS. No backend, atuo com MongoDB, SQL e integrações com LDAP.",
+    "paragraph3": "Na área de DevOps, utilizo Docker, pipelines de CI/CD e ambientes Linux para deploy e manutenção de serviços. Também aplico testes automatizados com Vitest para garantir estabilidade e evolução contínua dos projetos.",
     "experience": "Experiência",
     "cbpf": "Centro Brasileiro de Pesquisas Físicas",
-    "full_stack": "Desenvolvedor Full Stack",
+    "engineer_devops": "Engenheiro de Software & DevOps",
     "twnt": "2019 - presente"
   },
   "certificates": {

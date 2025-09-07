@@ -18,15 +18,17 @@
     "im": "I'm {name} aka {nickname}",
     "simple_im": "Im",
     "aka": "aka",
-    "subtitle": "Full Stack Developer"
+    "subtitle": "Software Engineer & DevOps"
   },
   "about": {
     "title": "About me",
     "description": "find out the techie stuff Im into, a bunch of pics, and the certificates that make me look legit. Its me in a nutshell, no fluff. Enjoy!",
-    "learner": "I'm a dedicated self-learner, always eager to grasp new technologies and approaches. My ability to learn quickly enables me to keep up with the ever-evolving trends in tech.",
+    "paragraph1": "I'm a Software Engineer and DevOps professional with experience in full-stack development and infrastructure. I work across frontend and backend, focusing on building solutions that are simple, scalable, and easy to maintain.",
+    "paragraph2": "My background includes Nuxt, Vue, Next, React, Node.js, Go, and TypeScript, along with Tailwind CSS. On the backend, I have worked with MongoDB, SQL, and LDAP integrations.",
+    "paragraph3": "In DevOps, I use Docker, CI/CD pipelines, and Linux environments to deploy and manage services. I also apply automated testing with Vitest to ensure stability and continuous improvement.",
     "experience": "Experience",
     "cbpf": "Brazilian Center for Physics Research",
-    "full_stack": "Full Stack Developer",
+    "engineer_devops": "Software Engineer & DevOps",
     "twnt": "2019 - present"
   },
   "certificates": {
