@@ -137,7 +137,8 @@ class Line{
 }
 
 let ctx: { running?: boolean, frame?: number } & CanvasRenderingContext2D
-let _f: Wave
+// eslint-disable-next-line unused-imports/no-unused-vars
+let f: Wave
 let pos = { x: 0, y: 0 }
 let lines: Line[] = []
 
