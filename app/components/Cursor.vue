@@ -137,7 +137,7 @@ class Line{
 }
 
 let ctx: { running?: boolean, frame?: number } & CanvasRenderingContext2D
-let f: Wave
+let _f: Wave
 let pos = { x: 0, y: 0 }
 let lines: Line[] = []
 
