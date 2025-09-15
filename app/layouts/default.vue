@@ -1,5 +1,6 @@
 <template>
   <Nav />
+  <Cursor />
   <main class="min-h-content bg-pearl dark:bg-onyx">
     <slot />
   </main>

@@ -29,12 +29,12 @@ const menuClosed = ref(true)
 </script>
 
 <template>
-  <nav class="border-b border-gray-200 bg-pearl dark:border-gray-800 dark:bg-onyx">
+  <nav class="bg-pearl dark:bg-onyx border-b border-gray-200 dark:border-gray-800">
     <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
       <NuxtLink to="/" class="group flex items-center">
         <NuxtImg src="/logo.webp" :alt="t('nav.logo')" class="mr-3 size-8 group-hover:animate-pulse" preload />
         <!-- eslint-disable-next-line vue/no-bare-strings-in-template -->
-        <span class="self-center whitespace-nowrap font-delius text-2xl font-semibold text-obsidian group-hover:text-candy dark:text-snow dark:group-hover:text-candy">Gabriel Rosa</span>
+        <span class="font-delius text-obsidian group-hover:text-candy dark:text-snow dark:group-hover:text-candy self-center text-2xl font-semibold whitespace-nowrap">Gabriel Rosa</span>
       </NuxtLink>
       <div class="flex items-center space-x-4 sm:mt-0 lg:order-2">
         <Dropdown :options="languages" :aria-label="t('nav.language')">
@@ -53,9 +53,9 @@ const menuClosed = ref(true)
         </button>
       </div>
       <div class="w-full items-center justify-between lg:order-1 lg:flex lg:w-auto" :class="{ hidden: menuClosed }">
-        <ul class="mt-4 flex flex-col rounded-lg border border-stone-300 bg-pearl p-4 font-medium dark:border-gray-700 dark:bg-onyx lg:mt-0 lg:flex-row lg:space-x-8 lg:border-0 lg:p-0">
+        <ul class="bg-pearl dark:bg-onyx mt-4 flex flex-col rounded-lg border border-stone-300 p-4 font-medium lg:mt-0 lg:flex-row lg:space-x-8 lg:border-0 lg:p-0 dark:border-gray-700">
           <li v-for="route in routes" :key="route.path">
-            <NuxtLinkLocale :to="route.path" class="block rounded border-transparent py-2 pl-3 pr-4 text-obsidian hover:bg-gray-200 dark:text-snow dark:hover:bg-gray-700 dark:hover:text-white lg:rounded-none lg:border-b-2 lg:border-candy/0 lg:p-0 hover:lg:border-candy/100 lg:hover:bg-transparent lg:hover:text-candy hover:lg:dark:border-candy lg:dark:hover:bg-transparent lg:dark:hover:text-candy" active-class="!text-white bg-candy hover:!bg-candy lg:bg-transparent hover:lg:!bg-transparent lg:!text-obsidian lg:dark:!text-snow lg:border-obsidian lg:dark:border-obsidian lg:border-opacity-100 lg:hover:!text-candy lg:dark:hover:!text-candy hover:lg:border-candy hover:lg:dark:border-candy" @click="menuClosed = true">
+            <NuxtLinkLocale :to="route.path" class="text-obsidian dark:text-snow lg:border-candy/0 hover:lg:border-candy/100 lg:hover:text-candy hover:lg:dark:border-candy lg:dark:hover:text-candy block rounded border-transparent py-2 pr-4 pl-3 hover:bg-gray-200 lg:rounded-none lg:border-b-2 lg:p-0 lg:hover:bg-transparent dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent" active-class="!text-white bg-candy hover:!bg-candy lg:bg-transparent hover:lg:!bg-transparent lg:!text-obsidian lg:dark:!text-snow lg:border-obsidian lg:dark:border-obsidian lg:border-opacity-100 lg:hover:!text-candy lg:dark:hover:!text-candy hover:lg:border-candy hover:lg:dark:border-candy" @click="menuClosed = true">
               {{ route.text }}
             </NuxtLinkLocale>
           </li>

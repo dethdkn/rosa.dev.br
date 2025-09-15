@@ -12,7 +12,7 @@ const { data: projects } = await useFetch('/api/projects', { default: () => [] a
 
 <template>
   <div class="mx-auto max-w-7xl space-y-10 px-20 py-5 text-center sm:text-start lg:space-y-20">
-    <h1 class="inline border-b-2 border-candy text-4xl text-obsidian dark:text-snow">
+    <h1 class="border-candy text-obsidian dark:text-snow inline border-b-2 text-4xl">
       {{ t('projects.title') }}
     </h1>
     <List v-for="{title, badges, urls, description} in projects" :key="title" :title :badges :urls :description data-aos="fade-right" />

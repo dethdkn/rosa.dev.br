@@ -1,0 +1,162 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@theme {
+  --spacing-950px: 950px;
+  --spacing-19-20: 95%;
+  --spacing-100: 25rem;
+  --spacing-120: 30rem;
+  --spacing-160: 40rem;
+  --spacing-content: calc(100vh - 311px);
+
+  --color-snow: #CDD5F4;
+  --color-pearl: #EFF1F5;
+  --color-cloud: #DCE0E7;
+  --color-milk: #FAFAFA;
+  --color-obsidian: #4C4F69;
+  --color-onyx: #1E1E2E;
+  --color-eclipse: #1A1B26;
+  --color-candy: #F28AA9;
+  --color-bubblegum: #e7688e;
+  --color-nuxt: #43DD7D;
+  --color-vercel: #000000;
+  --color-vercelWhite: #FDFDFD;
+
+  --drop-shadow-candy: 0 0 5px #F28AA9;
+  --drop-shadow-nuxt: 0 0 5px #43DD7D;
+  --drop-shadow-nuxtWhite: 0 0 5px #43DD7Daa;
+  --drop-shadow-vercel: 0 0 5px #000000;
+  --drop-shadow-vercelWhite: 0 0 5px #FDFDFDaa;
+
+  --font-delius: "Delius Unicase", sans-serif;
+  --font-montserrat: "Montserrat Alternates", sans-serif;
+  --text-mini: 10px;
+
+  --border-3: 3px;
+  --z-100: 100;
+
+  --animate-overlayShow: overlayShow 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-contentShow: contentShow 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-slideUpAndFade: slideUpAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  @keyframes overlayShow {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  @keyframes contentShow {
+    from { opacity: 0; transform: translate(-50%, -50%) scale(0.01) }
+    to   { opacity: 1; transform: translate(-50%, -50%) scale(1) }
+  }
+
+  @keyframes slideUpAndFade {
+    from { opacity: 0; transform: translateY(2px) }
+    to   { opacity: 1; transform: translateY(0) }
+  }
+}
+
+* {
+  @apply font-montserrat transition-colors duration-500 ease-in-out;
+}
+
+*::selection {
+  @apply text-snow bg-candy;
+}
+
+html, body {
+  @apply h-full m-0 p-0;
+}
+
+body {
+  @apply bg-pearl;
+}
+
+.dark body {
+  @apply bg-onyx;
+}
+
+html.dark .shiki, html.dark .shiki span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+  font-style: var(--shiki-dark-font-style) !important;
+  font-weight: var(--shiki-dark-font-weight) !important;
+  text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
+*::-webkit-scrollbar-button, .dark *::-webkit-scrollbar-button {
+  @apply hidden;
+}
+
+*::-webkit-scrollbar, .dark *::-webkit-scrollbar {
+  @apply w-4;
+}
+
+*::-webkit-scrollbar-thumb, .dark *::-webkit-scrollbar-thumb {
+  @apply rounded-2xl;
+}
+
+body::-webkit-scrollbar {
+  @apply bg-pearl;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-[#babac0] border-4 border-solid border-pearl;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-pearl;
+}
+
+.dark body::-webkit-scrollbar {
+  @apply bg-onyx;
+}
+
+.dark body::-webkit-scrollbar-thumb {
+  @apply bg-[#718096] border-onyx;
+}
+
+.dark body::-webkit-scrollbar-track {
+  @apply bg-onyx;
+}
+
+div::-webkit-scrollbar {
+  @apply bg-milk;
+}
+
+div::-webkit-scrollbar-thumb {
+  @apply bg-[#babac0] border-4 border-solid border-milk;
+}
+
+div::-webkit-scrollbar-track {
+  @apply bg-milk;
+}
+
+.dark div::-webkit-scrollbar {
+  @apply bg-eclipse;
+}
+
+.dark div::-webkit-scrollbar-thumb {
+  @apply bg-[#718096] border-eclipse;
+}
+
+.dark div::-webkit-scrollbar-track {
+  @apply bg-eclipse;
+}
+
+.page-enter-active, .page-leave-active {
+  transition: all 0.4s;
+}
+
+.page-enter-from, .page-leave-to {
+  opacity: 0;
+  filter: blur(0.1rem);
+}

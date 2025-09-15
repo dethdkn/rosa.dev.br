@@ -1,11 +1,17 @@
+import tailwindcss from '@tailwindcss/vite'
+
 export default defineNuxtConfig({
-  modules: ['@nuxt/fonts', '@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/seo', '@nuxtjs/i18n', '@vueuse/nuxt', '@nuxt/icon', 'nuxt-aos', 'reka-ui/nuxt'],
+  modules: ['@nuxt/fonts', '@nuxt/image', '@nuxtjs/color-mode', '@nuxtjs/seo', '@nuxtjs/i18n', '@vueuse/nuxt', '@nuxt/icon', 'nuxt-aos', 'reka-ui/nuxt'],
   imports: { imports: [
     { name: 'emojiBlasts', from: 'emoji-blast' },
     { name: 'codeToHtml', from: 'shiki' },
   ] },
   devtools: { enabled: true },
-  app: { head: { templateParams: { separator: '•' } } },
+  app: { head: {
+    templateParams: { separator: '•' },
+    noscript: [{ innerHTML: '<style>.noscript{opacity:100!important;}</style>' }],
+  } },
+  css: ['~/assets/main.css'],
   site: {
     url: 'https://rosa.dev.br/',
     name: 'Gabriel Rosa',
@@ -23,6 +29,7 @@ export default defineNuxtConfig({
   nitro: {
     imports: { imports: [{ name: 'head', from: '@vercel/blob' }] },
   },
+  vite: { plugins: [tailwindcss()] },
   i18n: {
     baseUrl: 'https://rosa.dev.br/',
     defaultLocale: 'en',

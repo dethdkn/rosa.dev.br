@@ -2,6 +2,7 @@ packages:
   - .
 onlyBuiltDependencies:
   - '@parcel/watcher'
+  - '@tailwindcss/oxide'
   - '@vercel/speed-insights'
   - esbuild
   - sharp
