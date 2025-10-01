@@ -29,7 +29,13 @@
     "experience": "Experience",
     "cbpf": "Brazilian Center for Physics Research",
     "engineer_devops": "Software Engineer & DevOps",
-    "twnt": "2019 - present"
+    "twnt": "2019 - present",
+    "cbpf_description1": "At the Brazilian Center for Physics Research (CBPF), I am responsible for modernizing the institution's technological infrastructure and developing solutions that support its internal systems. I led the full migration of legacy PHP 5 applications to modern stacks such as Nuxt and Go, bringing enhanced security, scalability, and performance to our services.",
+    "cbpf_description2": "I manage the deployment and configuration of the central web server using Nginx with HTTP/3 and Docker, as well as the central database infrastructure, which integrates PostgreSQL, MongoDB, and Redis in a stable, high-availability environment.",
+    "cbpf_description3": "I designed and maintain the institution's Single Sign-On (SSO), ensuring secure and unified authentication across CBPF's systems. I also set up authoritative and recursive DNS servers (primary and secondary), and implemented GitLab and GitLab Runners, enabling code versioning, CI/CD automation, and seamless collaboration across research and development teams.",
+    "cbpf_description4": "In addition, I deployed third-party tools such as Umami and Uptime Kuma for analytics and uptime monitoring, and I create and maintain technical documentation with VitePress, ensuring clarity and accessibility of processes and systems.",
+    "cbpf_description5": "My work also involves configuring and securing servers (typically running Ubuntu), setting up firewalls, network rules, and security best practices. As the technical lead of the team, I also mentor colleagues and interns in programming, system administration, and DevOps practices.",
+    "cbpf_description6": "Furthermore, I assist in the deployment and integration of the LDAP server across CBPF projects, and in setting up secure access infrastructure with OpenVPN, strengthening both reliability and security across the institution's environment."
   },
   "certificates": {
     "title": "Certificates",

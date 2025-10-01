@@ -47,11 +47,29 @@ const isDark = computed(() => colorMode.value === 'dark')
               <NuxtLink to="https://cbpf.br" external target="_blank" class="text-obsidian hover:text-candy hover:drop-shadow-candy dark:border-snow dark:text-snow dark:hover:text-candy mb-2 block cursor-pointer text-lg leading-tight font-medium transition-all duration-300">
                 {{ t('about.cbpf') }}
               </NuxtLink>
+              <p class="mb-2">
+                {{ t('about.engineer_devops') }}
+              </p>
               <p class="border-candy m-0 inline rounded border p-1 text-sm whitespace-nowrap sm:m-1">
                 {{ t('about.twnt') }}
               </p>
               <p class="mt-2">
-                {{ t('about.engineer_devops') }}
+                {{ t('about.cbpf_description1') }}
+              </p>
+              <p>
+                {{ t('about.cbpf_description2') }}
+              </p>
+              <p>
+                {{ t('about.cbpf_description3') }}
+              </p>
+              <p>
+                {{ t('about.cbpf_description4') }}
+              </p>
+              <p>
+                {{ t('about.cbpf_description5') }}
+              </p>
+              <p>
+                {{ t('about.cbpf_description6') }}
               </p>
             </li>
           </ol>

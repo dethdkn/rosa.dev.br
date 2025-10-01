@@ -29,7 +29,13 @@
     "experience": "Experiência",
     "cbpf": "Centro Brasileiro de Pesquisas Físicas",
     "engineer_devops": "Engenheiro de Software & DevOps",
-    "twnt": "2019 - presente"
+    "twnt": "2019 - presente",
+    "cbpf_description1": "No Centro Brasileiro de Pesquisas Físicas (CBPF), sou responsável pela modernização da infraestrutura tecnológica e pelo desenvolvimento de soluções que sustentam os sistemas institucionais. Conduzi a migração completa do legado em PHP 5 para tecnologias modernas como Nuxt e Go, trazendo mais segurança, escalabilidade e desempenho para os serviços internos.",
+    "cbpf_description2": "Também sou responsável pela implantação e configuração do servidor web central, utilizando Nginx com suporte a HTTP/3 e conteinerização com Docker, além da administração do banco de dados central, que integra PostgreSQL, MongoDB e Redis em um ecossistema estável e de alta disponibilidade.",
+    "cbpf_description3": "Desenvolvo e mantenho o SSO (Single Sign-On) da instituição, garantindo autenticação única e segura para os diversos sistemas do CBPF. Além disso, implementei servidores DNS autoritativos e recursivos (primários e secundários), bem como a instalação e configuração do GitLab e de GitLab Runners, viabilizando o versionamento de código, automação de pipelines e integração contínua para os times de pesquisa e desenvolvimento.",
+    "cbpf_description4": "Participei ativamente da implantação de ferramentas de monitoramento e análise como Umami e Uptime Kuma, e sou responsável pela criação de documentações técnicas com VitePress, garantindo registro claro e acessível dos processos e sistemas.",
+    "cbpf_description5": "Grande parte da minha atuação envolve a configuração e segurança de servidores (geralmente em Ubuntu), incluindo firewalls, regras de rede e boas práticas de proteção de dados. Também atuo como responsável técnico da equipe, orientando colegas e estagiários em programação, administração de sistemas e melhores práticas em DevOps.",
+    "cbpf_description6": "Além disso, contribuo na implantação e integração do servidor LDAP nos projetos do CBPF, assim como na configuração de infraestrutura de acesso seguro via VPN (OpenVPN), reforçando a confiabilidade e a segurança do ambiente institucional."
   },
   "certificates": {
     "title": "Certificados",
