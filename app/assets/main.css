@@ -28,14 +28,12 @@
   --color-candy: #F28AA9;
   --color-bubblegum: #e7688e;
   --color-nuxt: #43DD7D;
-  --color-vercel: #000000;
-  --color-vercelWhite: #FDFDFD;
+  --color-cloudflare: #F38020;
 
   --drop-shadow-candy: 0 0 5px #F28AA9;
   --drop-shadow-nuxt: 0 0 5px #43DD7D;
   --drop-shadow-nuxtWhite: 0 0 5px #43DD7Daa;
-  --drop-shadow-vercel: 0 0 5px #000000;
-  --drop-shadow-vercelWhite: 0 0 5px #FDFDFDaa;
+  --drop-shadow-cloudflare: 0 0 5px #F38020aa;
 
   --font-delius: "Delius Unicase", sans-serif;
   --font-montserrat: "Montserrat Alternates", sans-serif;

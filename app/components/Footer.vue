@@ -1,7 +1,4 @@
 <script setup lang="ts">
-const colorMode = useColorMode()
-const isDark = computed(() => colorMode.value === 'dark')
-
 const socials = ref([
   { url: 'mailto:gabriel@rosa.dev.br', icon: 'iconoir:at-sign', name: 'Email' },
   { url: 'https://github.com/dethdkn', icon: 'iconoir:github', name: 'Github' },
@@ -35,10 +32,9 @@ const socials = ref([
         </NuxtLink>
         <span class="mx-2">—</span>
         Hosted on&nbsp;
-        <NuxtLink to="https://vercel.com/home" external target="_blank" class="text-vercel hover:drop-shadow-vercel dark:text-vercelWhite dark:hover:drop-shadow-vercelWhite transition-all duration-300">
-          <Icon v-if="isDark" name="simple-icons:vercel" :size="12" />
-          <Icon v-else name="logos:vercel-icon" :size="12" />
-          <span>&nbsp;Vercel</span>
+        <NuxtLink to="https://www.cloudflare.com/" external target="_blank" class="text-cloudflare hover:drop-shadow-cloudflare transition-all duration-300">
+          <Icon name="logos:cloudflare-icon" :size="12" />
+          <span>&nbsp;Cloudflare</span>
         </NuxtLink>
       </p>
     </div>

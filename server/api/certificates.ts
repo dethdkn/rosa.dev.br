@@ -1,5 +1,5 @@
 export default defineEventHandler(async () => {
-  const certificates = await mongo.collection('certificates').find<Certificates>({}).toArray()
+  const certificates = (await kv<Certificates[]>('certificates')) || []
 
   certificates.sort((a: Certificates, b: Certificates) => {
     const [am, ay] = a.concluded.split('/')

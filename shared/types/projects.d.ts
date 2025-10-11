@@ -1,5 +1,3 @@
-import type { Badges } from './badges'
-
 export interface Projects{
   title: string,
   badges: Badges[],
