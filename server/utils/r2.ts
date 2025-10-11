@@ -1,8 +1,8 @@
 import { Buffer } from 'node:buffer'
 
-const R2 = createStorage({ driver: R2Driver({ binding: 'BUCKET' }) })
-
 export default async function(filePath: string){
+  const R2 = createStorage({ driver: R2Driver({ binding: 'BUCKET' }) })
+
   const file = await R2.getItemRaw<ArrayBuffer>(filePath).catch(() => null)
 
   if(!file) throw new Error('File not found')
