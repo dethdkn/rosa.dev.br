@@ -16,18 +16,27 @@ export default defineNuxtConfig({
     url: 'https://rosa.dev.br/',
     name: 'Gabriel Rosa',
     description: 'Software Engineer & DevOps',
-    defaultLocale: 'en',
     twitter: '@deth_gr',
     identity: { type: 'Person' },
   },
   colorMode: { preference: 'dark', fallback: 'dark', classSuffix: '' },
-  runtimeConfig: {
-    blobReadWriteToken: '',
-    mongodbUri: '',
-  },
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: '2025-10-10',
   nitro: {
-    imports: { imports: [{ name: 'head', from: '@vercel/blob' }] },
+    preset: 'cloudflare_module',
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true,
+      wrangler: {
+        r2_buckets: [{ binding: 'R2', bucket_name: 'rosa-dev-br' }],
+        kv_namespaces: [{ binding: 'KV', id: '39c4dd68c5dc4ca5b5ad77db972e07a3' }],
+      },
+    },
+    imports: { imports: [
+      { name: 'createStorage', from: 'unstorage' },
+      { name: 'default', as: 'R2Driver', from: 'unstorage/drivers/cloudflare-r2-binding' },
+      { name: 'default', as: 'KVDriver', from: 'unstorage/drivers/cloudflare-kv-binding' },
+      { name: 'default', as: 'mime', from: 'mime' },
+    ] },
   },
   vite: { plugins: [tailwindcss()] },
   i18n: {
