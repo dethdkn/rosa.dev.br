@@ -1,7 +1,11 @@
-const KV = globalThis.KV || globalThis.__env__?.KV
+const { KV } = globalThis
 
 export default async function<T>(key: string): Promise<T>{
   if(!KV) throw new Error('KV not found')
 
-  return (await KV.get<T>(key)) as T
+  const value = await KV.get(key)
+
+  if(!value) throw new Error('Key not found')
+
+  return destr<T>(value)
 }

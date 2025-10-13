@@ -39,6 +39,7 @@
     "@tailwindcss/vite": "^4.1.14",
     "@vueuse/nuxt": "^13.9.0",
     "clsx": "^2.1.1",
+    "destr": "^2.0.5",
     "emoji-blast": "^0.10.2",
     "mime": "^4.1.0",
     "motion-v": "^1.7.2",

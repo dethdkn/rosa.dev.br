@@ -1,4 +1,4 @@
-const R2 = globalThis.R2 || globalThis.__env__?.R2
+const { R2 } = globalThis
 
 export default async function(filePath: string){
   if(!R2) throw new Error('R2 not found')
