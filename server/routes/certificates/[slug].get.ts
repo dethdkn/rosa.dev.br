@@ -1,10 +1,10 @@
 export default defineEventHandler(async event => {
-  const certName = getRouterParam(event, 'slug') || ''
+  const name = `certificates:${getRouterParam(event, 'slug') || ''}`
 
-  const { buffer, headers } = await r2('certificates', certName)
+  const { file, headers } = await r2(name)
     .catch(() => { throw createError({ statusCode: 404, statusMessage: 'Certificate Not Found' }) })
 
   appendHeaders(event, headers)
 
-  return buffer
+  return file
 })
