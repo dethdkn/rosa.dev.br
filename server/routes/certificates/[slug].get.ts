@@ -1,7 +1,7 @@
 export default defineEventHandler(async event => {
-  const name = `certificates:${getRouterParam(event, 'slug')?.replaceAll('/', '') || ''}`
+  const certName = getRouterParam(event, 'slug') || ''
 
-  const { buffer, headers } = await r2(name)
+  const { buffer, headers } = await r2('certificates', certName)
     .catch(() => { throw createError({ statusCode: 404, statusMessage: 'Certificate Not Found' }) })
 
   appendHeaders(event, headers)

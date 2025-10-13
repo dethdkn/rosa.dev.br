@@ -1,7 +1,7 @@
 export default defineEventHandler(async event => {
-  const name = `downloads:${getRouterParam(event, 'slug')?.replaceAll('/', '') || ''}`
+  const fileName = getRouterParam(event, 'slug') || ''
 
-  const { buffer, headers } = await r2(name)
+  const { buffer, headers } = await r2('downloads', fileName)
     .catch(() => { throw createError({ statusCode: 404, statusMessage: 'File Not Found' }) })
 
   appendHeaders(event, headers)
