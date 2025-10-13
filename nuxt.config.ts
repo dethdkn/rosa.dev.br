@@ -27,11 +27,12 @@ export default defineNuxtConfig({
       deployConfig: true,
       nodeCompat: true,
       wrangler: {
+        name: 'rosa-dev-br',
+        workers_dev: false,
+        route: 'rosa.dev.br/*',
         r2_buckets: [{ binding: 'R2', bucket_name: 'rosa-dev-br' }],
         kv_namespaces: [{ binding: 'KV', id: '39c4dd68c5dc4ca5b5ad77db972e07a3' }],
         observability: { logs: { enabled: true, head_sampling_rate: 1, invocation_logs: true } },
-        workers_dev: false,
-        route: 'rosa.dev.br/*',
       },
     },
     imports: { imports: [
