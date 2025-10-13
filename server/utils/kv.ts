@@ -1,5 +1,7 @@
-const KV = createStorage({ driver: KVDriver({ binding: 'KV' }) })
+const KV = globalThis.KV || globalThis.__env__?.KV
 
 export default async function<T>(key: string): Promise<T>{
-  return (await KV.getItem<T>(key)) as T
+  if(!KV) throw new Error('KV not found')
+
+  return (await KV.get<T>(key)) as T
 }

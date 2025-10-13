@@ -1,14 +1,16 @@
-const R2 = createStorage({ driver: R2Driver({ binding: 'R2' }) })
+const R2 = globalThis.R2 || globalThis.__env__?.R2
 
 export default async function(filePath: string){
-  const file = await R2.getItemRaw<ReadableStream>(filePath, { type: 'stream' })
+  if(!R2) throw new Error('R2 not found')
 
-  if(!file) throw new Error('File not found')
+  const obj = await R2.get(filePath)
+
+  if(!obj) throw new Error('File not found')
 
   const headers = {
     'Content-Type': mime.getType(filePath) || 'application/octet-stream',
     'Content-Disposition': `inline; filename="${filePath.split('/').pop()}"`,
   }
 
-  return { file, headers }
+  return { file: obj.body, headers }
 }

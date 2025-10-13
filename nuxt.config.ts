@@ -32,12 +32,7 @@ export default defineNuxtConfig({
         observability: { logs: { enabled: true, head_sampling_rate: 1, invocation_logs: true } },
       },
     },
-    imports: { imports: [
-      { name: 'createStorage', from: 'unstorage' },
-      { name: 'default', as: 'R2Driver', from: 'unstorage/drivers/cloudflare-r2-binding' },
-      { name: 'default', as: 'KVDriver', from: 'unstorage/drivers/cloudflare-kv-binding' },
-      { name: 'default', as: 'mime', from: 'mime' },
-    ] },
+    imports: { imports: [{ name: 'default', as: 'mime', from: 'mime' }] },
   },
   vite: { plugins: [tailwindcss()] },
   i18n: {
