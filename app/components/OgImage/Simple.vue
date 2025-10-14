@@ -1,6 +1,4 @@
 <script setup lang="ts">
-defineOptions({ inheritAttrs: false })
-
 defineProps({
   title: { type: String, default: 'Gabriel Rosa' },
   description: { type: String, default: '' },
