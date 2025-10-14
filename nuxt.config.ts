@@ -52,11 +52,4 @@ export default defineNuxtConfig({
   },
   icon: { customCollections: [{ prefix: 'cc', dir: 'app/assets/custom-icons' }] },
   linkChecker: { enabled: false },
-  ogImage: { compatibility: { runtime: {
-    'chromium': false,
-    'sharp': false,
-    'css-inline': false,
-    'satori': 'wasm',
-    'resvg': 'wasm',
-  } } },
 })
