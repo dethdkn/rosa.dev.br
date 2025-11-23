@@ -7,6 +7,8 @@ useSeoMeta({ description: t('blog.description') })
 
 defineOgImageComponent('Techs', { title: t('blog.title') })
 
+const localePath = useLocalePath()
+
 const posts = computed(() => [
   {
     title: t('posts.primevue_locale_dynamic.title'),
@@ -17,7 +19,7 @@ const posts = computed(() => [
       { title: 'i18n', icon: 'material-symbols:language-chinese-dayi', color: '#FCC72B' },
     ],
     urls: [
-      { url: '/blog/how-to-switch-primevue-locale-dynamically', external: false, icon: 'iconoir:open-in-browser', aria: 'URL' },
+      { url: localePath('/blog/how-to-switch-primevue-locale-dynamically'), external: false, icon: 'iconoir:open-in-browser', aria: 'URL' },
     ],
     description: t('posts.primevue_locale_dynamic.description'),
     locale: true,
@@ -29,7 +31,7 @@ const posts = computed(() => [
       { title: 'Ventoy', icon: 'material-symbols:usb', color: '#FCD134' },
     ],
     urls: [
-      { url: '/blog/customizable-multiboot-pendrive', external: false, icon: 'iconoir:open-in-browser', aria: 'URL' },
+      { url: localePath('/blog/customizable-multiboot-pendrive'), external: false, icon: 'iconoir:open-in-browser', aria: 'URL' },
     ],
     description: t('posts.customizable_multiboot_pendrive.description'),
     locale: true,
@@ -42,7 +44,7 @@ const posts = computed(() => [
       { title: 'Arch', icon: 'devicon:archlinux', color: '#2A90CF' },
     ],
     urls: [
-      { url: '/blog/installing-arch-linux', external: false, icon: 'iconoir:open-in-browser', aria: 'URL' },
+      { url: localePath('/blog/installing-arch-linux'), external: false, icon: 'iconoir:open-in-browser', aria: 'URL' },
     ],
     description: t('posts.installing_arch_linux.description'),
     locale: true,

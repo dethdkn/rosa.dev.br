@@ -24,18 +24,22 @@ const socials = ref([
         <span class="mx-2">—</span>
         Gabriel 'DethDKN' Rosa
       </p>
-      <p>
-        Powered by&nbsp;
-        <NuxtLink to="https://nuxt.com" external target="_blank" class="text-nuxt hover:drop-shadow-nuxt dark:hover:drop-shadow-nuxtWhite transition-all duration-300">
-          <Icon name="logos:nuxt-icon" :size="12" />
-          <span>&nbsp;Nuxt</span>
-        </NuxtLink>
-        <span class="mx-2">—</span>
-        Hosted on&nbsp;
-        <NuxtLink to="https://www.cloudflare.com/" external target="_blank" class="text-cloudflare hover:drop-shadow-cloudflare transition-all duration-300">
-          <Icon name="logos:cloudflare-icon" :size="12" />
-          <span>&nbsp;Cloudflare</span>
-        </NuxtLink>
+      <p class="flex flex-col items-center justify-center md:flex-row">
+        <span>
+          Powered by&nbsp;
+          <NuxtLink to="https://nuxt.com" external target="_blank" class="text-nuxt hover:drop-shadow-nuxt dark:hover:drop-shadow-nuxtWhite transition-all duration-300">
+            <Icon name="logos:nuxt-icon" :size="12" />
+            <span>&nbsp;Nuxt</span>
+          </NuxtLink>
+        </span>
+        <span class="hidden md:mx-2 md:block">—</span>
+        <span>
+          Hosted on&nbsp;
+          <NuxtLink to="https://www.cloudflare.com/" external target="_blank" class="text-cloudflare hover:drop-shadow-cloudflare transition-all duration-300">
+            <Icon name="logos:cloudflare-icon" :size="12" />
+            <span>&nbsp;Cloudflare</span>
+          </NuxtLink>
+        </span>
       </p>
     </div>
   </footer>
