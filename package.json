@@ -1,7 +1,7 @@
 {
   "name": "rosa-dev-br",
   "type": "module",
-  "version": "3.6.3",
+  "version": "3.6.4",
   "private": true,
   "packageManager": "bun@1.3.4",
   "scripts": {
