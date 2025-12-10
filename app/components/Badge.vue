@@ -1,4 +1,4 @@
-<script setup lang='ts'>
+<script setup lang="ts">
 defineProps({
   title: { type: String, required: true },
   icon: { type: String, required: true },
@@ -8,7 +8,9 @@ defineProps({
 
 <template>
   <!-- eslint-disable-next-line vue/no-restricted-v-bind -->
-  <div class="text-mini mt-2 inline rounded border p-1 sm:mt-0" :style="{ color, borderColor: color }">
+  <div
+    class="text-mini mt-2 inline rounded border p-1 sm:mt-0"
+    :style="{ color, borderColor: color }">
     <span class="inline-flex items-center justify-center space-x-1">
       <Icon :name="icon" :size="10" />
       <span>{{ title }}</span>

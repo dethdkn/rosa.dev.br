@@ -1,4 +1,4 @@
-<script setup lang='ts'>
+<script setup lang="ts">
 // no-useless-escape false positive
 /* eslint-disable no-useless-escape */
 
@@ -88,12 +88,16 @@ function changeLang() {
       <p>{{ t('posts.primevue_locale_dynamic.paragraph2') }}</p>
       <p>{{ t('posts.primevue_locale_dynamic.paragraph3') }}</p>
       <!-- eslint-disable-next-line vue/no-bare-strings-in-template -->
-      <NuxtLink to="https://github.com/primefaces/primelocale" external target="_blank" class="text-obsidian hover:border-candy hover:text-candy dark:text-snow hover:dark:border-candy dark:hover:text-candy inline-block border-b-2">
+      <NuxtLink
+        to="https://github.com/primefaces/primelocale"
+        external
+        target="_blank"
+        class="text-obsidian hover:border-candy hover:text-candy dark:text-snow hover:dark:border-candy dark:hover:text-candy inline-block border-b-2">
         primefaces / primelocale
       </NuxtLink>
       <p>{{ t('posts.primevue_locale_dynamic.paragraph4') }}</p>
       <p>{{ t('posts.primevue_locale_dynamic.paragraph5') }}</p>
-      <hr class="my-8 h-px border-0 bg-gray-300 dark:bg-gray-600">
+      <hr class="my-8 h-px border-0 bg-gray-300 dark:bg-gray-600" />
       <p>{{ t('posts.primevue_locale_dynamic.paragraph6') }}</p>
       <CodeHighlight file-name="nuxt.config.ts" :code="code1" lang="ts" />
       <p>{{ t('posts.primevue_locale_dynamic.paragraph7') }}</p>
@@ -108,7 +112,7 @@ function changeLang() {
       <p>{{ t('posts.primevue_locale_dynamic.paragraph8') }}</p>
       <CodeHighlight file-name="Primevue Component Text" :code="code2" lang="json" />
       <p>{{ t('posts.primevue_locale_dynamic.paragraph9') }}</p>
-      <hr class="my-8 h-px border-0 bg-gray-300 dark:bg-gray-600">
+      <hr class="my-8 h-px border-0 bg-gray-300 dark:bg-gray-600" />
       <p>{{ t('posts.primevue_locale_dynamic.paragraph10') }}</p>
       <CodeHighlight file-name="components/Navbar.vue" :code="code3" lang="vue" />
       <p>{{ t('posts.primevue_locale_dynamic.paragraph11') }}</p>

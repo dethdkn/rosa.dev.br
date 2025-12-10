@@ -1,11 +1,11 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
   button:not(:disabled),
-  [role="button"]:not(:disabled) {
+  [role='button']:not(:disabled) {
     cursor: pointer;
   }
 }
@@ -18,25 +18,25 @@
   --spacing-160: 40rem;
   --spacing-content: calc(100vh - 311px);
 
-  --color-snow: #CDD5F4;
-  --color-pearl: #EFF1F5;
-  --color-cloud: #DCE0E7;
-  --color-milk: #FAFAFA;
-  --color-obsidian: #4C4F69;
-  --color-onyx: #1E1E2E;
-  --color-eclipse: #1A1B26;
-  --color-candy: #F28AA9;
+  --color-snow: #cdd5f4;
+  --color-pearl: #eff1f5;
+  --color-cloud: #dce0e7;
+  --color-milk: #fafafa;
+  --color-obsidian: #4c4f69;
+  --color-onyx: #1e1e2e;
+  --color-eclipse: #1a1b26;
+  --color-candy: #f28aa9;
   --color-bubblegum: #e7688e;
-  --color-nuxt: #43DD7D;
-  --color-cloudflare: #F38020;
+  --color-nuxt: #43dd7d;
+  --color-cloudflare: #f38020;
 
-  --drop-shadow-candy: 0 0 5px #F28AA9;
-  --drop-shadow-nuxt: 0 0 5px #43DD7D;
-  --drop-shadow-nuxtWhite: 0 0 5px #43DD7Daa;
-  --drop-shadow-cloudflare: 0 0 5px #F38020aa;
+  --drop-shadow-candy: 0 0 5px #f28aa9;
+  --drop-shadow-nuxt: 0 0 5px #43dd7d;
+  --drop-shadow-nuxtWhite: 0 0 5px #43dd7daa;
+  --drop-shadow-cloudflare: 0 0 5px #f38020aa;
 
-  --font-delius: "Delius Unicase", sans-serif;
-  --font-montserrat: "Montserrat Alternates", sans-serif;
+  --font-delius: 'Delius Unicase', sans-serif;
+  --font-montserrat: 'Montserrat Alternates', sans-serif;
   --text-mini: 10px;
 
   --border-3: 3px;
@@ -47,18 +47,34 @@
   --animate-slideUpAndFade: slideUpAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1);
 
   @keyframes overlayShow {
-    from { opacity: 0 }
-    to   { opacity: 1 }
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   @keyframes contentShow {
-    from { opacity: 0; transform: translate(-50%, -50%) scale(0.01) }
-    to   { opacity: 1; transform: translate(-50%, -50%) scale(1) }
+    from {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.01);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
   }
 
   @keyframes slideUpAndFade {
-    from { opacity: 0; transform: translateY(2px) }
-    to   { opacity: 1; transform: translateY(0) }
+    from {
+      opacity: 0;
+      transform: translateY(2px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
@@ -70,7 +86,8 @@
   @apply text-snow bg-candy;
 }
 
-html, body {
+html,
+body {
   @apply h-full m-0 p-0;
 }
 
@@ -82,7 +99,8 @@ body {
   @apply bg-onyx;
 }
 
-html.dark .shiki, html.dark .shiki span {
+html.dark .shiki,
+html.dark .shiki span {
   color: var(--shiki-dark) !important;
   background-color: var(--shiki-dark-bg) !important;
   font-style: var(--shiki-dark-font-style) !important;
@@ -90,15 +108,18 @@ html.dark .shiki, html.dark .shiki span {
   text-decoration: var(--shiki-dark-text-decoration) !important;
 }
 
-*::-webkit-scrollbar-button, .dark *::-webkit-scrollbar-button {
+*::-webkit-scrollbar-button,
+.dark *::-webkit-scrollbar-button {
   @apply hidden;
 }
 
-*::-webkit-scrollbar, .dark *::-webkit-scrollbar {
+*::-webkit-scrollbar,
+.dark *::-webkit-scrollbar {
   @apply w-4;
 }
 
-*::-webkit-scrollbar-thumb, .dark *::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb,
+.dark *::-webkit-scrollbar-thumb {
   @apply rounded-2xl;
 }
 
@@ -150,11 +171,13 @@ div::-webkit-scrollbar-track {
   @apply bg-eclipse;
 }
 
-.page-enter-active, .page-leave-active {
+.page-enter-active,
+.page-leave-active {
   transition: all 0.4s;
 }
 
-.page-enter-from, .page-leave-to {
+.page-enter-from,
+.page-leave-to {
   opacity: 0;
   filter: blur(0.1rem);
 }

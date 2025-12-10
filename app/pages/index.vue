@@ -1,14 +1,22 @@
-<script setup lang='ts'>
+<script setup lang="ts">
 const { t } = useI18n()
 
 useHead({ title: t('home.title') })
 
 useSeoMeta({ description: t('home.subtitle') })
 
-defineOgImageComponent('Home', { title: t('home.title'), im: t('home.simple_im'), aka: t('home.aka'), subtitle: t('home.subtitle') })
+defineOgImageComponent('Home', {
+  title: t('home.title'),
+  im: t('home.simple_im'),
+  aka: t('home.aka'),
+  subtitle: t('home.subtitle'),
+})
 
-function pinkBlast(){
-  const { cancel } = emojiBlasts({ interval: 40, emojis: ['🌹', '🌸', '💗', '💓', '💖', '💕', '💞', '💝', '🦩', '💘', '🩷', '🌷', '🌺'] })
+function pinkBlast(): void {
+  const { cancel } = emojiBlasts({
+    interval: 40,
+    emojis: ['🌹', '🌸', '💗', '💓', '💖', '💕', '💞', '💝', '🦩', '💘', '🩷', '🌷', '🌺'],
+  })
   setTimeout(cancel, 3000)
 }
 
@@ -17,8 +25,16 @@ onKeyStroke(' ', () => pinkBlast())
 
 <template>
   <div class="flex flex-wrap items-center justify-center space-x-6 pt-16">
-    <div class="border-candy relative size-48 cursor-pointer overflow-hidden rounded-full border-4" role="button" @click="pinkBlast" @keydown.enter="pinkBlast">
-      <NuxtImg src="/gsr.webp" alt="Gabriel Rosa" class="absolute top-0 left-0 size-full rounded-full object-cover" placeholder />
+    <div
+      class="border-candy relative size-48 cursor-pointer overflow-hidden rounded-full border-4"
+      role="button"
+      @click="pinkBlast"
+      @keydown.enter="pinkBlast">
+      <NuxtImg
+        src="/gsr.webp"
+        alt="Gabriel Rosa"
+        class="absolute top-0 left-0 size-full rounded-full object-cover"
+        placeholder />
     </div>
     <div class="space-y-2 text-center">
       <ClientOnly>

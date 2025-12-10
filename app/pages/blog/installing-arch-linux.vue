@@ -1,4 +1,4 @@
-<script setup lang='ts'>
+<script setup lang="ts">
 const { t } = useI18n()
 
 useHead({ title: t('posts.installing_arch_linux.title') })
@@ -56,7 +56,21 @@ pacman -S neofetch`
     </div>
     <div class="text-obsidian dark:text-snow mt-10 space-y-5 px-10">
       <!-- eslint-disable-next-line vue/no-bare-strings-in-template -->
-      <iframe class="m-auto h-60 w-full rounded-lg sm:h-80 md:h-100 lg:h-120 xl:h-160" src="https://www.youtube.com/embed/YGX3None2y8" title="Instalando o Arch Linux (o guia mais fácil do youtube)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+      <iframe
+        class="m-auto h-60 w-full rounded-lg sm:h-80 md:h-100 lg:h-120 xl:h-160"
+        src="https://www.youtube.com/embed/YGX3None2y8"
+        title="Instalando o Arch Linux (o guia mais fácil do youtube)"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        allowfullscreen />
       <p>{{ t('posts.installing_arch_linux.paragraph1') }}</p>
       <CodeHighlight file-name="Arch Install" :code="code1" lang="shell" />
       <p>{{ t('posts.installing_arch_linux.paragraph2') }}</p>

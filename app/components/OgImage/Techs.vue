@@ -7,19 +7,100 @@ defineProps({
 
 <template>
   <!-- eslint-disable vue/no-restricted-static-attribute, vue/no-bare-strings-in-template -->
-  <div style="width: 100%; height: 100%; background-color: #1E1E2E;">
-    <h1 style="border-bottom: 2px solid #F28AA9; font-size: 60px; color: #CDD5F4; position: absolute; left: 50%; top: 10%; transform: translate(-50%, -50%);">
+  <div style="width: 100%; height: 100%; background-color: #1e1e2e">
+    <h1
+      style="
+        border-bottom: 2px solid #f28aa9;
+        font-size: 60px;
+        color: #cdd5f4;
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -50%);
+      ">
       {{ title }}
     </h1>
-    <img src="https://rosa.dev.br/stack/vue.png" alt="VueJS" style="position: absolute; left: 2%; top: 10%; transform: translate(-50%, -50%); transform: rotate(30deg); width: 100px; height: 100px;">
-    <img src="https://rosa.dev.br/stack/nuxt.png" alt="NuxtJS" style="position: absolute; right: 4%; top: 10%; transform: translate(-50%, -50%); transform: rotate(-30deg); width: 100px; height: 100px;">
-    <img src="https://rosa.dev.br/stack/tailwind.png" alt="TailwindCSS" style="position: absolute; right: 20%; top: 65%; transform: translate(-50%, -50%); width: 100px; height: 100px;">
-    <img src="https://rosa.dev.br/stack/typescript.png" alt="Typescript" style="position: absolute; left: 6%; top: 85%; transform: translate(-50%, -50%); transform: rotate(10deg); width: 100px; height: 100px;">
-    <img src="https://rosa.dev.br/stack/mongo.png" alt="MongoDB" style="position: absolute; right: 6%; top: 75%; transform: translate(-50%, -50%); transform: rotate(-10deg); width: 100px; height: 100px;">
-    <img src="https://rosa.dev.br/stack/nginx.png" alt="Nginx" style=" position: absolute; right: 50%; top: 75%; transform: translate(-50%, -50%); transform: rotate(-5deg); width: 100px; height: 100px;">
-    <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+    <img
+      src="https://rosa.dev.br/stack/vue.png"
+      alt="VueJS"
+      style="
+        position: absolute;
+        left: 2%;
+        top: 10%;
+        transform: translate(-50%, -50%);
+        transform: rotate(30deg);
+        width: 100px;
+        height: 100px;
+      " />
+    <img
+      src="https://rosa.dev.br/stack/nuxt.png"
+      alt="NuxtJS"
+      style="
+        position: absolute;
+        right: 4%;
+        top: 10%;
+        transform: translate(-50%, -50%);
+        transform: rotate(-30deg);
+        width: 100px;
+        height: 100px;
+      " />
+    <img
+      src="https://rosa.dev.br/stack/tailwind.png"
+      alt="TailwindCSS"
+      style="
+        position: absolute;
+        right: 20%;
+        top: 65%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+      " />
+    <img
+      src="https://rosa.dev.br/stack/typescript.png"
+      alt="Typescript"
+      style="
+        position: absolute;
+        left: 6%;
+        top: 85%;
+        transform: translate(-50%, -50%);
+        transform: rotate(10deg);
+        width: 100px;
+        height: 100px;
+      " />
+    <img
+      src="https://rosa.dev.br/stack/mongo.png"
+      alt="MongoDB"
+      style="
+        position: absolute;
+        right: 6%;
+        top: 75%;
+        transform: translate(-50%, -50%);
+        transform: rotate(-10deg);
+        width: 100px;
+        height: 100px;
+      " />
+    <img
+      src="https://rosa.dev.br/stack/nginx.png"
+      alt="Nginx"
+      style="
+        position: absolute;
+        right: 50%;
+        top: 75%;
+        transform: translate(-50%, -50%);
+        transform: rotate(-5deg);
+        width: 100px;
+        height: 100px;
+      " />
+    <div
+      style="
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      ">
       <div style="margin-inline-start: 1.5rem">
-        <h2 style="font-size: 40px; color: #CDD5F4; padding: 60px;">
+        <h2 style="font-size: 40px; color: #cdd5f4; padding: 60px">
           {{ description }}
         </h2>
       </div>

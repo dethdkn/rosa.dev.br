@@ -1,11 +1,11 @@
-<script setup lang='ts'>
+<script setup lang="ts">
 const error = useError()
 const localePath = useLocalePath()
 
 const statusCode = ref(500)
 const message = ref('Something went wrong...')
 
-if(error.value && 'statusCode' in error.value && 'message' in error.value){
+if (error.value && 'statusCode' in error.value && 'message' in error.value) {
   statusCode.value = error.value.statusCode
   message.value = error.value.message
 }
@@ -24,7 +24,9 @@ useHead({ title: String(statusCode.value) })
           {{ message }}
         </h1>
         <!-- eslint-disable-next-line vue/no-bare-strings-in-template -->
-        <button class="bg-candy hover:bg-bubblegum gap-x-1.5 rounded-md px-2.5 py-1.5 text-sm font-medium text-white shadow-sm" @click="clearError({ redirect: localePath('/') })">
+        <button
+          class="bg-candy hover:bg-bubblegum gap-x-1.5 rounded-md px-2.5 py-1.5 text-sm font-medium text-white shadow-sm"
+          @click="clearError({ redirect: localePath('/') })">
           Home
         </button>
       </div>

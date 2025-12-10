@@ -1,8 +1,9 @@
-import { type ClassValue, clsx } from 'clsx'
+import { clsx } from 'clsx'
+import type { ClassValue } from 'clsx'
 import { twMerge } from 'tailwind-merge'
 
-export default function cn(...inputs: ClassValue[]){
+export default function cn(...inputs: ClassValue[]): string {
   return twMerge(clsx(inputs))
 }
 
-export type ObjectValues<T> = T[keyof T]
+export type ObjectValues<Type> = Type[keyof Type]

@@ -1,4 +1,4 @@
-<script setup lang='ts'>
+<script setup lang="ts">
 const { t } = useI18n()
 
 useHead({ title: t('certificates.title') })
@@ -7,7 +7,9 @@ useSeoMeta({ description: t('certificates.description') })
 
 defineOgImageComponent('Techs', { title: t('certificates.title') })
 
-const { data: certificates } = await useFetch('/api/certificates', { default: () => [] as Certificates[] })
+const { data: certificates } = await useFetch('/api/certificates', {
+  default: () => [] as Certificates[],
+})
 </script>
 
 <template>
@@ -15,6 +17,13 @@ const { data: certificates } = await useFetch('/api/certificates', { default: ()
     <h1 class="border-candy text-obsidian dark:text-snow inline border-b-2 text-4xl">
       {{ t('certificates.title') }}
     </h1>
-    <List v-for="{href, title, subtitle, concluded, badges} in certificates" :key="href" :title :badges :urls="[{ url: href, icon: 'iconoir:doc-star-in', external: true, aria: 'PDF' }]" :description="`${subtitle} • ${concluded}`" data-aos="fade-right" />
+    <List
+      v-for="{ href, title, subtitle, concluded, badges } in certificates"
+      :key="href"
+      :title
+      :badges
+      :urls="[{ url: href, icon: 'iconoir:doc-star-in', external: true, aria: 'PDF' }]"
+      :description="`${subtitle} • ${concluded}`"
+      data-aos="fade-right" />
   </div>
 </template>

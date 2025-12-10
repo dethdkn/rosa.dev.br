@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// oxlint-disable id-length
 import { Motion } from 'motion-v'
 
 const props = defineProps({
@@ -8,7 +9,7 @@ const props = defineProps({
   yOffset: { type: Number, default: 20 },
 })
 
-const container = ref(null)
+const container = ref<HTMLElement | null>(null)
 const childElements = ref([])
 const slots = useSlots()
 
@@ -21,15 +22,16 @@ onMounted(() => {
   })
 })
 
-function getInitial(){
+function getInitial(): { opacity: number; filter: string; y: number } {
   return {
     opacity: 0,
     filter: `blur(${props.blur})`,
+
     y: props.yOffset,
   }
 }
 
-function getAnimate(){
+function getAnimate(): { opacity: number; filter: string; y: number } {
   return {
     opacity: 1,
     filter: `blur(0px)`,
@@ -50,8 +52,7 @@ function getAnimate(){
       :transition="{
         duration: props.duration,
         delay: props.delay * index,
-      }"
-    >
+      }">
       <component :is="child" />
     </Motion>
   </div>

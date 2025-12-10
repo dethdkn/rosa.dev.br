@@ -1,4 +1,4 @@
-<script setup lang='ts'>
+<script setup lang="ts">
 const { t } = useI18n()
 
 useHead({ title: t('blog.title') })
@@ -19,7 +19,12 @@ const posts = computed(() => [
       { title: 'i18n', icon: 'material-symbols:language-chinese-dayi', color: '#FCC72B' },
     ],
     urls: [
-      { url: localePath('/blog/how-to-switch-primevue-locale-dynamically'), external: false, icon: 'iconoir:open-in-browser', aria: 'URL' },
+      {
+        url: localePath('/blog/how-to-switch-primevue-locale-dynamically'),
+        external: false,
+        icon: 'iconoir:open-in-browser',
+        aria: 'URL',
+      },
     ],
     description: t('posts.primevue_locale_dynamic.description'),
     locale: true,
@@ -27,11 +32,14 @@ const posts = computed(() => [
   },
   {
     title: t('posts.customizable_multiboot_pendrive.title'),
-    badges: [
-      { title: 'Ventoy', icon: 'material-symbols:usb', color: '#FCD134' },
-    ],
+    badges: [{ title: 'Ventoy', icon: 'material-symbols:usb', color: '#FCD134' }],
     urls: [
-      { url: localePath('/blog/customizable-multiboot-pendrive'), external: false, icon: 'iconoir:open-in-browser', aria: 'URL' },
+      {
+        url: localePath('/blog/customizable-multiboot-pendrive'),
+        external: false,
+        icon: 'iconoir:open-in-browser',
+        aria: 'URL',
+      },
     ],
     description: t('posts.customizable_multiboot_pendrive.description'),
     locale: true,
@@ -44,7 +52,12 @@ const posts = computed(() => [
       { title: 'Arch', icon: 'devicon:archlinux', color: '#2A90CF' },
     ],
     urls: [
-      { url: localePath('/blog/installing-arch-linux'), external: false, icon: 'iconoir:open-in-browser', aria: 'URL' },
+      {
+        url: localePath('/blog/installing-arch-linux'),
+        external: false,
+        icon: 'iconoir:open-in-browser',
+        aria: 'URL',
+      },
     ],
     description: t('posts.installing_arch_linux.description'),
     locale: true,
@@ -58,6 +71,15 @@ const posts = computed(() => [
     <h1 class="border-candy text-obsidian dark:text-snow inline border-b-2 text-4xl">
       {{ t('blog.title') }}
     </h1>
-    <List v-for="{title, badges, urls, description, locale, self} in posts" :key="title" :title :badges :urls :description :locale :self data-aos="fade-right" />
+    <List
+      v-for="{ title, badges, urls, description, locale, self } in posts"
+      :key="title"
+      :title
+      :badges
+      :urls
+      :description
+      :locale
+      :self
+      data-aos="fade-right" />
   </div>
 </template>

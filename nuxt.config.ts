@@ -1,16 +1,30 @@
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
-  modules: ['@nuxt/fonts', '@nuxt/image', '@nuxtjs/color-mode', '@nuxtjs/seo', '@nuxtjs/i18n', '@vueuse/nuxt', '@nuxt/icon', 'nuxt-aos', 'reka-ui/nuxt'],
-  imports: { imports: [
-    { name: 'emojiBlasts', from: 'emoji-blast' },
-    { name: 'codeToHtml', from: 'shiki' },
-  ] },
+  modules: [
+    '@nuxt/fonts',
+    '@nuxt/image',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/seo',
+    '@nuxtjs/i18n',
+    '@vueuse/nuxt',
+    '@nuxt/icon',
+    'nuxt-aos',
+    'reka-ui/nuxt',
+  ],
+  imports: {
+    imports: [
+      { name: 'emojiBlasts', from: 'emoji-blast' },
+      { name: 'codeToHtml', from: 'shiki' },
+    ],
+  },
   devtools: { enabled: true },
-  app: { head: {
-    templateParams: { separator: '•' },
-    noscript: [{ innerHTML: '<style>.noscript{opacity:100!important;}</style>' }],
-  } },
+  app: {
+    head: {
+      templateParams: { separator: '•' },
+      noscript: [{ innerHTML: '<style>.noscript{opacity:100!important;}</style>' }],
+    },
+  },
   css: ['~/assets/main.css'],
   site: {
     url: 'https://rosa.dev.br/',
@@ -35,18 +49,32 @@ export default defineNuxtConfig({
         observability: { logs: { enabled: true, head_sampling_rate: 1, invocation_logs: true } },
       },
     },
-    imports: { imports: [
-      { name: 'destr', from: 'destr' },
-      { name: 'default', as: 'mime', from: 'mime' },
-    ] },
+    imports: {
+      imports: [
+        { name: 'destr', from: 'destr' },
+        { name: 'default', as: 'mime', from: 'mime' },
+      ],
+    },
   },
   vite: { plugins: [tailwindcss()] },
   i18n: {
     baseUrl: 'https://rosa.dev.br/',
     defaultLocale: 'en',
     locales: [
-      { code: 'en', language: 'en-US', name: 'English (US)', file: 'en-US.json', flag: 'flag:us-4x3' },
-      { code: 'pt', language: 'pt-BR', name: 'Português (BR)', file: 'pt-BR.json', flag: 'flag:br-4x3' },
+      {
+        code: 'en',
+        language: 'en-US',
+        name: 'English (US)',
+        file: 'en-US.json',
+        flag: 'flag:us-4x3',
+      },
+      {
+        code: 'pt',
+        language: 'pt-BR',
+        name: 'Português (BR)',
+        file: 'pt-BR.json',
+        flag: 'flag:br-4x3',
+      },
     ],
     skipSettingLocaleOnNavigate: true,
   },

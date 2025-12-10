@@ -1,5 +1,5 @@
-export interface Badges{
-  title: string,
-  icon: string,
-  color: string,
+export interface Badges {
+  title: string
+  icon: string
+  color: string
 }

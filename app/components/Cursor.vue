@@ -1,5 +1,6 @@
 <script setup lang="ts">
-// eslint-disable-next-line typescript/ban-ts-comment
+// oxlint-disable-next-line no-abusive-eslint-disable
+// oxlint-disable
 // @ts-nocheck
 const props = defineProps({
   friction: { type: Number, default: 0.5 },
@@ -11,15 +12,25 @@ const props = defineProps({
 
 const canvasRef = ref<HTMLCanvasElement | null>(null)
 
-interface NodeType{ x: number, y: number, vx: number, vy: number }
-
-interface WaveOptions{ phase?: number, offset?: number, frequency?: number, amplitude?: number }
-
-interface LineOptions{
-  spring: number,
+interface NodeType {
+  x: number
+  y: number
+  vx: number
+  vy: number
 }
 
-class Wave{
+interface WaveOptions {
+  phase?: number
+  offset?: number
+  frequency?: number
+  amplitude?: number
+}
+
+interface LineOptions {
+  spring: number
+}
+
+class Wave {
   phase = 0
 
   offset = 0
@@ -30,29 +41,29 @@ class Wave{
 
   private e = 0
 
-  constructor(options: WaveOptions = {}){
+  constructor(options: WaveOptions = {}) {
     this.init(options)
   }
 
-  init(options: WaveOptions): void{
+  init(options: WaveOptions): void {
     this.phase = options.phase || 0
     this.offset = options.offset || 0
     this.frequency = options.frequency || 0.001
     this.amplitude = options.amplitude || 1
   }
 
-  update(): number{
+  update(): number {
     this.phase += this.frequency
     this.e = this.offset + Math.sin(this.phase) * this.amplitude
     return this.e
   }
 
-  value(): number{
+  value(): number {
     return this.e
   }
 }
 
-class Node implements NodeType{
+class Node implements NodeType {
   x = 0
 
   y = 0
@@ -62,23 +73,23 @@ class Node implements NodeType{
   vy = 0
 }
 
-class Line{
+class Line {
   spring = 0
 
   friction = 0
 
   nodes: NodeType[] = []
 
-  constructor(options: LineOptions){
+  constructor(options: LineOptions) {
     this.init(options)
   }
 
-  init(options: LineOptions): void{
+  init(options: LineOptions): void {
     this.spring = options.spring + 0.1 * Math.random() - 0.02
     this.friction = E.friction + 0.01 * Math.random() - 0.002
     this.nodes = []
 
-    for(let n = 0; n < E.size; n++){
+    for (let n = 0; n < E.size; n++) {
       const t = new Node()
       t.x = pos.x
       t.y = pos.y
@@ -86,17 +97,17 @@ class Line{
     }
   }
 
-  update(): void{
+  update(): void {
     let e = this.spring
     let [t] = this.nodes
 
     t.vx += (pos.x - t.x) * e
     t.vy += (pos.y - t.y) * e
 
-    for(let i = 0, a = this.nodes.length; i < a; i++){
+    for (let i = 0, a = this.nodes.length; i < a; i++) {
       t = this.nodes[i]
 
-      if(i > 0){
+      if (i > 0) {
         const n = this.nodes[i - 1]
         t.vx += (n.x - t.x) * e
         t.vy += (n.y - t.y) * e
@@ -112,7 +123,7 @@ class Line{
     }
   }
 
-  draw(ctx: CanvasRenderingContext2D): void{
+  draw(ctx: CanvasRenderingContext2D): void {
     let e: NodeType, t: NodeType
     let n = this.nodes[0].x
     let i = this.nodes[0].y
@@ -120,7 +131,7 @@ class Line{
     ctx.beginPath()
     ctx.moveTo(n, i)
 
-    for(let a = 1, o = this.nodes.length - 2; a < o; a++){
+    for (let a = 1, o = this.nodes.length - 2; a < o; a++) {
       e = this.nodes[a]
       t = this.nodes[a + 1]
       n = 0.5 * (e.x + t.x)
@@ -128,15 +139,15 @@ class Line{
       ctx.quadraticCurveTo(e.x, e.y, n, i)
     }
 
-    e = this.nodes[this.nodes.length - 2]
-    t = this.nodes[this.nodes.length - 1]
+    e = this.nodes.at(-2)
+    t = this.nodes.at(-1)
     ctx.quadraticCurveTo(e.x, e.y, t.x, t.y)
     ctx.stroke()
     ctx.closePath()
   }
 }
 
-let ctx: { running?: boolean, frame?: number } & CanvasRenderingContext2D
+let ctx: { running?: boolean; frame?: number } & CanvasRenderingContext2D
 // eslint-disable-next-line unused-imports/no-unused-vars
 let f: Wave
 let pos = { x: 0, y: 0 }
@@ -152,41 +163,40 @@ const E = {
   tension: props.tension,
 }
 
-function createLines(): void{
+function createLines(): void {
   lines = []
-  for(let e = 0; e < E.trails; e++){
+  for (let e = 0; e < E.trails; e++) {
     lines.push(new Line({ spring: 0.4 + (e / E.trails) * 0.025 }))
   }
 }
 
-function updatePosition(e: MouseEvent | TouchEvent): void{
-  if('touches' in e){
+function updatePosition(e: MouseEvent | TouchEvent): void {
+  if ('touches' in e) {
     pos.x = e.touches[0].pageX
     pos.y = e.touches[0].pageY
-  }
-  else {
+  } else {
     pos.x = e.clientX
     pos.y = e.clientY
   }
   e.preventDefault()
 }
 
-function handleTouchMove(e: TouchEvent): void{
-  if(e.touches.length === 1){
+function handleTouchMove(e: TouchEvent): void {
+  if (e.touches.length === 1) {
     pos.x = e.touches[0].pageX
     pos.y = e.touches[0].pageY
   }
 }
 
-function render(): void{
-  if(ctx.running){
+function render(): void {
+  if (ctx.running) {
     ctx.globalCompositeOperation = 'source-over'
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
     ctx.globalCompositeOperation = 'lighter'
     ctx.strokeStyle = 'rgba(242, 138, 169, 0.2)'
     ctx.lineWidth = 1
 
-    for(let t = 0; t < E.trails; t++){
+    for (let t = 0; t < E.trails; t++) {
       const e = lines[t]
       e.update()
       e.draw(ctx)
@@ -197,14 +207,14 @@ function render(): void{
   }
 }
 
-function resizeCanvas(): void{
-  if(ctx && ctx.canvas){
+function resizeCanvas(): void {
+  if (ctx && ctx.canvas) {
     ctx.canvas.width = globalThis.innerWidth - 20
     ctx.canvas.height = globalThis.innerHeight
   }
 }
 
-function onMouseMove(e: MouseEvent | TouchEvent): void{
+function onMouseMove(e: MouseEvent | TouchEvent): void {
   document.removeEventListener('mousemove', onMouseMove)
   document.removeEventListener('touchstart', onMouseMove)
   document.addEventListener('mousemove', updatePosition)
@@ -215,24 +225,24 @@ function onMouseMove(e: MouseEvent | TouchEvent): void{
   render()
 }
 
-function handleFocus(): void{
-  if(!ctx.running){
+function handleFocus(): void {
+  if (!ctx.running) {
     ctx.running = true
     render()
   }
 }
 
-function handleBlur(): void{
+function handleBlur(): void {
   ctx.running = true
 }
 
-function initCanvas(): void{
+function initCanvas(): void {
   const canvas = canvasRef.value
-  if(!canvas) return
+  if (!canvas) return
 
   ctx = canvas.getContext('2d') as {
-    running?: boolean,
-    frame?: number,
+    running?: boolean
+    frame?: number
   } & CanvasRenderingContext2D
 
   ctx.running = true
@@ -255,8 +265,8 @@ function initCanvas(): void{
   resizeCanvas()
 }
 
-function cleanup(): void{
-  if(ctx){
+function cleanup(): void {
+  if (ctx) {
     ctx.running = false
   }
 
@@ -281,9 +291,5 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <canvas
-    id="canvas"
-    ref="canvasRef"
-    :class="cn('pointer-events-none fixed inset-0 z-50')"
-  />
+  <canvas id="canvas" ref="canvasRef" :class="cn('pointer-events-none fixed inset-0 z-50')" />
 </template>
