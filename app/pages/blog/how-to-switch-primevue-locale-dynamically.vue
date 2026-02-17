@@ -1,16 +1,16 @@
 <script setup lang="ts">
-// no-useless-escape false positive
-/* eslint-disable no-useless-escape */
+  // No-useless-escape false positive
+  /* eslint-disable no-useless-escape */
 
-const { t } = useI18n()
+  const { t } = useI18n()
 
-useHead({ title: t('posts.primevue_locale_dynamic.title') })
+  useHead({ title: t('posts.primevue_locale_dynamic.title') })
 
-useSeoMeta({ description: t('posts.primevue_locale_dynamic.description') })
+  useSeoMeta({ description: t('posts.primevue_locale_dynamic.description') })
 
-defineOgImageComponent('Simple', { title: t('posts.primevue_locale_dynamic.title') })
+  defineOgImageComponent('Simple', { title: t('posts.primevue_locale_dynamic.title') })
 
-const code1 = `export default defineNuxtConfig({
+  const code1 = `export default defineNuxtConfig({
   i18n: {
     baseUrl: 'https://example.com/',
     defaultLocale: 'en',
@@ -22,9 +22,9 @@ const code1 = `export default defineNuxtConfig({
   },
 })`
 
-const code2 = `{ "type": 0, "start": 0, "end": 2, "loc": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 3, "offset": 2 }, "source": "Fr" }, "body": { "type": 2, "start": 0, "end": 2, "loc": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 3, "offset": 2 } }, "items": [ { "type": 3, "start": 0, "end": 2, "loc": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 3, "offset": 2 } } } ], "static": "Fr" } }`
+  const code2 = `{ "type": 0, "start": 0, "end": 2, "loc": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 3, "offset": 2 }, "source": "Fr" }, "body": { "type": 2, "start": 0, "end": 2, "loc": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 3, "offset": 2 } }, "items": [ { "type": 3, "start": 0, "end": 2, "loc": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 3, "offset": 2 } } } ], "static": "Fr" } }`
 
-const code3 = `<script setup lang="ts">
+  const code3 = `<script setup lang="ts">
 const { locale, setLocale, t } = useI18n()
 
 function changeLang() {
@@ -42,7 +42,7 @@ function changeLang() {
 }
 <\/script>`
 
-const code4 = `<script setup lang="ts">
+  const code4 = `<script setup lang="ts">
 const { locale, setLocale, t } = useI18n()
 
 const primeConfig = usePrimeVue()
@@ -79,11 +79,11 @@ function changeLang() {
 <template>
   <div class="mx-auto max-w-7xl">
     <div class="space-y-10 px-20 py-5 text-center sm:text-start lg:space-y-20">
-      <h1 class="border-candy text-obsidian dark:text-snow inline border-b-2 text-4xl">
+      <h1 class="inline border-b-2 border-candy text-4xl text-obsidian dark:text-snow">
         {{ t('posts.primevue_locale_dynamic.title') }}
       </h1>
     </div>
-    <div class="text-obsidian dark:text-snow mt-10 space-y-5 px-10">
+    <div class="mt-10 space-y-5 px-10 text-obsidian dark:text-snow">
       <p>{{ t('posts.primevue_locale_dynamic.paragraph1') }}</p>
       <p>{{ t('posts.primevue_locale_dynamic.paragraph2') }}</p>
       <p>{{ t('posts.primevue_locale_dynamic.paragraph3') }}</p>
@@ -92,7 +92,7 @@ function changeLang() {
         to="https://github.com/primefaces/primelocale"
         external
         target="_blank"
-        class="text-obsidian hover:border-candy hover:text-candy dark:text-snow hover:dark:border-candy dark:hover:text-candy inline-block border-b-2">
+        class="inline-block border-b-2 text-obsidian hover:border-candy hover:text-candy dark:text-snow hover:dark:border-candy dark:hover:text-candy">
         primefaces / primelocale
       </NuxtLink>
       <p>{{ t('posts.primevue_locale_dynamic.paragraph4') }}</p>

@@ -1,32 +1,34 @@
 <script setup lang="ts">
-const { t } = useI18n()
+  const { t } = useI18n()
+  const { proxy } = useScriptUmamiAnalytics()
 
-useHead({ title: t('home.title') })
+  useHead({ title: t('home.title') })
 
-useSeoMeta({ description: t('home.subtitle') })
+  useSeoMeta({ description: t('home.subtitle') })
 
-defineOgImageComponent('Home', {
-  title: t('home.title'),
-  im: t('home.simple_im'),
-  aka: t('home.aka'),
-  subtitle: t('home.subtitle'),
-})
-
-function pinkBlast(): void {
-  const { cancel } = emojiBlasts({
-    interval: 40,
-    emojis: ['🌹', '🌸', '💗', '💓', '💖', '💕', '💞', '💝', '🦩', '💘', '🩷', '🌷', '🌺'],
+  defineOgImageComponent('Home', {
+    title: t('home.title'),
+    im: t('home.simple_im'),
+    aka: t('home.aka'),
+    subtitle: t('home.subtitle'),
   })
-  setTimeout(cancel, 3000)
-}
 
-onKeyStroke(' ', () => pinkBlast())
+  function pinkBlast(): void {
+    proxy.track('pink blast', {})
+    const { cancel } = emojiBlasts({
+      interval: 40,
+      emojis: ['🌹', '🌸', '💗', '💓', '💖', '💕', '💞', '💝', '🦩', '💘', '🩷', '🌷', '🌺'],
+    })
+    setTimeout(cancel, 3000)
+  }
+
+  onKeyStroke(' ', () => pinkBlast())
 </script>
 
 <template>
   <div class="flex flex-wrap items-center justify-center space-x-6 pt-16">
     <div
-      class="border-candy relative size-48 cursor-pointer overflow-hidden rounded-full border-4"
+      class="relative size-48 cursor-pointer overflow-hidden rounded-full border-4 border-candy"
       role="button"
       @click="pinkBlast"
       @keydown.enter="pinkBlast">

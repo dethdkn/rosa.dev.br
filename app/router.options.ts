@@ -18,7 +18,7 @@ export default {
     if (to.hash) {
       setTimeout(() => {
         let heading = document.querySelector(`[id="${to.hash.replace('#', '')}"]`)
-        if (!heading) heading = document.querySelector(`[href$="${to.hash}"]`)
+        heading ??= document.querySelector(`[href$="${to.hash}"]`)
         if (!heading || !('offsetTop' in heading) || typeof heading.offsetTop !== 'number') return
         window.scrollTo({ top: heading.offsetTop, behavior: 'smooth' })
       })

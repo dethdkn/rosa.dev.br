@@ -1,10 +1,10 @@
 <script setup lang="ts">
-defineProps({
-  title: { type: String, default: 'Gabriel Rosa' },
-  subtitle: { type: String, default: 'Software Engineer & DevOps' },
-  im: { type: String, default: "I'm" },
-  aka: { type: String, default: 'aka' },
-})
+  defineProps({
+    title: { type: String, default: 'Gabriel Rosa' },
+    subtitle: { type: String, default: 'Software Engineer & DevOps' },
+    im: { type: String, default: "I'm" },
+    aka: { type: String, default: 'aka' },
+  })
 </script>
 
 <template>

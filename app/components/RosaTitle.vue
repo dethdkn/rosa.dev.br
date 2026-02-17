@@ -3,14 +3,14 @@
     scope="global"
     keypath="home.im"
     tag="h1"
-    class="text-obsidian dark:text-snow mb-2 text-4xl">
+    class="mb-2 text-4xl text-obsidian dark:text-snow">
     <template #name>
       <!-- eslint-disable-next-line vue/no-bare-strings-in-template -->
-      <span class="border-candy border-b-2">Gabriel Rosa</span>
+      <span class="border-b-2 border-candy">Gabriel Rosa</span>
     </template>
     <template #nickname>
       <!-- eslint-disable-next-line vue/no-bare-strings-in-template -->
-      <span class="border-candy border-b-2">Deth</span>
+      <span class="border-b-2 border-candy">Deth</span>
     </template>
   </i18n-t>
 </template>

@@ -1,4 +1,4 @@
-const KV = globalThis.KV || globalThis.__env__?.KV
+const KV = globalThis.KV ?? globalThis.__env__?.KV
 
 export default async function kv<Type>(key: string): Promise<Type> {
   if (!KV) throw new Error('KV not found')

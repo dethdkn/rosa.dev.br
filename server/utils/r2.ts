@@ -1,6 +1,6 @@
 import type { R2ObjectBody } from '@cloudflare/workers-types'
 
-const R2 = globalThis.R2 || globalThis.__env__?.R2
+const R2 = globalThis.R2 ?? globalThis.__env__?.R2
 
 export default async function r2(
   filePath: string,
@@ -12,7 +12,7 @@ export default async function r2(
   if (!obj) throw new Error('File not found')
 
   const headers = {
-    'Content-Type': mime.getType(filePath) || 'application/octet-stream',
+    'Content-Type': mime.getType(filePath) ?? 'application/octet-stream',
     'Content-Disposition': `inline; filename="${filePath.split('/').pop()}"`,
   }
 

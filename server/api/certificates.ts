@@ -1,5 +1,5 @@
 export default defineEventHandler(async () => {
-  const certificates = (await kv<Certificates[]>('certificates')) || []
+  const certificates = await kv<Certificates[]>('certificates')
 
   certificates.sort((cert1: Certificates, cert2: Certificates) => {
     const [am, ay] = cert1.concluded.split('/')

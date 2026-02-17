@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const { finalizePendingLocaleChange } = useI18n()
+  const { finalizePendingLocaleChange } = useI18n()
 
-async function onBeforeEnter(): Promise<void> {
-  await finalizePendingLocaleChange()
-}
+  async function onBeforeEnter(): Promise<void> {
+    await finalizePendingLocaleChange()
+  }
 </script>
 
 <template>

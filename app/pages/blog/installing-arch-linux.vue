@@ -1,13 +1,14 @@
 <script setup lang="ts">
-const { t } = useI18n()
+  const { t } = useI18n()
+  const { proxy } = useScriptUmamiAnalytics()
 
-useHead({ title: t('posts.installing_arch_linux.title') })
+  useHead({ title: t('posts.installing_arch_linux.title') })
 
-useSeoMeta({ description: t('posts.installing_arch_linux.description') })
+  useSeoMeta({ description: t('posts.installing_arch_linux.description') })
 
-defineOgImageComponent('Simple', { title: t('posts.installing_arch_linux.title') })
+  defineOgImageComponent('Simple', { title: t('posts.installing_arch_linux.title') })
 
-const code1 = `ping cbpf.br
+  const code1 = `ping cbpf.br
 timedatectl set-ntp true
 lsblk
 cfdisk /dev/sda
@@ -45,32 +46,23 @@ usermod -aG sudo gabrielrosa
 nano /etc/sudoers
 pacman -Syu
 pacman -S neofetch`
+
+  function youtubePlay(event: { data: number }): void {
+    if (event.data === 1) {
+      proxy.track('play video', { video: 'installing_arch' })
+    }
+  }
 </script>
 
 <template>
   <div class="mx-auto max-w-7xl">
     <div class="space-y-10 px-20 py-5 text-center sm:text-start lg:space-y-20">
-      <h1 class="border-candy text-obsidian dark:text-snow inline border-b-2 text-4xl">
+      <h1 class="inline border-b-2 border-candy text-4xl text-obsidian dark:text-snow">
         {{ t('posts.installing_arch_linux.title') }}
       </h1>
     </div>
-    <div class="text-obsidian dark:text-snow mt-10 space-y-5 px-10">
-      <!-- eslint-disable-next-line vue/no-bare-strings-in-template -->
-      <iframe
-        class="m-auto h-60 w-full rounded-lg sm:h-80 md:h-100 lg:h-120 xl:h-160"
-        src="https://www.youtube.com/embed/YGX3None2y8"
-        title="Instalando o Arch Linux (o guia mais fácil do youtube)"
-        frameborder="0"
-        allow="
-          accelerometer;
-          autoplay;
-          clipboard-write;
-          encrypted-media;
-          gyroscope;
-          picture-in-picture;
-          web-share;
-        "
-        allowfullscreen />
+    <div class="mt-10 space-y-5 px-10 text-obsidian dark:text-snow">
+      <ScriptYouTubePlayer video-id="YGX3None2y8" @state-change="youtubePlay" />
       <p>{{ t('posts.installing_arch_linux.paragraph1') }}</p>
       <CodeHighlight file-name="Arch Install" :code="code1" lang="shell" />
       <p>{{ t('posts.installing_arch_linux.paragraph2') }}</p>

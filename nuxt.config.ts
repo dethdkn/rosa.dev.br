@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/fonts',
     '@nuxt/image',
+    '@nuxt/scripts',
+    '@nuxt/a11y',
+    '@nuxt/hints',
     '@nuxtjs/color-mode',
     '@nuxtjs/seo',
     '@nuxtjs/i18n',
@@ -56,6 +59,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+  // @ts-expect-error nuxt bug
   vite: { plugins: [tailwindcss()] },
   i18n: {
     baseUrl: 'https://rosa.dev.br/',
@@ -77,6 +81,21 @@ export default defineNuxtConfig({
       },
     ],
     skipSettingLocaleOnNavigate: true,
+  },
+  routeRules: {
+    '/um.js': {
+      proxy: 'https://cloud.umami.is/script.js',
+    },
+  },
+  scripts: {
+    registry: {
+      umamiAnalytics: {
+        scriptInput: {
+          src: '/um.js',
+        },
+        websiteId: 'fb1a8842-f8f9-4f58-84ac-21132f0f8414',
+      },
+    },
   },
   icon: { customCollections: [{ prefix: 'cc', dir: 'app/assets/custom-icons' }] },
   linkChecker: { enabled: false },

@@ -1,16 +1,18 @@
 <script setup lang="ts">
-defineProps({
-  title: { type: String, default: '' },
-  badges: {
-    type: Array as PropType<{ title: string; icon: string; color: string }[]>,
-    required: true,
-  },
-  urls: {
-    type: Array as PropType<{ url: string; external: boolean; icon: string; aria: string }[]>,
-    required: true,
-  },
-  description: { type: String, default: '' },
-})
+  defineProps({
+    title: { type: String, default: '' },
+    badges: {
+      type: Array as PropType<{ title: string; icon: string; color: string }[]>,
+      required: true,
+    },
+    urls: {
+      type: Array as PropType<{ url: string; external: boolean; icon: string; aria: string }[]>,
+      required: true,
+    },
+    description: { type: String, default: '' },
+  })
+
+  const { proxy } = useScriptUmamiAnalytics()
 </script>
 
 <template>
@@ -23,14 +25,16 @@ defineProps({
         external
         target="_blank"
         :aria-label="urls?.[0]?.aria"
-        class="border-obsidian text-obsidian hover:text-candy hover:drop-shadow-candy dark:border-snow dark:text-snow dark:hover:text-candy inline cursor-pointer border-b-2 text-2xl transition-all duration-300">
+        @click="proxy.track('List', { name: title, url: urls?.[0]?.url })"
+        class="inline cursor-pointer border-b-2 border-obsidian text-2xl text-obsidian transition-all duration-300 hover:text-candy hover:drop-shadow-candy dark:border-snow dark:text-snow dark:hover:text-candy">
         {{ title }}
       </NuxtLink>
       <NuxtLink
         v-else
         :to="urls?.[0]?.url"
         :aria-label="urls?.[0]?.aria"
-        class="border-obsidian text-obsidian hover:text-candy hover:drop-shadow-candy dark:border-snow dark:text-snow dark:hover:text-candy inline cursor-pointer border-b-2 text-2xl transition-all duration-300">
+        @click="proxy.track('List', { name: title, url: urls?.[0]?.url })"
+        class="inline cursor-pointer border-b-2 border-obsidian text-2xl text-obsidian transition-all duration-300 hover:text-candy hover:drop-shadow-candy dark:border-snow dark:text-snow dark:hover:text-candy">
         {{ title }}
       </NuxtLink>
       <Badge
@@ -48,19 +52,21 @@ defineProps({
           external
           target="_blank"
           :aria-label="url.aria"
-          class="text-obsidian hover:text-candy hover:drop-shadow-candy dark:text-snow dark:hover:text-candy text-3xl transition-all duration-300">
+          @click="proxy.track('List', { name: title, url: url.url })"
+          class="text-3xl text-obsidian transition-all duration-300 hover:text-candy hover:drop-shadow-candy dark:text-snow dark:hover:text-candy">
           <Icon :name="url.icon" />
         </NuxtLink>
         <NuxtLinkLocale
           v-else
           :to="url.url"
           :aria-label="url.aria"
-          class="text-obsidian hover:text-candy hover:drop-shadow-candy dark:text-snow dark:hover:text-candy text-3xl transition-all duration-300">
+          @click="proxy.track('List', { name: title, url: url.url })"
+          class="text-3xl text-obsidian transition-all duration-300 hover:text-candy hover:drop-shadow-candy dark:text-snow dark:hover:text-candy">
           <Icon :name="url.icon" />
         </NuxtLinkLocale>
       </template>
     </div>
-    <p class="text-obsidian dark:text-snow inline text-xl">
+    <p class="inline text-xl text-obsidian dark:text-snow">
       {{ description }}
     </p>
   </div>
