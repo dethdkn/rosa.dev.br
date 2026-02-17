@@ -1,4 +1,3 @@
-/* eslint-disable no-inner-declarations */
 import type { KVNamespace, R2Bucket } from '@cloudflare/workers-types'
 
 declare global {

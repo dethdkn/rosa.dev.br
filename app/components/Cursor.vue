@@ -148,12 +148,10 @@
   }
 
   let ctx: { running?: boolean; frame?: number } & CanvasRenderingContext2D
-  // eslint-disable-next-line unused-imports/no-unused-vars
   let f: Wave
   let pos = { x: 0, y: 0 }
   let lines: Line[] = []
 
-  // eslint-disable-next-line vue/no-setup-props-reactivity-loss
   const E = {
     debug: true,
     friction: props.friction,

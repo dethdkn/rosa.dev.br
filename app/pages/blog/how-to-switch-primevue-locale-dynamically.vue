@@ -1,6 +1,6 @@
 <script setup lang="ts">
   // No-useless-escape false positive
-  /* eslint-disable no-useless-escape */
+  /* oxlint-disable no-useless-escape */
 
   const { t } = useI18n()
 
@@ -87,7 +87,6 @@ function changeLang() {
       <p>{{ t('posts.primevue_locale_dynamic.paragraph1') }}</p>
       <p>{{ t('posts.primevue_locale_dynamic.paragraph2') }}</p>
       <p>{{ t('posts.primevue_locale_dynamic.paragraph3') }}</p>
-      <!-- eslint-disable-next-line vue/no-bare-strings-in-template -->
       <NuxtLink
         to="https://github.com/primefaces/primelocale"
         external
@@ -101,7 +100,6 @@ function changeLang() {
       <p>{{ t('posts.primevue_locale_dynamic.paragraph6') }}</p>
       <CodeHighlight file-name="nuxt.config.ts" :code="code1" lang="ts" />
       <p>{{ t('posts.primevue_locale_dynamic.paragraph7') }}</p>
-      <!-- eslint-disable-next-line vue/no-bare-strings-in-template -->
       <pre>
 /locales
 ----/en.ts

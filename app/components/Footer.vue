@@ -46,7 +46,6 @@
 </script>
 
 <template>
-  <!-- eslint-disable vue/no-bare-strings-in-template -->
   <footer class="space-y-4 bg-pearl pt-20 pb-10 dark:bg-onyx">
     <div
       class="grid grid-cols-3 place-items-center gap-4 sm:grid-cols-6 lg:flex lg:items-center lg:justify-center lg:space-x-8">

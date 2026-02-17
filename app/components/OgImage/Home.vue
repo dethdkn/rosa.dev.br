@@ -8,7 +8,6 @@
 </script>
 
 <template>
-  <!-- eslint-disable vue/no-restricted-static-attribute, vue/no-bare-strings-in-template -->
   <div style="width: 100%; height: 100%; background-color: #1e1e2e">
     <h1
       style="

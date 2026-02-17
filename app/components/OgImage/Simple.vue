@@ -6,7 +6,6 @@
 </script>
 
 <template>
-  <!-- eslint-disable vue/no-restricted-static-attribute -->
   <div style="width: 100%; height: 100%; background-color: #1e1e2e">
     <div style="width: 100%; display: flex; justify-content: center; align-items: center">
       <h1 style="font-size: 60px; color: #cdd5f4; text-align: center">

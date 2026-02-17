@@ -63,7 +63,6 @@
           :alt="t('nav.logo')"
           class="mr-3 size-8 group-hover:animate-pulse"
           preload />
-        <!-- eslint-disable-next-line vue/no-bare-strings-in-template -->
         <span
           class="self-center font-delius text-2xl font-semibold whitespace-nowrap text-obsidian group-hover:text-candy dark:text-snow dark:group-hover:text-candy"
           >Gabriel Rosa</span
