@@ -83,12 +83,12 @@
 }
 
 *::selection {
-  @apply text-snow bg-candy;
+  @apply bg-candy text-snow;
 }
 
 html,
 body {
-  @apply h-full m-0 p-0;
+  @apply m-0 h-full p-0;
 }
 
 body {
@@ -128,7 +128,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  @apply bg-[#babac0] border-4 border-solid border-pearl;
+  @apply border-4 border-solid border-pearl bg-[#babac0];
 }
 
 body::-webkit-scrollbar-track {
@@ -140,7 +140,7 @@ body::-webkit-scrollbar-track {
 }
 
 .dark body::-webkit-scrollbar-thumb {
-  @apply bg-[#718096] border-onyx;
+  @apply border-onyx bg-[#718096];
 }
 
 .dark body::-webkit-scrollbar-track {
@@ -152,7 +152,7 @@ div::-webkit-scrollbar {
 }
 
 div::-webkit-scrollbar-thumb {
-  @apply bg-[#babac0] border-4 border-solid border-milk;
+  @apply border-4 border-solid border-milk bg-[#babac0];
 }
 
 div::-webkit-scrollbar-track {
@@ -164,7 +164,7 @@ div::-webkit-scrollbar-track {
 }
 
 .dark div::-webkit-scrollbar-thumb {
-  @apply bg-[#718096] border-eclipse;
+  @apply border-eclipse bg-[#718096];
 }
 
 .dark div::-webkit-scrollbar-track {

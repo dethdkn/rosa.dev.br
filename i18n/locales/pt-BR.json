@@ -55,7 +55,9 @@
     "litcomp_ai_description": "🤖 Explorando o Futuro com Ciência e Inteligência",
     "posgrad_description": "🧑‍🎓 Portal da pós graduação da COEDU (CBPF)",
     "cotectemp_description": "🌡️ Monitor em tempo real das temperaturas e sensores de fumaça dos racks do Rio Science Data Center.",
-    "ldapnel_description": "🔐 Interface web moderna para administração de LDAP"
+    "ldapnel_description": "🔐 Interface web moderna para administração de LDAP",
+    "sso_description": "🫆 Sistema de autenticação única (SSO) para o CBPF",
+    "uniposrio_description": "🎓 Portal de inscrições para a UNIPÓSRIO"
   },
   "blog": {
     "title": "Blog",

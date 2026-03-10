@@ -9,43 +9,43 @@
   defineOgImageComponent('Simple', { title: t('posts.installing_arch_linux.title') })
 
   const code1 = `ping cbpf.br
-timedatectl set-ntp true
-lsblk
-cfdisk /dev/sda
-mkfs.ext4 /dev/sda1
-mkfs.ext4 /dev/sda2
-mount /dev/sda2 /mnt
-mkdir /mnt/boot
-mount /dev/sda1 /mnt/boot
-lsblk
-pacstrap /mnt base base-devel linux linux-firmware nano
-genfstab /mnt
-genfstab -U /mnt
-genfstab -U /mnt /mnt/etc/fstab
-arch-chroot /mnt /bin/bash    
-pacman -S networkmanager grub dosfstools os-prober mtools   (non uefi)
-pacman -S networkmanager grub efibootmgr dosfstools os-prober mtools   (uefi)
-systemctl enable NetworkManager
-grub-install --target=i386-pc --recheck /dev/sda (non uefi)
-grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck /dev/sda (uefi)
-grub-mkconfig -o /boot/grub/grub.cfg
-nano /etc/default/grub
-passwd
-localectl set-keymap --no-convert br-abnt2
-nano /etc/hostname
-nano /etc/locale.gen
-nano /etc/locale.conf
-ln -sf /usr/share/zoneinfo/America/Brazil/ /etc/localtime
-exit
-umount -R /mnt
-reboot
-useradd -m gabrielrosa
-passwd gabrielrosa
-groupadd sudo
-usermod -aG sudo gabrielrosa
-nano /etc/sudoers
-pacman -Syu
-pacman -S neofetch`
+  timedatectl set-ntp true
+  lsblk
+  cfdisk /dev/sda
+  mkfs.ext4 /dev/sda1
+  mkfs.ext4 /dev/sda2
+  mount /dev/sda2 /mnt
+  mkdir /mnt/boot
+  mount /dev/sda1 /mnt/boot
+  lsblk
+  pacstrap /mnt base base-devel linux linux-firmware nano
+  genfstab /mnt
+  genfstab -U /mnt
+  genfstab -U /mnt /mnt/etc/fstab
+  arch-chroot /mnt /bin/bash
+  pacman -S networkmanager grub dosfstools os-prober mtools   (non uefi)
+  pacman -S networkmanager grub efibootmgr dosfstools os-prober mtools   (uefi)
+  systemctl enable NetworkManager
+  grub-install --target=i386-pc --recheck /dev/sda (non uefi)
+  grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck /dev/sda (uefi)
+  grub-mkconfig -o /boot/grub/grub.cfg
+  nano /etc/default/grub
+  passwd
+  localectl set-keymap --no-convert br-abnt2
+  nano /etc/hostname
+  nano /etc/locale.gen
+  nano /etc/locale.conf
+  ln -sf /usr/share/zoneinfo/America/Brazil/ /etc/localtime
+  exit
+  umount -R /mnt
+  reboot
+  useradd -m gabrielrosa
+  passwd gabrielrosa
+  groupadd sudo
+  usermod -aG sudo gabrielrosa
+  nano /etc/sudoers
+  pacman -Syu
+  pacman -S neofetch`
 
   function youtubePlay(event: { data: number }): void {
     if (event.data === 1) {
