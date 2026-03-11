@@ -40,5 +40,9 @@
   "tabWidth": 2,
   "trailingComma": "all",
   "useTabs": false,
-  "vueIndentScriptAndStyle": true
+  "vueIndentScriptAndStyle": true,
+  "ignorePatterns": [
+    "app/pages/blog/installing-arch-linux.vue",
+    "app/pages/blog/how-to-switch-primevue-locale-dynamically.vue"
+  ]
 }

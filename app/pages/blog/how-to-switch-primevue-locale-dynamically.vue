@@ -11,69 +11,69 @@
   defineOgImageComponent('Simple', { title: t('posts.primevue_locale_dynamic.title') })
 
   const code1 = `export default defineNuxtConfig({
-    i18n: {
-      baseUrl: 'https://example.com/',
-      defaultLocale: 'en',
-      langDir: 'locales',
-      locales: [
-        { code: 'en', iso: 'en-US', name: 'English (US)', file: 'en.ts' },
-        { code: 'pt', iso: 'pt-BR', name: 'Português (BR)', file: 'pt.ts' },
-      ],
-    },
-  })`
+  i18n: {
+    baseUrl: 'https://example.com/',
+    defaultLocale: 'en',
+    langDir: 'locales',
+    locales: [
+      { code: 'en', iso: 'en-US', name: 'English (US)', file: 'en.ts' },
+      { code: 'pt', iso: 'pt-BR', name: 'Português (BR)', file: 'pt.ts' },
+    ],
+  },
+})`
 
   const code2 = `{ "type": 0, "start": 0, "end": 2, "loc": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 3, "offset": 2 }, "source": "Fr" }, "body": { "type": 2, "start": 0, "end": 2, "loc": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 3, "offset": 2 } }, "items": [ { "type": 3, "start": 0, "end": 2, "loc": { "start": { "line": 1, "column": 1, "offset": 0 }, "end": { "line": 1, "column": 3, "offset": 2 } } } ], "static": "Fr" } }`
 
   const code3 = `<script setup lang="ts">
-  const { locale, setLocale, t } = useI18n()
+const { locale, setLocale, t } = useI18n()
 
-  function changeLang() {
-    const primeConfig = usePrimeVue()
-    // Warns [Vue warn]: inject() can only be used inside setup() or functional components.
-    // Throws Uncaught Error: PrimeVue is not installed!
-    if (locale.value === 'en') {
-      setLocale('pt')
-      primeConfig.config.locale = primept
-    }
-    else {
-      setLocale('en')
-      primeConfig.config.locale = primeen
-    }
+function changeLang() {
+  const primeConfig = usePrimeVue()
+  // Warns [Vue warn]: inject() can only be used inside setup() or functional components.
+  // Throws Uncaught Error: PrimeVue is not installed!
+  if (locale.value === 'en') {
+    setLocale('pt')
+    primeConfig.config.locale = primept
   }
-  <\/script>`
+  else {
+    setLocale('en')
+    primeConfig.config.locale = primeen
+  }
+}
+<\/script>`
 
   const code4 = `<script setup lang="ts">
-  const { locale, setLocale, t } = useI18n()
+const { locale, setLocale, t } = useI18n()
 
-  const primeConfig = usePrimeVue()
+const primeConfig = usePrimeVue()
 
-  onMounted(() => {
-    if (locale.value === 'en')
-      primeConfig.config.locale = primeen
-    else
-      primeConfig.config.locale = primept
-  })
+onMounted(() => {
+  if (locale.value === 'en')
+    primeConfig.config.locale = primeen
+  else
+    primeConfig.config.locale = primept
+})
 
-  function changeLang() {
-    if (locale.value === 'en') {
-      setLocale('pt')
-      primeConfig.config.locale = primept
-    }
-    else {
-      setLocale('en')
-      primeConfig.config.locale = primeen
-    }
+function changeLang() {
+  if (locale.value === 'en') {
+    setLocale('pt')
+    primeConfig.config.locale = primept
   }
-  <\/script>
+  else {
+    setLocale('en')
+    primeConfig.config.locale = primeen
+  }
+}
+<\/script>
 
-  <template>
-    <button aria-label="Switch Language" @click="changeLang">
-      <Icon
-        :name="locale === 'pt' ? 'openmoji:flag-brazil' : 'openmoji:flag-united-states'"
-        size="24"
-      />
-    <\/button>
-  <\/template>`
+<template>
+  <button aria-label="Switch Language" @click="changeLang">
+    <Icon
+      :name="locale === 'pt' ? 'openmoji:flag-brazil' : 'openmoji:flag-united-states'"
+      size="24"
+    />
+  <\/button>
+<\/template>`
 </script>
 
 <template>
