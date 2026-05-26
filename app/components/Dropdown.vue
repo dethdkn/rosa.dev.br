@@ -18,7 +18,7 @@
 
     <DropdownMenuPortal>
       <DropdownMenuContent
-        class="min-w-36 rounded-md bg-gray-200 p-[5px] will-change-[opacity,transform] outline-none data-[side=bottom]:animate-slideUpAndFade dark:bg-gray-800"
+        class="min-w-36 rounded-md bg-gray-200 p-1.25 will-change-[opacity,transform] outline-none data-[side=bottom]:animate-slideUpAndFade dark:bg-gray-800"
         :side-offset="5">
         <DropdownMenuItem
           v-for="{ text, icon, click, active } in options"
