@@ -6,7 +6,7 @@
 
   useSeoMeta({ description: t('home.subtitle') })
 
-  defineOgImageComponent('Home', {
+  defineOgImage('Home.takumi', {
     title: t('home.title'),
     im: t('home.simple_im'),
     aka: t('home.aka'),

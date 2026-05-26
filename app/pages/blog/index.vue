@@ -5,7 +5,7 @@
 
   useSeoMeta({ description: t('blog.description') })
 
-  defineOgImageComponent('Techs', { title: t('blog.title') })
+  defineOgImage('Techs.takumi', { title: t('blog.title') })
 
   const localePath = useLocalePath()
 

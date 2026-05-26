@@ -8,7 +8,7 @@
 
   useSeoMeta({ description: t('posts.primevue_locale_dynamic.description') })
 
-  defineOgImageComponent('Simple', { title: t('posts.primevue_locale_dynamic.title') })
+  defineOgImage('Simple.takumi', { title: t('posts.primevue_locale_dynamic.title') })
 
   const code1 = `export default defineNuxtConfig({
   i18n: {

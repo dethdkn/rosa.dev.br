@@ -1,5 +1,6 @@
 import type { R2ObjectBody } from '@cloudflare/workers-types'
 
+// oxlint-disable-next-line no-underscore-dangle
 const R2 = globalThis.R2 ?? globalThis.__env__?.R2
 
 export default async function r2(

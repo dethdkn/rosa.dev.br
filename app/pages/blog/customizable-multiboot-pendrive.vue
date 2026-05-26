@@ -6,7 +6,7 @@
 
   useSeoMeta({ description: t('posts.customizable_multiboot_pendrive.description') })
 
-  defineOgImageComponent('Simple', { title: t('posts.customizable_multiboot_pendrive.title') })
+  defineOgImage('Simple.takumi', { title: t('posts.customizable_multiboot_pendrive.title') })
 
   function youtubePlay(event: { data: number }): void {
     if (event.data === 1) {

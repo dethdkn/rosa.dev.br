@@ -6,7 +6,7 @@
 
   useSeoMeta({ description: t('posts.installing_arch_linux.description') })
 
-  defineOgImageComponent('Simple', { title: t('posts.installing_arch_linux.title') })
+  defineOgImage('Simple.takumi', { title: t('posts.installing_arch_linux.title') })
 
   const code1 = `ping cbpf.br
 timedatectl set-ntp true

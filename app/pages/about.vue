@@ -7,7 +7,7 @@
 
   useSeoMeta({ description: t('about.description') })
 
-  defineOgImageComponent('Simple', { title: t('about.title') })
+  defineOgImage('Simple.takumi', { title: t('about.title') })
 
   const isDark = computed(() => colorMode.value === 'dark')
 </script>
@@ -40,7 +40,7 @@
             class="relative border-s border-gray-200 text-gray-500 dark:border-gray-700 dark:text-gray-400">
             <li class="ms-6 mb-4">
               <span
-                class="absolute -start-4 flex size-8 items-center justify-center rounded-full bg-candy">
+                class="absolute -inset-s-4 flex size-8 items-center justify-center rounded-full bg-candy">
                 <ClientOnly>
                   <Icon
                     v-if="isDark"

@@ -1,3 +1,4 @@
+// oxlint-disable-next-line no-underscore-dangle
 const KV = globalThis.KV ?? globalThis.__env__?.KV
 
 export default async function kv<Type>(key: string): Promise<Type> {

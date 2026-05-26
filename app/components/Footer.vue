@@ -1,6 +1,8 @@
 <script setup lang="ts">
   const { proxy } = useScriptUmamiAnalytics()
 
+  const { siteVersion } = useRuntimeConfig().public
+
   function clickSocial(name: string): void {
     proxy.track('social', { name })
   }
@@ -69,6 +71,8 @@
         {{ new Date().getFullYear() }}
         <span class="mx-2">—</span>
         Gabriel 'DethDKN' Rosa
+        <span class="mx-2">—</span>
+        v{{ siteVersion }}
       </p>
       <p class="flex flex-col items-center justify-center md:flex-row">
         <span>

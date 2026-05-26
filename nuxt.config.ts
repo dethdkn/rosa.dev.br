@@ -1,5 +1,7 @@
 import tailwindcss from '@tailwindcss/vite'
 
+import { version } from './package.json'
+
 export default defineNuxtConfig({
   modules: [
     '@nuxt/fonts',
@@ -37,6 +39,16 @@ export default defineNuxtConfig({
     identity: { type: 'Person' },
   },
   colorMode: { preference: 'dark', fallback: 'dark', classSuffix: '' },
+  runtimeConfig: {
+    public: {
+      siteVersion: version,
+    },
+  },
+  routeRules: {
+    '/um.js': {
+      proxy: 'https://cloud.umami.is/script.js',
+    },
+  },
   compatibilityDate: '2025-10-10',
   nitro: {
     preset: 'cloudflare_module',
@@ -59,7 +71,6 @@ export default defineNuxtConfig({
       ],
     },
   },
-  // @ts-expect-error nuxt bug
   vite: { plugins: [tailwindcss()] },
   i18n: {
     baseUrl: 'https://rosa.dev.br/',
@@ -82,11 +93,8 @@ export default defineNuxtConfig({
     ],
     skipSettingLocaleOnNavigate: true,
   },
-  routeRules: {
-    '/um.js': {
-      proxy: 'https://cloud.umami.is/script.js',
-    },
-  },
+  icon: { customCollections: [{ prefix: 'cc', dir: 'app/assets/custom-icons' }] },
+  linkChecker: { enabled: false },
   scripts: {
     registry: {
       umamiAnalytics: {
@@ -97,6 +105,4 @@ export default defineNuxtConfig({
       },
     },
   },
-  icon: { customCollections: [{ prefix: 'cc', dir: 'app/assets/custom-icons' }] },
-  linkChecker: { enabled: false },
 })

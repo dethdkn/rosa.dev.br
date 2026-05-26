@@ -5,7 +5,7 @@
 
   useSeoMeta({ description: t('certificates.description') })
 
-  defineOgImageComponent('Techs', { title: t('certificates.title') })
+  defineOgImage('Techs.takumi', { title: t('certificates.title') })
 
   const { data: certificates } = await useFetch('/api/certificates', {
     default: () => [] as Certificates[],
