@@ -8,50 +8,27 @@
 </script>
 
 <template>
-  <div style="width: 100%; height: 100%; background-color: #1e1e2e">
+  <div class="h-full w-full bg-onyx">
     <h1
-      style="
-        border-bottom: 2px solid #f28aa9;
-        font-size: 60px;
-        color: #cdd5f4;
-        position: absolute;
-        left: 50%;
-        top: 10%;
-        transform: translate(-50%, -50%);
-      ">
+      class="absolute top-[10%] left-1/2 [transform:translate(-50%,-50%)] border-b-2 border-candy text-[60px] text-snow">
       {{ title }}
     </h1>
-    <div
-      style="
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      ">
+    <div class="flex h-full w-full items-center justify-center">
       <img
         src="https://rosa.dev.br/gsr.png"
         alt="Gabriel Rosa"
-        width="13rem"
-        height="13rem"
-        style="
-          border: 2px solid #f28aa9;
-          border-radius: 9999px;
-          width: 13rem;
-          height: 13rem;
-          margin-right: 30px;
-        " />
-      <div style="margin-inline-start: 1.5rem">
-        <h2 style="font-size: 40px; color: #cdd5f4">
-          <span style="margin-right: 10px">{{ im }}</span>
-          <span style="border-bottom: 2px solid #f28aa9; margin-right: 10px">Gabriel Rosa</span>
-          <span style="margin-right: 10px">{{ aka }}</span>
-          <span style="border-bottom: 2px solid #f28aa9">Deth</span>
+        class="mr-7.5 h-52 w-52 rounded-full border-2 border-candy" />
+      <div class="ms-6 flex flex-col items-center">
+        <h2 class="text-[40px] text-snow">
+          <span class="mr-2.5">{{ im }}&nbsp;</span>
+          <span class="mr-2.5 border-b-2 border-candy">Gabriel Rosa&nbsp;</span>
+          <span class="mr-2.5">{{ aka }}&nbsp;</span>
+          <span class="border-b-2 border-candy">Deth</span>
         </h2>
+        <h3 class="text-[20px] text-snow">
+          {{ subtitle }}
+        </h3>
       </div>
-      <h3 style="font-size: 20px; color: #cdd5f4">
-        {{ subtitle }}
-      </h3>
     </div>
   </div>
 </template>

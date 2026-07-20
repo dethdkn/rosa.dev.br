@@ -6,100 +6,45 @@
 </script>
 
 <template>
-  <div style="width: 100%; height: 100%; background-color: #1e1e2e">
+  <div class="h-full w-full bg-onyx">
     <h1
-      style="
-        border-bottom: 2px solid #f28aa9;
-        font-size: 60px;
-        color: #cdd5f4;
-        position: absolute;
-        left: 50%;
-        top: 10%;
-        transform: translate(-50%, -50%);
-      ">
+      class="absolute top-[10%] left-1/2 [transform:translate(-50%,-50%)] border-b-2 border-candy text-[60px] text-snow">
       {{ title }}
     </h1>
+
     <img
       src="https://rosa.dev.br/stack/vue.png"
       alt="VueJS"
-      style="
-        position: absolute;
-        left: 2%;
-        top: 10%;
-        transform: translate(-50%, -50%);
-        transform: rotate(30deg);
-        width: 100px;
-        height: 100px;
-      " />
+      class="absolute top-[10%] left-[2%] h-25 w-25 [transform:translate(-50%,-50%)_rotate(30deg)]" />
+
     <img
       src="https://rosa.dev.br/stack/nuxt.png"
       alt="NuxtJS"
-      style="
-        position: absolute;
-        right: 4%;
-        top: 10%;
-        transform: translate(-50%, -50%);
-        transform: rotate(-30deg);
-        width: 100px;
-        height: 100px;
-      " />
+      class="absolute top-[10%] right-[4%] h-25 w-25 [transform:translate(-50%,-50%)_rotate(-30deg)]" />
+
     <img
       src="https://rosa.dev.br/stack/tailwind.png"
       alt="TailwindCSS"
-      style="
-        position: absolute;
-        right: 20%;
-        top: 65%;
-        transform: translate(-50%, -50%);
-        width: 100px;
-        height: 100px;
-      " />
+      class="absolute top-[65%] right-[20%] h-25 w-25 [transform:translate(-50%,-50%)]" />
+
     <img
       src="https://rosa.dev.br/stack/typescript.png"
       alt="Typescript"
-      style="
-        position: absolute;
-        left: 6%;
-        top: 85%;
-        transform: translate(-50%, -50%);
-        transform: rotate(10deg);
-        width: 100px;
-        height: 100px;
-      " />
+      class="absolute top-[85%] left-[6%] h-25 w-25 [transform:translate(-50%,-50%)_rotate(10deg)]" />
+
     <img
       src="https://rosa.dev.br/stack/mongo.png"
       alt="MongoDB"
-      style="
-        position: absolute;
-        right: 6%;
-        top: 75%;
-        transform: translate(-50%, -50%);
-        transform: rotate(-10deg);
-        width: 100px;
-        height: 100px;
-      " />
+      class="absolute top-[75%] right-[6%] h-25 w-25 [transform:translate(-50%,-50%)_rotate(-10deg)]" />
+
     <img
       src="https://rosa.dev.br/stack/nginx.png"
       alt="Nginx"
-      style="
-        position: absolute;
-        right: 50%;
-        top: 75%;
-        transform: translate(-50%, -50%);
-        transform: rotate(-5deg);
-        width: 100px;
-        height: 100px;
-      " />
-    <div
-      style="
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      ">
-      <div style="margin-inline-start: 1.5rem">
-        <h2 style="font-size: 40px; color: #cdd5f4; padding: 60px">
+      class="absolute top-[75%] right-[50%] h-25 w-25 [transform:translate(-50%,-50%)_rotate(-5deg)]" />
+
+    <div class="flex h-full w-full items-center justify-center">
+      <div class="ms-6">
+        <h2 class="p-15 text-[40px] text-snow">
           {{ description }}
         </h2>
       </div>

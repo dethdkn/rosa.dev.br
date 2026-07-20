@@ -44,11 +44,6 @@ export default defineNuxtConfig({
       siteVersion: version,
     },
   },
-  routeRules: {
-    '/um.js': {
-      proxy: 'https://cloud.umami.is/script.js',
-    },
-  },
   compatibilityDate: '2025-10-10',
   nitro: {
     preset: 'cloudflare_module',
@@ -98,9 +93,7 @@ export default defineNuxtConfig({
   scripts: {
     registry: {
       umamiAnalytics: {
-        scriptInput: {
-          src: '/um.js',
-        },
+        trigger: 'onNuxtReady',
         websiteId: 'fb1a8842-f8f9-4f58-84ac-21132f0f8414',
       },
     },
