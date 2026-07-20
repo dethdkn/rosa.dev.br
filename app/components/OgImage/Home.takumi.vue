@@ -15,7 +15,7 @@
     </h1>
     <div class="flex h-full w-full items-center justify-center">
       <img
-        src="https://rosa.dev.br/gsr.png"
+        src="/gsr.png"
         alt="Gabriel Rosa"
         class="mr-7.5 h-52 w-52 rounded-full border-2 border-candy" />
       <div class="ms-6 flex flex-col items-center">
