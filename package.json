@@ -11,7 +11,7 @@
     "fmt:fix": "oxfmt",
     "lint": "oxlint --type-aware",
     "lint:fix": "oxlint --type-aware --fix",
-    "typecheck": "nuxi typecheck",
+    "typecheck": "nuxi typecheck --checker=golar",
     "prerelease": "bun run fmt && bun run lint && bun run typecheck",
     "release": "bun run prerelease && bumpp"
   },
@@ -62,10 +62,11 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^5.20260903.1",
     "@dethdkn/ox-config": "^1.0.25",
+    "@golar/vue": "^0.1.10",
     "@types/youtube": "^0.3.0",
     "bumpp": "^12.3.0",
+    "golar": "^0.1.10",
     "typescript": "^7.0.2",
-    "vue-tsc": "^3.3.11",
     "wrangler": "^4.129.0"
   },
   "packageManager": "bun@1.4.0"
