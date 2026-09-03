@@ -45,19 +45,11 @@
     "title": "Projetos",
     "description": "Explore meus projetos, elaborados com Nuxt, Vue, Tailwind CSS e outras tecnologias interessantes.",
     "rosa_description": "🧑🏻‍💼 Minha página web",
-    "hamilton_description": "👷 Página web do Hamilton Marcenaria Moderna",
-    "ldappasswords_description": "🔑 Hashing e verificação de senhas usando algoritmos de senha do LDAP.",
     "govbr_description": "🔭 Página web do Centro Brasileiro de Pesquisas Físicas",
-    "idcbpf_description": "👥 Gerenciador de contas Ldap",
-    "agenda_auditorios_description": "🏟 Simplificando e organizando eventos de auditório com facilidade e eficiência",
-    "rsdc_agenda_description": "📅 Gerenciador de agendamento do Rio Science Data Center com calendário integrado e dashboard.",
-    "eslint_config_description": "🧹 Minha Configuração ESLint Personalizada",
-    "litcomp_ai_description": "🤖 Explorando o Futuro com Ciência e Inteligência",
-    "posgrad_description": "🧑‍🎓 Portal da pós graduação da COEDU (CBPF)",
-    "cotectemp_description": "🌡️ Monitor em tempo real das temperaturas e sensores de fumaça dos racks do Rio Science Data Center.",
-    "ldapnel_description": "🔐 Interface web moderna para administração de LDAP",
     "sso_description": "🫆 Sistema de autenticação única (SSO) para o CBPF",
-    "uniposrio_description": "🎓 Portal de inscrições para a UNIPÓSRIO"
+    "uniposrio_description": "🎓 Portal de inscrições para a UNIPÓSRIO",
+    "lab_ia_description": "🤖 Explorando o Futuro com Ciência e Inteligência",
+    "ldap_studio_description": "🔍 Um cliente LDAP nativo para macOS, com backend em Rust, para navegar, pesquisar e editar diretórios LDAP."
   },
   "blog": {
     "title": "Blog",
